@@ -59,6 +59,7 @@ namespace ClickForService.PresentationLayer
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(173, 20);
             this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // Usernamelabel
             // 
