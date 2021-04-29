@@ -57,14 +57,24 @@ namespace ClickForService.PresentationLayer
             this.DivisionregistercomboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.NidregistertextBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.CategoryregistercomboBox = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.BloodgroupregistercomboBox = new System.Windows.Forms.ComboBox();
+            this.ProfessionregistercomboBox = new System.Windows.Forms.ComboBox();
+            this.AddressregistertextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Loginregisterbutton
             // 
             this.Loginregisterbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Loginregisterbutton.Location = new System.Drawing.Point(269, 421);
+            this.Loginregisterbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Loginregisterbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loginregisterbutton.Location = new System.Drawing.Point(257, 441);
             this.Loginregisterbutton.Name = "Loginregisterbutton";
-            this.Loginregisterbutton.Size = new System.Drawing.Size(75, 23);
+            this.Loginregisterbutton.Size = new System.Drawing.Size(75, 28);
             this.Loginregisterbutton.TabIndex = 47;
             this.Loginregisterbutton.Text = "Login";
             this.Loginregisterbutton.UseVisualStyleBackColor = false;
@@ -74,7 +84,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 422);
+            this.label10.Location = new System.Drawing.Point(38, 442);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(186, 19);
             this.label10.TabIndex = 46;
@@ -83,7 +93,7 @@ namespace ClickForService.PresentationLayer
             // 
             // EmailregistertextBox
             // 
-            this.EmailregistertextBox.Location = new System.Drawing.Point(426, 170);
+            this.EmailregistertextBox.Location = new System.Drawing.Point(426, 157);
             this.EmailregistertextBox.Name = "EmailregistertextBox";
             this.EmailregistertextBox.Size = new System.Drawing.Size(100, 20);
             this.EmailregistertextBox.TabIndex = 45;
@@ -92,7 +102,7 @@ namespace ClickForService.PresentationLayer
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(247, 170);
+            this.label8.Location = new System.Drawing.Point(247, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
             this.label8.TabIndex = 44;
@@ -103,7 +113,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AgreeregistercheckBox.AutoSize = true;
             this.AgreeregistercheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgreeregistercheckBox.Location = new System.Drawing.Point(65, 362);
+            this.AgreeregistercheckBox.Location = new System.Drawing.Point(12, 419);
             this.AgreeregistercheckBox.Name = "AgreeregistercheckBox";
             this.AgreeregistercheckBox.Size = new System.Drawing.Size(236, 20);
             this.AgreeregistercheckBox.TabIndex = 43;
@@ -115,11 +125,19 @@ namespace ClickForService.PresentationLayer
             // 
             this.CityregistercomboBox.FormattingEnabled = true;
             this.CityregistercomboBox.Items.AddRange(new object[] {
-            "Bangladesh",
-            "India",
-            "Japan",
-            "Pakistan"});
-            this.CityregistercomboBox.Location = new System.Drawing.Point(426, 335);
+            "Dhaka",
+            "Uttora",
+            "Mirpur",
+            "Bonani",
+            "Gulshan",
+            "Rajbari",
+            "Patuakhali",
+            "Shorishabari",
+            "Dhaka Cantt.",
+            "Wari",
+            "Dhanmondi",
+            "Kuratoli"});
+            this.CityregistercomboBox.Location = new System.Drawing.Point(426, 287);
             this.CityregistercomboBox.Name = "CityregistercomboBox";
             this.CityregistercomboBox.Size = new System.Drawing.Size(121, 21);
             this.CityregistercomboBox.TabIndex = 42;
@@ -128,7 +146,7 @@ namespace ClickForService.PresentationLayer
             // FemaleregisterradioButton
             // 
             this.FemaleregisterradioButton.AutoSize = true;
-            this.FemaleregisterradioButton.Location = new System.Drawing.Point(517, 272);
+            this.FemaleregisterradioButton.Location = new System.Drawing.Point(508, 237);
             this.FemaleregisterradioButton.Name = "FemaleregisterradioButton";
             this.FemaleregisterradioButton.Size = new System.Drawing.Size(59, 17);
             this.FemaleregisterradioButton.TabIndex = 41;
@@ -140,7 +158,7 @@ namespace ClickForService.PresentationLayer
             // MaleregisterradioButton
             // 
             this.MaleregisterradioButton.AutoSize = true;
-            this.MaleregisterradioButton.Location = new System.Drawing.Point(426, 272);
+            this.MaleregisterradioButton.Location = new System.Drawing.Point(426, 237);
             this.MaleregisterradioButton.Name = "MaleregisterradioButton";
             this.MaleregisterradioButton.Size = new System.Drawing.Size(48, 17);
             this.MaleregisterradioButton.TabIndex = 40;
@@ -151,7 +169,7 @@ namespace ClickForService.PresentationLayer
             // 
             // DateofbirthregisterdateTimePicker
             // 
-            this.DateofbirthregisterdateTimePicker.Location = new System.Drawing.Point(426, 237);
+            this.DateofbirthregisterdateTimePicker.Location = new System.Drawing.Point(426, 211);
             this.DateofbirthregisterdateTimePicker.MaxDate = new System.DateTime(2021, 4, 17, 0, 0, 0, 0);
             this.DateofbirthregisterdateTimePicker.MinDate = new System.DateTime(1910, 1, 25, 23, 59, 59, 0);
             this.DateofbirthregisterdateTimePicker.Name = "DateofbirthregisterdateTimePicker";
@@ -162,7 +180,7 @@ namespace ClickForService.PresentationLayer
             // 
             // MobilenumberregistertextBox
             // 
-            this.MobilenumberregistertextBox.Location = new System.Drawing.Point(426, 205);
+            this.MobilenumberregistertextBox.Location = new System.Drawing.Point(426, 183);
             this.MobilenumberregistertextBox.Name = "MobilenumberregistertextBox";
             this.MobilenumberregistertextBox.Size = new System.Drawing.Size(100, 20);
             this.MobilenumberregistertextBox.TabIndex = 38;
@@ -170,7 +188,7 @@ namespace ClickForService.PresentationLayer
             // 
             // ConfirmpasswordregistertextBox
             // 
-            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(426, 112);
+            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(426, 104);
             this.ConfirmpasswordregistertextBox.Name = "ConfirmpasswordregistertextBox";
             this.ConfirmpasswordregistertextBox.PasswordChar = '*';
             this.ConfirmpasswordregistertextBox.Size = new System.Drawing.Size(100, 20);
@@ -179,7 +197,7 @@ namespace ClickForService.PresentationLayer
             // 
             // PasswordregistertextBox
             // 
-            this.PasswordregistertextBox.Location = new System.Drawing.Point(426, 80);
+            this.PasswordregistertextBox.Location = new System.Drawing.Point(426, 72);
             this.PasswordregistertextBox.Name = "PasswordregistertextBox";
             this.PasswordregistertextBox.PasswordChar = '*';
             this.PasswordregistertextBox.Size = new System.Drawing.Size(100, 20);
@@ -188,7 +206,7 @@ namespace ClickForService.PresentationLayer
             // 
             // UsernameregistertextBox
             // 
-            this.UsernameregistertextBox.Location = new System.Drawing.Point(426, 51);
+            this.UsernameregistertextBox.Location = new System.Drawing.Point(426, 43);
             this.UsernameregistertextBox.Name = "UsernameregistertextBox";
             this.UsernameregistertextBox.Size = new System.Drawing.Size(100, 20);
             this.UsernameregistertextBox.TabIndex = 35;
@@ -205,9 +223,12 @@ namespace ClickForService.PresentationLayer
             // Registerformbutton
             // 
             this.Registerformbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Registerformbutton.Location = new System.Drawing.Point(631, 355);
+            this.Registerformbutton.Enabled = false;
+            this.Registerformbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Registerformbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registerformbutton.Location = new System.Drawing.Point(585, 419);
             this.Registerformbutton.Name = "Registerformbutton";
-            this.Registerformbutton.Size = new System.Drawing.Size(75, 27);
+            this.Registerformbutton.Size = new System.Drawing.Size(88, 27);
             this.Registerformbutton.TabIndex = 33;
             this.Registerformbutton.Text = "Register";
             this.Registerformbutton.UseVisualStyleBackColor = false;
@@ -216,7 +237,7 @@ namespace ClickForService.PresentationLayer
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(247, 338);
+            this.label9.Location = new System.Drawing.Point(247, 290);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(24, 13);
             this.label9.TabIndex = 32;
@@ -226,7 +247,7 @@ namespace ClickForService.PresentationLayer
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(247, 272);
+            this.label7.Location = new System.Drawing.Point(247, 237);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 31;
@@ -236,7 +257,7 @@ namespace ClickForService.PresentationLayer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(247, 237);
+            this.label6.Location = new System.Drawing.Point(247, 211);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 30;
@@ -246,7 +267,8 @@ namespace ClickForService.PresentationLayer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(244, 208);
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label5.Location = new System.Drawing.Point(244, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 29;
@@ -256,7 +278,7 @@ namespace ClickForService.PresentationLayer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 112);
+            this.label4.Location = new System.Drawing.Point(244, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 28;
@@ -266,7 +288,7 @@ namespace ClickForService.PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(244, 83);
+            this.label3.Location = new System.Drawing.Point(244, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 27;
@@ -276,7 +298,7 @@ namespace ClickForService.PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 51);
+            this.label2.Location = new System.Drawing.Point(244, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 26;
@@ -296,7 +318,7 @@ namespace ClickForService.PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(247, 303);
+            this.label1.Location = new System.Drawing.Point(247, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 48;
@@ -305,7 +327,17 @@ namespace ClickForService.PresentationLayer
             // DivisionregistercomboBox
             // 
             this.DivisionregistercomboBox.FormattingEnabled = true;
-            this.DivisionregistercomboBox.Location = new System.Drawing.Point(426, 295);
+            this.DivisionregistercomboBox.Items.AddRange(new object[] {
+            "Dhaka",
+            "Comilla",
+            "Chattogram",
+            "Barishal",
+            "Mymensingh",
+            "Khulna",
+            "Rajshahi",
+            "Rangpur",
+            "Sylhet"});
+            this.DivisionregistercomboBox.Location = new System.Drawing.Point(426, 260);
             this.DivisionregistercomboBox.Name = "DivisionregistercomboBox";
             this.DivisionregistercomboBox.Size = new System.Drawing.Size(121, 21);
             this.DivisionregistercomboBox.TabIndex = 49;
@@ -313,7 +345,7 @@ namespace ClickForService.PresentationLayer
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(247, 138);
+            this.label11.Location = new System.Drawing.Point(247, 130);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(26, 13);
             this.label11.TabIndex = 50;
@@ -321,16 +353,113 @@ namespace ClickForService.PresentationLayer
             // 
             // NidregistertextBox
             // 
-            this.NidregistertextBox.Location = new System.Drawing.Point(426, 139);
+            this.NidregistertextBox.Location = new System.Drawing.Point(426, 131);
             this.NidregistertextBox.Name = "NidregistertextBox";
             this.NidregistertextBox.Size = new System.Drawing.Size(100, 20);
             this.NidregistertextBox.TabIndex = 51;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(252, 316);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 13);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "Address";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(258, 338);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 13);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Category";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // CategoryregistercomboBox
+            // 
+            this.CategoryregistercomboBox.FormattingEnabled = true;
+            this.CategoryregistercomboBox.Items.AddRange(new object[] {
+            "Servicer Giver",
+            "Service Taker"});
+            this.CategoryregistercomboBox.Location = new System.Drawing.Point(426, 335);
+            this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
+            this.CategoryregistercomboBox.Size = new System.Drawing.Size(121, 21);
+            this.CategoryregistercomboBox.TabIndex = 55;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(254, 360);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 13);
+            this.label14.TabIndex = 56;
+            this.label14.Text = "Profession";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(256, 387);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(63, 13);
+            this.label15.TabIndex = 58;
+            this.label15.Text = "BloodGroup";
+            // 
+            // BloodgroupregistercomboBox
+            // 
+            this.BloodgroupregistercomboBox.FormattingEnabled = true;
+            this.BloodgroupregistercomboBox.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
+            this.BloodgroupregistercomboBox.Location = new System.Drawing.Point(426, 384);
+            this.BloodgroupregistercomboBox.Name = "BloodgroupregistercomboBox";
+            this.BloodgroupregistercomboBox.Size = new System.Drawing.Size(121, 21);
+            this.BloodgroupregistercomboBox.TabIndex = 59;
+            // 
+            // ProfessionregistercomboBox
+            // 
+            this.ProfessionregistercomboBox.FormattingEnabled = true;
+            this.ProfessionregistercomboBox.Items.AddRange(new object[] {
+            "Maid Service",
+            "AC Servicing/Repair",
+            "Fridge Servicing/Repair",
+            "Car Servicing/Repair",
+            "Computer/Laptop Servicing/Repair",
+            "Mobile Servicing"});
+            this.ProfessionregistercomboBox.Location = new System.Drawing.Point(426, 357);
+            this.ProfessionregistercomboBox.Name = "ProfessionregistercomboBox";
+            this.ProfessionregistercomboBox.Size = new System.Drawing.Size(121, 21);
+            this.ProfessionregistercomboBox.TabIndex = 60;
+            // 
+            // AddressregistertextBox
+            // 
+            this.AddressregistertextBox.Location = new System.Drawing.Point(426, 313);
+            this.AddressregistertextBox.Name = "AddressregistertextBox";
+            this.AddressregistertextBox.Size = new System.Drawing.Size(121, 20);
+            this.AddressregistertextBox.TabIndex = 61;
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.AddressregistertextBox);
+            this.Controls.Add(this.ProfessionregistercomboBox);
+            this.Controls.Add(this.BloodgroupregistercomboBox);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.CategoryregistercomboBox);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.NidregistertextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.DivisionregistercomboBox);
@@ -360,6 +489,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.Nameregisterlabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registration_FormClosing);
             this.Load += new System.EventHandler(this.Registration_Load);
@@ -397,5 +527,13 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.ComboBox DivisionregistercomboBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox NidregistertextBox;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox CategoryregistercomboBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox BloodgroupregistercomboBox;
+        private System.Windows.Forms.ComboBox ProfessionregistercomboBox;
+        private System.Windows.Forms.TextBox AddressregistertextBox;
     }
 }
