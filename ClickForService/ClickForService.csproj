@@ -56,6 +56,12 @@
     <Compile Include="PresentationLayer\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\HouseHoldService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\HouseHoldService.Designer.cs">
+      <DependentUpon>HouseHoldService.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Login.cs">
       <SubType>Form</SubType>
     </Compile>
