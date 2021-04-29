@@ -58,9 +58,9 @@ namespace ClickForService.PresentationLayer
             this.label11 = new System.Windows.Forms.Label();
             this.NidregistertextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AddressregistertextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CategoryregistercomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Loginregisterbutton
@@ -340,12 +340,12 @@ namespace ClickForService.PresentationLayer
             this.label12.Text = "Address";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // textBox1
+            // AddressregistertextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(426, 368);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 53;
+            this.AddressregistertextBox.Location = new System.Drawing.Point(426, 368);
+            this.AddressregistertextBox.Name = "AddressregistertextBox";
+            this.AddressregistertextBox.Size = new System.Drawing.Size(121, 20);
+            this.AddressregistertextBox.TabIndex = 53;
             // 
             // label13
             // 
@@ -356,22 +356,22 @@ namespace ClickForService.PresentationLayer
             this.label13.TabIndex = 54;
             this.label13.Text = "Category";
             // 
-            // comboBox1
+            // CategoryregistercomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(426, 395);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 55;
+            this.CategoryregistercomboBox.FormattingEnabled = true;
+            this.CategoryregistercomboBox.Location = new System.Drawing.Point(426, 395);
+            this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
+            this.CategoryregistercomboBox.Size = new System.Drawing.Size(121, 21);
+            this.CategoryregistercomboBox.TabIndex = 55;
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 481);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CategoryregistercomboBox);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.AddressregistertextBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.NidregistertextBox);
             this.Controls.Add(this.label11);
@@ -440,8 +440,8 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox NidregistertextBox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox AddressregistertextBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CategoryregistercomboBox;
     }
 }
