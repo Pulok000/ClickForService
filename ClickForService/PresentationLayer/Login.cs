@@ -36,7 +36,6 @@ namespace ClickForService.PresentationLayer
         private void LoginButton_Click(object sender, EventArgs e)
         {
 
-
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
             connection.Open();
 
@@ -49,6 +48,7 @@ namespace ClickForService.PresentationLayer
                 string passwordtext = Convert.ToString(reader["password"]);
                 if (passwordtext == Convert.ToString(textBoxPassword))
                 {
+                    username = Convert.ToString(textBoxUsername.Text);
                     Dashboard dashboard = new Dashboard();
                     this.Hide();
                     dashboard.Show();
