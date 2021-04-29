@@ -45,6 +45,7 @@ namespace ClickForService.PresentationLayer
             this.LoginButton.TabIndex = 0;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // textBoxUsername
             // 
@@ -59,6 +60,7 @@ namespace ClickForService.PresentationLayer
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(173, 20);
             this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // Usernamelabel
             // 
@@ -86,6 +88,7 @@ namespace ClickForService.PresentationLayer
             this.buttonRegister.TabIndex = 5;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = true;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // Login
             // 
