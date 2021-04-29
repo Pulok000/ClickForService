@@ -140,5 +140,10 @@ namespace ClickForService.PresentationLayer
         {
 
         }
+
+        private void Registration_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

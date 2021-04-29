@@ -58,6 +58,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(351, 196);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(173, 20);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
@@ -103,6 +104,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.LoginButton);
             this.Name = "Login";
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
