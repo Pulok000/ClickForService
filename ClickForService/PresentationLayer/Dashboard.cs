@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ClickForService.PresentationLayer
 {
-    public partial class Login : Form
+    public partial class Dashboard : Form
     {
-        public Login()
+        public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void textBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
