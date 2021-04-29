@@ -57,12 +57,16 @@ namespace ClickForService.PresentationLayer
             this.DivisionregistercomboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.NidregistertextBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Loginregisterbutton
             // 
             this.Loginregisterbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Loginregisterbutton.Location = new System.Drawing.Point(269, 421);
+            this.Loginregisterbutton.Location = new System.Drawing.Point(257, 441);
             this.Loginregisterbutton.Name = "Loginregisterbutton";
             this.Loginregisterbutton.Size = new System.Drawing.Size(75, 23);
             this.Loginregisterbutton.TabIndex = 47;
@@ -74,7 +78,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 422);
+            this.label10.Location = new System.Drawing.Point(38, 442);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(186, 19);
             this.label10.TabIndex = 46;
@@ -103,7 +107,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AgreeregistercheckBox.AutoSize = true;
             this.AgreeregistercheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgreeregistercheckBox.Location = new System.Drawing.Point(65, 362);
+            this.AgreeregistercheckBox.Location = new System.Drawing.Point(12, 419);
             this.AgreeregistercheckBox.Name = "AgreeregistercheckBox";
             this.AgreeregistercheckBox.Size = new System.Drawing.Size(236, 20);
             this.AgreeregistercheckBox.TabIndex = 43;
@@ -326,11 +330,49 @@ namespace ClickForService.PresentationLayer
             this.NidregistertextBox.Size = new System.Drawing.Size(100, 20);
             this.NidregistertextBox.TabIndex = 51;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(250, 368);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 13);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "Address";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(426, 368);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 53;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(253, 394);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 13);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Category";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(426, 395);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 55;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.NidregistertextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.DivisionregistercomboBox);
@@ -397,5 +439,9 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.ComboBox DivisionregistercomboBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox NidregistertextBox;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

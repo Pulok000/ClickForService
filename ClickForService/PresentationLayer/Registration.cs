@@ -145,5 +145,10 @@ namespace ClickForService.PresentationLayer
         {
             Application.Exit();
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
