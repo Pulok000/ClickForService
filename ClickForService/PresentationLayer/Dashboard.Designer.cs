@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -38,18 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(423, 341);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 15;
-            this.button7.Text = "Back";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(105, 287);
+            this.button6.Location = new System.Drawing.Point(105, 244);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(281, 37);
             this.button6.TabIndex = 14;
@@ -58,7 +48,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(105, 244);
+            this.button5.Location = new System.Drawing.Point(105, 158);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(281, 37);
             this.button5.TabIndex = 13;
@@ -92,10 +82,11 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "House Hold Services";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(105, 158);
+            this.button1.Location = new System.Drawing.Point(105, 287);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(281, 37);
             this.button1.TabIndex = 9;
@@ -118,7 +109,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 368);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -135,8 +125,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
