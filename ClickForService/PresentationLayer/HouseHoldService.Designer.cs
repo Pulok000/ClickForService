@@ -47,6 +47,7 @@ namespace ClickForService.PresentationLayer
             this.buttonMaid.TabIndex = 0;
             this.buttonMaid.Text = "Maid Service";
             this.buttonMaid.UseVisualStyleBackColor = true;
+            this.buttonMaid.Click += new System.EventHandler(this.buttonMaid_Click);
             // 
             // button2
             // 

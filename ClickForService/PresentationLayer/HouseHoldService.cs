@@ -21,5 +21,12 @@ namespace ClickForService.PresentationLayer
         {
             Application.Exit();
         }
+
+        private void buttonMaid_Click(object sender, EventArgs e)
+        {
+            MaidService ms = new MaidService();
+            this.Hide();
+            ms.Show();
+        }
     }
 }

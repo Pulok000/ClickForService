@@ -68,6 +68,12 @@
     <Compile Include="PresentationLayer\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\MaidService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\MaidService.Designer.cs">
+      <DependentUpon>MaidService.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\MaidService.resx">
+      <DependentUpon>MaidService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
