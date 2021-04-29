@@ -127,7 +127,14 @@ namespace ClickForService.PresentationLayer
             "Uttora",
             "Mirpur",
             "Bonani",
-            "Gulshan"});
+            "Gulshan",
+            "Rajbari",
+            "Patuakhali",
+            "Shorishabari",
+            "Dhaka Cantt.",
+            "Wari",
+            "Dhanmondi",
+            "Kuratoli"});
             this.CityregistercomboBox.Location = new System.Drawing.Point(426, 287);
             this.CityregistercomboBox.Name = "CityregistercomboBox";
             this.CityregistercomboBox.Size = new System.Drawing.Size(121, 21);
@@ -415,11 +422,12 @@ namespace ClickForService.PresentationLayer
             // 
             this.ProfessionregistercomboBox.FormattingEnabled = true;
             this.ProfessionregistercomboBox.Items.AddRange(new object[] {
-            "AC Mechanic",
-            "Maid",
-            "Electrical Worker",
-            "Suiper",
-            "G"});
+            "Maid Service",
+            "AC Servicing/Repair",
+            "Fridge Servicing/Repair",
+            "Car Servicing/Repair",
+            "Computer/Laptop Servicing/Repair",
+            "Mobile Servicing"});
             this.ProfessionregistercomboBox.Location = new System.Drawing.Point(426, 357);
             this.ProfessionregistercomboBox.Name = "ProfessionregistercomboBox";
             this.ProfessionregistercomboBox.Size = new System.Drawing.Size(121, 21);

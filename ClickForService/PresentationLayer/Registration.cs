@@ -101,7 +101,7 @@ namespace ClickForService.PresentationLayer
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
              connection.Open();
 
-             string sql = "SELECT *FROM Users WHERE userName= '" + UsernameregistertextBox.Text + "' ";
+             string sql = "SELECT *FROM Registrations  WHERE userName= '" + UsernameregistertextBox.Text + "' ";
              SqlCommand command = new SqlCommand(sql, connection);
              SqlDataReader reader = command.ExecuteReader();
 
@@ -193,7 +193,7 @@ namespace ClickForService.PresentationLayer
                      if (result > 0)
                      {
                          MessageBox.Show("User Added");
-                         connection1.Close();
+                        // connection1.Close();
                          Login login = new Login();
                          this.Hide();
                          login.Show();
