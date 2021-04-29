@@ -70,9 +70,11 @@ namespace ClickForService.PresentationLayer
             // Loginregisterbutton
             // 
             this.Loginregisterbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Loginregisterbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Loginregisterbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Loginregisterbutton.Location = new System.Drawing.Point(257, 441);
             this.Loginregisterbutton.Name = "Loginregisterbutton";
-            this.Loginregisterbutton.Size = new System.Drawing.Size(75, 23);
+            this.Loginregisterbutton.Size = new System.Drawing.Size(75, 28);
             this.Loginregisterbutton.TabIndex = 47;
             this.Loginregisterbutton.Text = "Login";
             this.Loginregisterbutton.UseVisualStyleBackColor = false;
@@ -221,9 +223,12 @@ namespace ClickForService.PresentationLayer
             // Registerformbutton
             // 
             this.Registerformbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Registerformbutton.Enabled = false;
+            this.Registerformbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Registerformbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registerformbutton.Location = new System.Drawing.Point(585, 419);
             this.Registerformbutton.Name = "Registerformbutton";
-            this.Registerformbutton.Size = new System.Drawing.Size(75, 27);
+            this.Registerformbutton.Size = new System.Drawing.Size(88, 27);
             this.Registerformbutton.TabIndex = 33;
             this.Registerformbutton.Text = "Register";
             this.Registerformbutton.UseVisualStyleBackColor = false;
@@ -262,6 +267,7 @@ namespace ClickForService.PresentationLayer
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label5.Location = new System.Drawing.Point(244, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
