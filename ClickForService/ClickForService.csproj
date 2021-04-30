@@ -50,6 +50,12 @@
     <Compile Include="DatabaseConnectionLayer\AccessProperty.cs" />
     <Compile Include="DatabaseConnectionLayer\DataAcess.cs" />
     <Compile Include="DatabaseConnectionLayer\Operations.cs" />
+    <Compile Include="PresentationLayer\ComputerServcing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\ComputerServcing.Designer.cs">
+      <DependentUpon>ComputerServcing.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     <Compile Include="PresentationLayer\MaidService.Designer.cs">
       <DependentUpon>MaidService.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\MobileServicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\MobileServicing.Designer.cs">
+      <DependentUpon>MobileServicing.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PresentationLayer\ComputerServcing.resx">
+      <DependentUpon>ComputerServcing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\MaidService.resx">
       <DependentUpon>MaidService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\MobileServicing.resx">
+      <DependentUpon>MobileServicing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
@@ -131,6 +149,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\registration background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clicklogo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clickservicelogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernamelogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogo1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

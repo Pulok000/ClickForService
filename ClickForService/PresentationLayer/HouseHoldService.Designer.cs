@@ -84,6 +84,7 @@ namespace ClickForService.PresentationLayer
             this.button5.TabIndex = 4;
             this.button5.Text = "Computer/Laptop Servicing/Repair";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -93,6 +94,7 @@ namespace ClickForService.PresentationLayer
             this.button6.TabIndex = 5;
             this.button6.Text = "Mobile Servicing/Repair";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 

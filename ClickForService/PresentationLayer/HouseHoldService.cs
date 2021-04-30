@@ -28,5 +28,20 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             ms.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ComputerServcing computerServcing = new ComputerServcing();
+            this.Hide();
+            computerServcing.Show();
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MobileServicing mobileServicing = new MobileServicing();
+            this.Hide();
+            mobileServicing.Show();
+        }
     }
 }

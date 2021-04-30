@@ -10,28 +10,23 @@ using System.Windows.Forms;
 
 namespace ClickForService.PresentationLayer
 {
-    public partial class Dashboard : Form
+    public partial class ComputerServcing : Form
     {
-        public Dashboard()
+        public ComputerServcing()
         {
             InitializeComponent();
         }
 
-        private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
+        private void ComputerServcing_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void mobileservcingbackbutton_Click(object sender, EventArgs e)
         {
-            HouseHoldService h1 = new HouseHoldService();
+            HouseHoldService houseHoldService = new HouseHoldService();
             this.Hide();
-            h1.Show();
-        }
-
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-
+            houseHoldService.Show();
         }
     }
 }
