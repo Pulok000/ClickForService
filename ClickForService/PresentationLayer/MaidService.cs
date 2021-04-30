@@ -131,6 +131,10 @@ namespace ClickForService.PresentationLayer
         {
             textBox1.Enabled = true;
         }
-        
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
