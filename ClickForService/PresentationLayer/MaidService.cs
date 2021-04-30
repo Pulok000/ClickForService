@@ -114,9 +114,9 @@ namespace ClickForService.PresentationLayer
         private void button3_Click(object sender, EventArgs e)
         {
             pos = pos - 1;
-            if (pos == data.Rows.Count)
+            if (pos <= data.Rows.Count)
             {
-                
+                pos++;
                 MessageBox.Show("First Record");
             }
             displaytext(pos);

@@ -43,5 +43,12 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             mobileServicing.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ACServicing acs = new ACServicing();
+            this.Hide();
+            acs.Show();
+        }
     }
 }

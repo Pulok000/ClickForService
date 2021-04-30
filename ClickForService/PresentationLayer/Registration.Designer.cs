@@ -531,11 +531,11 @@ namespace ClickForService.PresentationLayer
             this.ProfessionregistercomboBox.FormattingEnabled = true;
             this.ProfessionregistercomboBox.Items.AddRange(new object[] {
             "Maid Service",
-            "AC Servicing/Repair",
-            "Fridge Servicing/Repair",
-            "Car Servicing/Repair",
-            "Computer/Laptop Servicing/Repair",
-            "Mobile Servicing"});
+            "AC Mechanic",
+            "Fridge Mechanic",
+            "Car Mechanic",
+            "Computer or Laptop Mechanic",
+            "Mobile Mechanic"});
             this.ProfessionregistercomboBox.Location = new System.Drawing.Point(337, 357);
             this.ProfessionregistercomboBox.Name = "ProfessionregistercomboBox";
             this.ProfessionregistercomboBox.Size = new System.Drawing.Size(232, 21);
