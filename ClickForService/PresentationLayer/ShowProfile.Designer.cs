@@ -29,16 +29,16 @@ namespace ClickForService.PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxUN = new System.Windows.Forms.TextBox();
+            this.textBoxPass = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.Textboxgender = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,37 +55,37 @@ namespace ClickForService.PresentationLayer
             this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(277, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxName.Enabled = false;
+            this.textBoxName.Location = new System.Drawing.Point(277, 39);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(184, 20);
+            this.textBoxName.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxEmail
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(277, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBoxEmail.Enabled = false;
+            this.textBoxEmail.Location = new System.Drawing.Point(277, 74);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(184, 20);
+            this.textBoxEmail.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxUN
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(277, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBoxUN.Enabled = false;
+            this.textBoxUN.Location = new System.Drawing.Point(277, 100);
+            this.textBoxUN.Name = "textBoxUN";
+            this.textBoxUN.Size = new System.Drawing.Size(184, 20);
+            this.textBoxUN.TabIndex = 2;
             // 
-            // textBox4
+            // textBoxPass
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(277, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 20);
-            this.textBox4.TabIndex = 3;
+            this.textBoxPass.Enabled = false;
+            this.textBoxPass.Location = new System.Drawing.Point(277, 126);
+            this.textBoxPass.Name = "textBoxPass";
+            this.textBoxPass.Size = new System.Drawing.Size(184, 20);
+            this.textBoxPass.TabIndex = 3;
             // 
             // textBox5
             // 
@@ -127,13 +127,13 @@ namespace ClickForService.PresentationLayer
             this.textBox9.Size = new System.Drawing.Size(184, 20);
             this.textBox9.TabIndex = 8;
             // 
-            // textBox10
+            // Textboxgender
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(277, 341);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(184, 20);
-            this.textBox10.TabIndex = 9;
+            this.Textboxgender.Enabled = false;
+            this.Textboxgender.Location = new System.Drawing.Point(277, 341);
+            this.Textboxgender.Name = "Textboxgender";
+            this.Textboxgender.Size = new System.Drawing.Size(184, 20);
+            this.Textboxgender.TabIndex = 9;
             // 
             // textBox11
             // 
@@ -279,16 +279,16 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.Textboxgender);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPass);
+            this.Controls.Add(this.textBoxUN);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxName);
             this.Name = "ShowProfile";
             this.Text = "ShowProfile";
             this.Load += new System.EventHandler(this.ShowProfile_Load);
@@ -299,16 +299,16 @@ namespace ClickForService.PresentationLayer
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxUN;
+        private System.Windows.Forms.TextBox textBoxPass;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox Textboxgender;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label1;
