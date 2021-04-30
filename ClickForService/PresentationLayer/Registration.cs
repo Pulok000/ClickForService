@@ -43,7 +43,11 @@ namespace ClickForService.PresentationLayer
 
         private void AgreeregistercheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (AgreeregistercheckBox.Checked)
+            {
+                Registerformbutton.Enabled = true;
+            }
+            else Registerformbutton.Enabled = false;
         }
 
         private void CountryregistercomboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,119 +101,44 @@ namespace ClickForService.PresentationLayer
             //this.Hide();
             //login.Show();
 
+            SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
+            connect.Open();
+            string Gender = "";
+            if (MaleregisterradioButton.Checked)
+            {
+                Gender = "Male";
+            }
+            else
+            {
+                Gender = "Female";
+            }
 
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
-             connection.Open();
+            string sql1 = "INSERT INTO Registrations(userName, emailId, password, category, Address, City, Division, bloodGroup, mobileNumber, NID, fullName, dateofbirth, gender, Profession) VALUES('" + UsernameregistertextBox.Text + "','"+EmailregistertextBox.Text+ "', '" + PasswordregistertextBox.Text + "','" + CategoryregistercomboBox.Text + "','" + AddressregistertextBox.Text + "','" + CityregistercomboBox.Text + "','" + DivisionregistercomboBox.Text + "','" + BloodgroupregistercomboBox.Text + "','" + MobilenumberregistertextBox.Text + "','" + NidregistertextBox.Text + "','" + NameregistertextBox.Text + "','" + DateofbirthregisterdateTimePicker.Text + "','" + Gender + "','" + ProfessionregistercomboBox.Text + "')";
 
-             string sql = "SELECT *FROM Registrations  WHERE userName= '" + UsernameregistertextBox.Text + "' ";
-             SqlCommand command = new SqlCommand(sql, connection);
-             SqlDataReader reader = command.ExecuteReader();
-
-
-             if (reader.Read())
-             {
-                 MessageBox.Show("User Name Already Exist!!!!!!!!!!Give Another User Name.....");
-                 Registration registration = new Registration();
-
-                 this.Hide();
-                 registration.Show();
-
-
-
-
-
-             }
-
-             else
-             {
-
-                 if (AgreeregistercheckBox.Text == "")
-                 {
-                     MessageBox.Show("agree can not be empty");
-                 }
-
-                 else if (NameregistertextBox.Text == "")
-                 { MessageBox.Show("Name can not be empty"); }
-
-                 else if (UsernameregistertextBox.Text == "")
-                 { MessageBox.Show("User Name can not be empty"); }
-
-                 else if (PasswordregistertextBox.Text == "")
-                 { MessageBox.Show("Password can not be empty"); }
-
-                 else if (ConfirmpasswordregistertextBox.Text == "")
-                 { MessageBox.Show("Confrim Password can not be empty"); }
-
-                 else if (EmailregistertextBox.Text == "")
-                 { MessageBox.Show("Email can not be empty"); }
-
-                 else if (DateofbirthregisterdateTimePicker.Text == "")
-                 { MessageBox.Show("Date of Birth can not be empty"); }
-
-                 else if (MaleregisterradioButton.Text == "" && FemaleregisterradioButton.Text == "")
-                 { MessageBox.Show("Gender can not be empty"); }
-
-                 else if (CityregistercomboBox.Text == "")
-                 { MessageBox.Show("Blood Group can not be empty"); }
-
-            else if (NidregistertextBox.Text == "")
-                 { MessageBox.Show("Blood Group can not be empty"); }
-
-            else if (MobilenumberregistertextBox.Text == "")
-                 { MessageBox.Show("Blood Group can not be empty"); }
-
-            else if (DivisionregistercomboBox.Text == "")
-                 { MessageBox.Show("Blood Group can not be empty"); }
-
-            else if (AddressregistertextBox.Text == "")
-                 { MessageBox.Show("Blood Group can not be empty"); }
-
-            else if (CategoryregistercomboBox.Text == "")
-                 { MessageBox.Show("Blood Group can not be empty"); }
+            SqlCommand command1 = new SqlCommand(sql1, connect);
+            int result = command1.ExecuteNonQuery();
+            if (result > 0)
+            {
+                MessageBox.Show("Registration Sucessful....Please Login");
+                
+                connect.Close();
 
 
 
 
-                 else
-                 {
-                     //Database
-                     SqlConnection connection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
 
-                     connection1.Open();
+            }
+            else
+            {
+                MessageBox.Show("Error");
+                connect.Close();
 
-                     string gender = "";
-                     if (MaleregisterradioButton.Checked)
-                     {
-                         gender = "Male";
-                     }
-                     else
-                     {
-                         gender = "Female";
-                     }
-                     string sql1 = "INSERT INTO Registrations(userName,emailid,password,category,Address,City,Division,bloodGroup,mobileNumber,NID,fullName,dateofbirth,gender,Profession)VALUES('" + UsernameregistertextBox.Text + "','" + EmailregistertextBox.Text + "','" + PasswordregistertextBox.Text + "','" + CategoryregistercomboBox.Text + "','" + AddressregistertextBox.Text + "','" + CityregistercomboBox.Text + "','" + DivisionregistercomboBox.Text + "','" + BloodgroupregistercomboBox.Text + "','" + MobilenumberregistertextBox.Text + "','" + NidregistertextBox.Text + "','" + NameregistertextBox.Text + "','" + DateofbirthregisterdateTimePicker.Text + "','" + gender+ "','" + ProfessionregistercomboBox.Text + "')";
-                     SqlCommand command1 = new SqlCommand(sql, connection1);
-                     int result = command1.ExecuteNonQuery();
+            }
 
-                     if (result > 0)
-                     {
-                         MessageBox.Show("User Added");
-                        // connection1.Close();
-                         Login login = new Login();
-                         this.Hide();
-                         login.Show();
-                         connection1.Close();
-                     }
-                     else
 
-                     {
-                         MessageBox.Show("User Not Added");
-                         connection1.Close();
-                     }
 
-                 }
 
-             }
-             connection.Close();
+            connect.Close();
 
 
 

@@ -46,7 +46,7 @@ namespace ClickForService.PresentationLayer
             if (reader.Read())
             {
                 string passwordtext = Convert.ToString(reader["password"]);
-                if (passwordtext == Convert.ToString(textBoxPassword))
+                if (passwordtext == Convert.ToString(textBoxPassword.Text))
                 {
                     username = Convert.ToString(textBoxUsername.Text);
                     Dashboard dashboard = new Dashboard();
