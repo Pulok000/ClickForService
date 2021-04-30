@@ -291,6 +291,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.textBox1);
             this.Name = "ShowProfile";
             this.Text = "ShowProfile";
+            this.Load += new System.EventHandler(this.ShowProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
