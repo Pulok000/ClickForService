@@ -38,5 +38,12 @@ namespace ClickForService.PresentationLayer
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Profile pp = new Profile();
+            this.Hide();
+            pp.Show();
+        }
     }
 }

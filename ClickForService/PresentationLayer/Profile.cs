@@ -25,7 +25,9 @@ namespace ClickForService.PresentationLayer
 
         private void buttonSPI_Click(object sender, EventArgs e)
         {
-
+            ShowProfile sp = new ShowProfile();
+            this.Hide();
+            sp.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,6 +50,11 @@ namespace ClickForService.PresentationLayer
             }
             else
                 Close();
+        }
+
+        private void Profile_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
