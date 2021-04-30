@@ -62,6 +62,18 @@
     <Compile Include="PresentationLayer\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\DashboardforAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DashboardforAdmin.Designer.cs">
+      <DependentUpon>DashboardforAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\DashboardforSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DashboardforSP.Designer.cs">
+      <DependentUpon>DashboardforSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\HouseHoldService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\DashboardforAdmin.resx">
+      <DependentUpon>DashboardforAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\DashboardforSP.resx">
+      <DependentUpon>DashboardforSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\HouseHoldService.resx">
       <DependentUpon>HouseHoldService.cs</DependentUpon>
