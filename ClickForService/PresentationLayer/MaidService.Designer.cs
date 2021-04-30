@@ -29,7 +29,6 @@ namespace ClickForService.PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,10 +44,9 @@ namespace ClickForService.PresentationLayer
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -103,7 +101,7 @@ namespace ClickForService.PresentationLayer
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(613, 380);
+            this.button1.Location = new System.Drawing.Point(635, 41);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 28);
             this.button1.TabIndex = 7;
@@ -163,7 +161,7 @@ namespace ClickForService.PresentationLayer
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 228);
+            this.groupBox1.Location = new System.Drawing.Point(12, 313);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(776, 146);
             this.groupBox1.TabIndex = 14;
@@ -181,19 +179,30 @@ namespace ClickForService.PresentationLayer
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(701, 179);
+            this.button2.Location = new System.Drawing.Point(570, 240);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(62, 32);
+            this.button2.Size = new System.Drawing.Size(67, 33);
             this.button2.TabIndex = 15;
             this.button2.Text = "Next";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(470, 240);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(59, 33);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Previous";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MaidService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
@@ -214,7 +223,6 @@ namespace ClickForService.PresentationLayer
             this.Load += new System.EventHandler(this.MaidService_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,6 +245,6 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button button3;
     }
 }

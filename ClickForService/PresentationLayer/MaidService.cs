@@ -3,6 +3,7 @@ using ClickForService.DatabaseConnectionLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -15,6 +16,11 @@ namespace ClickForService.PresentationLayer
 {
     public partial class MaidService : Form
     {
+       
+        int pos;
+        SqlDataAdapter sqladp;
+        DataTable data = new DataTable();
+
         public MaidService()
         {
             InitializeComponent();
@@ -27,17 +33,14 @@ namespace ClickForService.PresentationLayer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
+
+            DataAcess ac = new DataAcess();
             string sql = "SELECT *FROM Registrations WHERE City='" + textBox1.Text + "'AND Profession='" + comboBox1.Text + "'";
-            AccessProperty ap = new AccessProperty();
-            DataAcess da = new DataAcess();
-            SqlDataReader reader = da.GetData(sql);
-            
-            while (reader.Read())
-            {
-                textBox2.Text = Convert.ToString(reader["fullName"]);
-                
-            }
-            da.ConnectionClose();
+            sqladp = new SqlDataAdapter(sql, connection);
+            sqladp.Fill(data);
+            pos = 0;
+            displaytext(pos);
 
         } 
         
@@ -65,10 +68,13 @@ namespace ClickForService.PresentationLayer
             da.ConnectionClose();
 
             
+        }
 
-
-
-
+        public void displaytext(int rowno)
+        {
+            textBox2.Text = data.Rows[rowno][10].ToString();
+            textBox3.Text = data.Rows[rowno][4].ToString();
+            textBox4.Text = data.Rows[rowno][8].ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -88,12 +94,31 @@ namespace ClickForService.PresentationLayer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bindingSource1.MoveNext();
+            pos = pos+1;
+            if(pos>=data.Rows.Count)
+            {
+                pos--;
+                MessageBox.Show("Last Record");
+            }
+            displaytext(pos);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
 
+         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pos = pos - 1;
+            if (pos == data.Rows.Count)
+            {
+                
+                MessageBox.Show("First Record");
+            }
+            displaytext(pos);
+            
         }
     }
 }
