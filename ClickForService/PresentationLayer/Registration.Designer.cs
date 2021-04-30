@@ -727,7 +727,7 @@ namespace ClickForService.PresentationLayer
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label17.Location = new System.Drawing.Point(747, 459);
+            this.label17.Location = new System.Drawing.Point(698, 444);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 16);
             this.label17.TabIndex = 80;

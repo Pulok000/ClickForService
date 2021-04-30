@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -45,6 +47,33 @@ namespace ClickForService.PresentationLayer
                 comboBox1.Text = Convert.ToString(reader["BloodGroup"]);
 
             }
+        }
+
+        private void buttonSPI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            this.Hide();
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                dashboard.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
         }
     }
 }
