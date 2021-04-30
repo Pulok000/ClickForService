@@ -104,6 +104,12 @@
     <Compile Include="PresentationLayer\MobileServicing.Designer.cs">
       <DependentUpon>MobileServicing.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\MobileServicing.resx">
       <DependentUpon>MobileServicing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
