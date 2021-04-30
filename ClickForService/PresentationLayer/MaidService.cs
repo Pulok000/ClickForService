@@ -24,6 +24,8 @@ namespace ClickForService.PresentationLayer
         public MaidService()
         {
             InitializeComponent();
+
+            buttonSearchbyC.Click += new System.EventHandler(ClickedButton);
         }
 
         private void MaidService_FormClosing(object sender, FormClosingEventArgs e)
@@ -120,5 +122,15 @@ namespace ClickForService.PresentationLayer
             displaytext(pos);
             
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void ClickedButton(object sender, EventArgs e)
+        {
+            textBox1.Enabled = true;
+        }
+        
     }
 }
