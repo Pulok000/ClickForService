@@ -39,20 +39,36 @@ namespace ClickForService.PresentationLayer
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
             connection.Open();
 
-            string sql = "SELECT *FROM Registrations WHERE userName='" + textBoxUsername.Text + "'";
+            string sql = "SELECT *FROM userpermissions WHERE userName='" + textBoxUsername.Text + "'";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
 
             if (reader.Read())
             {
+                string Permission = Convert.ToString(reader["uniqueCode"]);
                 string passwordtext = Convert.ToString(reader["password"]);
                 if (passwordtext == Convert.ToString(textBoxPassword.Text))
                 {
                     username = Convert.ToString(textBoxUsername.Text);
-                    Dashboard dashboard = new Dashboard();
-                    this.Hide();
-                    dashboard.Show();
+                    if (Permission == "ST")
+                    {
+                        Dashboard dashboard = new Dashboard();
+                        this.Hide();
+                        dashboard.Show();
+                    }
+                    else if(Permission=="GU")
+                    {
+                        DashboardforSP dsp = new DashboardforSP();
+                        this.Hide();
+                        dsp.Show();
+                    }
 
+                    else
+                    {
+                        DashboardforAdmin dfa = new DashboardforAdmin();
+                        this.Hide();
+                        dfa.Show();
+                    }
                 }
             }
 
