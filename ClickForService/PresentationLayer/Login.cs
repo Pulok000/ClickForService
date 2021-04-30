@@ -58,8 +58,6 @@ namespace ClickForService.PresentationLayer
 
             else
             {
-
-
                 MessageBox.Show("Wrong Username or Password...!!");
                 connection.Close();
             }
