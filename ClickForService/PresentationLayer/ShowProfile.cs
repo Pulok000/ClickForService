@@ -32,26 +32,15 @@ namespace ClickForService.PresentationLayer
             string sql = "SELECT *FROM Registrations WHERE userName= '" + Login.UserName+"'";
            
             da.GetData(sql);
-            SqlDataReader reader=;
+            SqlDataReader reader=da.GetData(sql);
 
             if (reader.Read())
             {
-                nametextBox.Text = Convert.ToString(reader["Name"]);
-                usertextBox.Text = Convert.ToString(reader["Username"]);
-                passwordtextBox.Text = Convert.ToString(reader["Password"]);
-                string gender;
-                gender = Convert.ToString(reader["Gender"]);
-                if (gender == "Male")
-                {
-                    radioButton1.Checked = true;
-                }
-                else { radioButton2.Checked = true; }
-
-
-                emailtextBox.Text = Convert.ToString(reader["Email"]);
-                dateTimePicker1.Text = reader["DateOfB"].ToString();
-                comboBox1.Text = Convert.ToString(reader["BloodGroup"]);
-
+                textBoxName.Text = Convert.ToString(reader["fullName"]);
+                textBoxEmail.Text = Convert.ToString(reader["emailId"]);
+                textBoxPass.Text = Convert.ToString(reader["password"]);
+                Textboxgender.Text = Convert.ToString(reader["gender"]);
+               
             }
         }
     }
