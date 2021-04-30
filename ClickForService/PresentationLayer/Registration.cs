@@ -124,9 +124,6 @@ namespace ClickForService.PresentationLayer
                 connect.Close();
 
 
-
-
-
             }
             else
             {

@@ -9,6 +9,17 @@ namespace ClickForService.BusinessLogicLayer
 {
     class GeneralOperations
     {
-        Operations Operation; 
+        Operations operation;
+        public GeneralOperations()
+        {
+            this.operation = new Operations();
+        }
+
+        public List<AccessProperty> GetMaid()
+        {
+            return this.operation.GetMaid();
+        }
+
+
     }
 }
