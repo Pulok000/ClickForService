@@ -20,6 +20,16 @@ namespace ClickForService.BusinessLogicLayer
             return this.operation.GetMaid();
         }
 
+        public List<AccessProperty> GetAllComputerServices()
+        {
+            return this.operation.GetAllComputerServices();
+        }
+
+        public List<AccessProperty> GetAllMobileServices()
+        {
+            return this.operation.GetAllMobileServices();
+        }
+
 
     }
 }
