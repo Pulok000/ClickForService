@@ -163,20 +163,32 @@ namespace ClickForService.PresentationLayer
 
                 string sql1 = "INSERT INTO Registrations(userName, emailId, password, category, Address, City, Division, bloodGroup, mobileNumber, NID, fullName, dateofbirth, gender, Profession) VALUES('" + UsernameregistertextBox.Text + "','" + EmailregistertextBox.Text + "', '" + PasswordregistertextBox.Text + "','" + CategoryregistercomboBox.Text + "','" + AddressregistertextBox.Text + "','" + CityregistercomboBox.Text + "','" + DivisionregistercomboBox.Text + "','" + BloodgroupregistercomboBox.Text + "','" + MobilenumberregistertextBox.Text + "','" + NidregistertextBox.Text + "','" + NameregistertextBox.Text + "','" + DateofbirthregisterdateTimePicker.Text + "','" + Gender + "','" + ProfessionregistercomboBox.Text + "')";
 
+                string ab="";
+               if(CategoryregistercomboBox.Text=="Service Giver")
+                {
+                     ab = "GU";
+                }
+               else 
+                { ab = "ST"; }
+
+                
+                
                 SqlCommand command1 = new SqlCommand(sql1, connect);
+
                 int result = command1.ExecuteNonQuery();
                 if (result > 0)
                 {
+                    string sql2 = "INSERT INTO userpermissions(userName, uniqueCode, password, Designation) VALUES('" + UsernameregistertextBox.Text + "','" + ab + "', '" + PasswordregistertextBox.Text + "','" + "" + "')";
+                    SqlCommand command2 = new SqlCommand(sql2, connect);
+                    int result3 = command2.ExecuteNonQuery();
+
+
                     MessageBox.Show("Registration Sucessful....Please Login");
                     Login login = new Login();
                     this.Hide();
                     login.Show();
 
                     connect.Close();
-
-
-
-
 
                 }
                 else
