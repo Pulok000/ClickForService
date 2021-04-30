@@ -139,6 +139,9 @@
     <EmbeddedResource Include="PresentationLayer\ACServicing.resx">
       <DependentUpon>ACServicing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ComputerServcing.resx">
       <DependentUpon>ComputerServcing.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\ProfileIC.resx">
+      <DependentUpon>ProfileIC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>

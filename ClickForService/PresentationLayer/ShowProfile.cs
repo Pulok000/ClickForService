@@ -36,10 +36,10 @@ namespace ClickForService.PresentationLayer
 
             if (reader.Read())
             {
-                textBoxName.Text = Convert.ToString(reader["fullName"]);
-                textBoxEmail.Text = Convert.ToString(reader["emailId"]);
-                textBoxPass.Text = Convert.ToString(reader["password"]);
-                Textboxgender.Text = Convert.ToString(reader["gender"]);
+                //textBoxName.Text = Convert.ToString(reader["fullName"]);
+                //textBoxEmail.Text = Convert.ToString(reader["emailId"]);
+                //textBoxPass.Text = Convert.ToString(reader["password"]);
+                //Textboxgender.Text = Convert.ToString(reader["gender"]);
                 da.ConnectionClose();
 
                
