@@ -180,5 +180,29 @@
   <ItemGroup>
     <None Include="Resources\passwordlogo3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportlogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subscription.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locklogo21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -82,6 +82,7 @@ namespace ClickForService.PresentationLayer
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -116,6 +117,8 @@ namespace ClickForService.PresentationLayer
             // EmailregistertextBox
             // 
             this.EmailregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.EmailregistertextBox.Location = new System.Drawing.Point(347, 154);
             this.EmailregistertextBox.Name = "EmailregistertextBox";
             this.EmailregistertextBox.Size = new System.Drawing.Size(300, 13);
@@ -138,6 +141,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AgreeregistercheckBox.AutoSize = true;
             this.AgreeregistercheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgreeregistercheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.AgreeregistercheckBox.Location = new System.Drawing.Point(55, 417);
             this.AgreeregistercheckBox.Name = "AgreeregistercheckBox";
             this.AgreeregistercheckBox.Size = new System.Drawing.Size(246, 20);
@@ -218,6 +222,8 @@ namespace ClickForService.PresentationLayer
             // MobilenumberregistertextBox
             // 
             this.MobilenumberregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MobilenumberregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MobilenumberregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.MobilenumberregistertextBox.Location = new System.Drawing.Point(347, 183);
             this.MobilenumberregistertextBox.Name = "MobilenumberregistertextBox";
             this.MobilenumberregistertextBox.Size = new System.Drawing.Size(300, 13);
@@ -227,16 +233,20 @@ namespace ClickForService.PresentationLayer
             // ConfirmpasswordregistertextBox
             // 
             this.ConfirmpasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(347, 97);
+            this.ConfirmpasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmpasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(359, 98);
             this.ConfirmpasswordregistertextBox.Name = "ConfirmpasswordregistertextBox";
             this.ConfirmpasswordregistertextBox.PasswordChar = '*';
-            this.ConfirmpasswordregistertextBox.Size = new System.Drawing.Size(300, 13);
+            this.ConfirmpasswordregistertextBox.Size = new System.Drawing.Size(288, 13);
             this.ConfirmpasswordregistertextBox.TabIndex = 37;
             this.ConfirmpasswordregistertextBox.TextChanged += new System.EventHandler(this.ConfirmpasswordregistertextBox_TextChanged);
             // 
             // PasswordregistertextBox
             // 
             this.PasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.PasswordregistertextBox.Location = new System.Drawing.Point(388, 69);
             this.PasswordregistertextBox.Name = "PasswordregistertextBox";
             this.PasswordregistertextBox.PasswordChar = '*';
@@ -247,6 +257,8 @@ namespace ClickForService.PresentationLayer
             // UsernameregistertextBox
             // 
             this.UsernameregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UsernameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UsernameregistertextBox.Location = new System.Drawing.Point(313, 43);
             this.UsernameregistertextBox.Name = "UsernameregistertextBox";
             this.UsernameregistertextBox.Size = new System.Drawing.Size(300, 13);
@@ -256,6 +268,8 @@ namespace ClickForService.PresentationLayer
             // NameregistertextBox
             // 
             this.NameregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.NameregistertextBox.Location = new System.Drawing.Point(307, 10);
             this.NameregistertextBox.Multiline = true;
             this.NameregistertextBox.Name = "NameregistertextBox";
@@ -421,6 +435,8 @@ namespace ClickForService.PresentationLayer
             // NidregistertextBox
             // 
             this.NidregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NidregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NidregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.NidregistertextBox.Location = new System.Drawing.Point(347, 130);
             this.NidregistertextBox.Name = "NidregistertextBox";
             this.NidregistertextBox.Size = new System.Drawing.Size(300, 13);
@@ -441,9 +457,11 @@ namespace ClickForService.PresentationLayer
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label13.Location = new System.Drawing.Point(250, 338);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 13);
+            this.label13.Size = new System.Drawing.Size(57, 13);
             this.label13.TabIndex = 54;
             this.label13.Text = "Category";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -451,6 +469,8 @@ namespace ClickForService.PresentationLayer
             // CategoryregistercomboBox
             // 
             this.CategoryregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CategoryregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.CategoryregistercomboBox.FormattingEnabled = true;
             this.CategoryregistercomboBox.Items.AddRange(new object[] {
             "Servicer Giver",
@@ -463,24 +483,30 @@ namespace ClickForService.PresentationLayer
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label14.Location = new System.Drawing.Point(251, 358);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 13);
+            this.label14.Size = new System.Drawing.Size(66, 13);
             this.label14.TabIndex = 56;
             this.label14.Text = "Profession";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(256, 387);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label15.Location = new System.Drawing.Point(255, 387);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(63, 13);
+            this.label15.Size = new System.Drawing.Size(73, 13);
             this.label15.TabIndex = 58;
             this.label15.Text = "BloodGroup";
             // 
             // BloodgroupregistercomboBox
             // 
             this.BloodgroupregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BloodgroupregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodgroupregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BloodgroupregistercomboBox.FormattingEnabled = true;
             this.BloodgroupregistercomboBox.Items.AddRange(new object[] {
             "A+",
@@ -499,6 +525,8 @@ namespace ClickForService.PresentationLayer
             // ProfessionregistercomboBox
             // 
             this.ProfessionregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ProfessionregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfessionregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ProfessionregistercomboBox.FormattingEnabled = true;
             this.ProfessionregistercomboBox.Items.AddRange(new object[] {
             "Maid Service",
@@ -515,6 +543,8 @@ namespace ClickForService.PresentationLayer
             // AddressregistertextBox
             // 
             this.AddressregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AddressregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.AddressregistertextBox.Location = new System.Drawing.Point(388, 313);
             this.AddressregistertextBox.Name = "AddressregistertextBox";
             this.AddressregistertextBox.Size = new System.Drawing.Size(259, 13);
@@ -546,7 +576,7 @@ namespace ClickForService.PresentationLayer
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.linkLabel1.Location = new System.Drawing.Point(224, 443);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(49, 18);
@@ -691,12 +721,25 @@ namespace ClickForService.PresentationLayer
             this.pictureBox16.TabIndex = 79;
             this.pictureBox16.TabStop = false;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label17.Location = new System.Drawing.Point(747, 459);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 16);
+            this.label17.TabIndex = 80;
+            this.label17.Text = "EXIT";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
@@ -749,6 +792,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Nameregisterlabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -829,5 +873,6 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Label label17;
     }
 }

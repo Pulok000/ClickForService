@@ -63,6 +63,26 @@ namespace ClickForService.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap about {
+            get {
+                object obj = ResourceManager.GetObject("about", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap about1 {
+            get {
+                object obj = ResourceManager.GetObject("about1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clicklogo {
             get {
                 object obj = ResourceManager.GetObject("clicklogo", resourceCulture);
@@ -103,6 +123,16 @@ namespace ClickForService.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap house {
+            get {
+                object obj = ResourceManager.GetObject("house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap locklogo {
             get {
                 object obj = ResourceManager.GetObject("locklogo", resourceCulture);
@@ -126,6 +156,16 @@ namespace ClickForService.Properties {
         internal static System.Drawing.Bitmap locklogo2 {
             get {
                 object obj = ResourceManager.GetObject("locklogo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap locklogo21 {
+            get {
+                object obj = ResourceManager.GetObject("locklogo21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +213,49 @@ namespace ClickForService.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile {
+            get {
+                object obj = ResourceManager.GetObject("profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap registration_background {
             get {
                 object obj = ResourceManager.GetObject("registration background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subscription {
+            get {
+                object obj = ResourceManager.GetObject("subscription", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transportlogo {
+            get {
+                object obj = ResourceManager.GetObject("transportlogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transportlogo2 {
+            get {
+                object obj = ResourceManager.GetObject("transportlogo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
