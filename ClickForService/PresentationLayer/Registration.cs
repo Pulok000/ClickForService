@@ -1,5 +1,5 @@
-using System
-using System.Collections.Generic;
+using System;
+using System.Collections.Generic ;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
@@ -255,6 +255,23 @@ namespace ClickForService.PresentationLayer
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
