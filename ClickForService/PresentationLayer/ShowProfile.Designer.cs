@@ -57,6 +57,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(277, 39);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(184, 20);
@@ -64,6 +65,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(277, 74);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(184, 20);
@@ -71,6 +73,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(277, 100);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(184, 20);
@@ -78,6 +81,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(277, 126);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(184, 20);
@@ -85,6 +89,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(277, 152);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(184, 20);
@@ -92,6 +97,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(277, 189);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(184, 20);
@@ -99,6 +105,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox7
             // 
+            this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(277, 216);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(184, 20);
@@ -106,6 +113,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox8
             // 
+            this.textBox8.Enabled = false;
             this.textBox8.Location = new System.Drawing.Point(277, 241);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(184, 20);
@@ -113,6 +121,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox9
             // 
+            this.textBox9.Enabled = false;
             this.textBox9.Location = new System.Drawing.Point(277, 263);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(184, 20);
@@ -120,6 +129,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox10
             // 
+            this.textBox10.Enabled = false;
             this.textBox10.Location = new System.Drawing.Point(277, 341);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(184, 20);
@@ -127,6 +137,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox11
             // 
+            this.textBox11.Enabled = false;
             this.textBox11.Location = new System.Drawing.Point(277, 289);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(184, 20);
@@ -134,6 +145,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox12
             // 
+            this.textBox12.Enabled = false;
             this.textBox12.Location = new System.Drawing.Point(277, 315);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(184, 20);
@@ -187,66 +199,66 @@ namespace ClickForService.PresentationLayer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(208, 189);
+            this.label6.Location = new System.Drawing.Point(189, 189);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 17;
-            this.label6.Text = "label6";
+            this.label6.Text = "Address";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(208, 216);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(24, 13);
             this.label7.TabIndex = 18;
-            this.label7.Text = "label7";
+            this.label7.Text = "City";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(208, 241);
+            this.label8.Location = new System.Drawing.Point(199, 244);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 19;
-            this.label8.Text = "label8";
+            this.label8.Text = "Division";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(208, 263);
+            this.label9.Location = new System.Drawing.Point(171, 266);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.Size = new System.Drawing.Size(78, 13);
             this.label9.TabIndex = 20;
-            this.label9.Text = "label9";
+            this.label9.Text = "Mobile Number";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(208, 289);
+            this.label10.Location = new System.Drawing.Point(208, 296);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.Size = new System.Drawing.Size(26, 13);
             this.label10.TabIndex = 21;
-            this.label10.Text = "label10";
+            this.label10.Text = "NID";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(208, 315);
+            this.label11.Location = new System.Drawing.Point(189, 322);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.Size = new System.Drawing.Size(68, 13);
             this.label11.TabIndex = 22;
-            this.label11.Text = "label11";
+            this.label11.Text = "Date Of Birth";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(208, 341);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.Size = new System.Drawing.Size(42, 13);
             this.label12.TabIndex = 23;
-            this.label12.Text = "label12";
+            this.label12.Text = "Gender";
             // 
             // ShowProfile
             // 
