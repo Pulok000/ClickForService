@@ -31,5 +31,12 @@ namespace ClickForService.PresentationLayer
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
+        }
     }
 }
