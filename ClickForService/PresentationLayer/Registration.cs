@@ -170,6 +170,9 @@ namespace ClickForService.PresentationLayer
                 if (result > 0)
                 {
                     MessageBox.Show("Registration Sucessful....Please Login");
+                    Login login = new Login();
+                    this.Hide();
+                    login.Show();
 
                     connect.Close();
 

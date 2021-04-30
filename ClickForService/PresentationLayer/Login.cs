@@ -79,5 +79,17 @@ namespace ClickForService.PresentationLayer
         {
             Application.Exit();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            textBoxUsername.Clear();
+            textBoxPassword.Clear();
+            textBoxUsername.Focus();
+        }
     }
 }

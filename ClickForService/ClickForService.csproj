@@ -132,5 +132,20 @@
   <ItemGroup>
     <None Include="Resources\registration background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clicklogo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clickservicelogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernamelogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogo1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

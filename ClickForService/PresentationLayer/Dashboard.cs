@@ -28,5 +28,10 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             h1.Show();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
