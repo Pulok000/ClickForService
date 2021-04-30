@@ -723,6 +723,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.Nameregisterlabel);
             this.Name = "ChangePass";
             this.Text = "ChangePass";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChangePass_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
