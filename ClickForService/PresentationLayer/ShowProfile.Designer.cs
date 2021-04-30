@@ -57,6 +57,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(277, 39);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(184, 20);
@@ -64,6 +65,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(277, 74);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(184, 20);
@@ -71,6 +73,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(277, 100);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(184, 20);
@@ -78,6 +81,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(277, 126);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(184, 20);
@@ -85,6 +89,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(277, 152);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(184, 20);
@@ -92,6 +97,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(277, 189);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(184, 20);
@@ -99,6 +105,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox7
             // 
+            this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(277, 216);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(184, 20);
@@ -106,6 +113,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox8
             // 
+            this.textBox8.Enabled = false;
             this.textBox8.Location = new System.Drawing.Point(277, 241);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(184, 20);
@@ -113,6 +121,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox9
             // 
+            this.textBox9.Enabled = false;
             this.textBox9.Location = new System.Drawing.Point(277, 263);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(184, 20);
@@ -120,6 +129,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox10
             // 
+            this.textBox10.Enabled = false;
             this.textBox10.Location = new System.Drawing.Point(277, 341);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(184, 20);
@@ -127,6 +137,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox11
             // 
+            this.textBox11.Enabled = false;
             this.textBox11.Location = new System.Drawing.Point(277, 289);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(184, 20);
@@ -134,6 +145,7 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox12
             // 
+            this.textBox12.Enabled = false;
             this.textBox12.Location = new System.Drawing.Point(277, 315);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(184, 20);
