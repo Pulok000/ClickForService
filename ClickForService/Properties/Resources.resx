@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="clickservicelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clickservicelogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="passwordlogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordlogo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="passwordlogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordlogo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clicklogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clicklogo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,16 +133,28 @@
   <data name="registration background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\registration background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="clickservicelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clickservicelogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="passwordlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordlogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clicklogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clicklogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usernamelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usernamelogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="passwordlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\passwordlogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="locklogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locklogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="passwordlogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\passwordlogo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="locklogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locklogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="locklogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locklogo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="passwordlogo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordlogo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -68,12 +68,12 @@ namespace ClickForService.PresentationLayer
 
         }
 
-        private void buttonRegister_Click(object sender, EventArgs e)
+       /* private void buttonRegister_Click(object sender, EventArgs e)
         {
             Registration registration = new Registration();
             this.Hide();
             registration.Show();
-        }
+        }*/
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -90,6 +90,13 @@ namespace ClickForService.PresentationLayer
             textBoxUsername.Clear();
             textBoxPassword.Clear();
             textBoxUsername.Focus();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registration registration = new Registration();
+            this.Hide();
+            registration.Show();
         }
     }
 }

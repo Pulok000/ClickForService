@@ -147,5 +147,20 @@
   <ItemGroup>
     <None Include="Resources\passwordlogo1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locklogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locklogo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locklogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogo3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

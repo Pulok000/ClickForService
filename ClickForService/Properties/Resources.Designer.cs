@@ -103,6 +103,36 @@ namespace ClickForService.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap locklogo {
+            get {
+                object obj = ResourceManager.GetObject("locklogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap locklogo1 {
+            get {
+                object obj = ResourceManager.GetObject("locklogo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap locklogo2 {
+            get {
+                object obj = ResourceManager.GetObject("locklogo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap passwordlogo {
             get {
                 object obj = ResourceManager.GetObject("passwordlogo", resourceCulture);
@@ -116,6 +146,26 @@ namespace ClickForService.Properties {
         internal static System.Drawing.Bitmap passwordlogo1 {
             get {
                 object obj = ResourceManager.GetObject("passwordlogo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap passwordlogo2 {
+            get {
+                object obj = ResourceManager.GetObject("passwordlogo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap passwordlogo3 {
+            get {
+                object obj = ResourceManager.GetObject("passwordlogo3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
