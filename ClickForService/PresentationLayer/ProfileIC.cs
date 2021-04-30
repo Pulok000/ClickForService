@@ -16,5 +16,10 @@ namespace ClickForService.PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void ProfileIC_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
