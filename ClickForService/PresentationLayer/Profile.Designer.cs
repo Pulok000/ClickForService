@@ -97,6 +97,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.buttonCPI);
             this.Name = "Profile";
             this.Text = "Profile";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Profile_FormClosing);
             this.Load += new System.EventHandler(this.Profile_Load);
             this.ResumeLayout(false);
 

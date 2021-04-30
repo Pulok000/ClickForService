@@ -40,8 +40,15 @@ namespace ClickForService.PresentationLayer
                 textBoxEmail.Text = Convert.ToString(reader["emailId"]);
                 textBoxPass.Text = Convert.ToString(reader["password"]);
                 Textboxgender.Text = Convert.ToString(reader["gender"]);
+                da.ConnectionClose();
+
                
             }
+        }
+
+        private void ShowProfile_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
