@@ -45,6 +45,7 @@ namespace ClickForService.PresentationLayer
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.buttonSearchbyC = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -197,11 +198,23 @@ namespace ClickForService.PresentationLayer
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // buttonSearchbyC
+            // 
+            this.buttonSearchbyC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSearchbyC.Location = new System.Drawing.Point(453, 46);
+            this.buttonSearchbyC.Name = "buttonSearchbyC";
+            this.buttonSearchbyC.Size = new System.Drawing.Size(87, 33);
+            this.buttonSearchbyC.TabIndex = 17;
+            this.buttonSearchbyC.Text = "Search By City";
+            this.buttonSearchbyC.UseVisualStyleBackColor = true;
+            this.buttonSearchbyC.Click += new System.EventHandler(this.button4_Click);
+            // 
             // MaidService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonSearchbyC);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
@@ -246,5 +259,6 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonSearchbyC;
     }
 }
