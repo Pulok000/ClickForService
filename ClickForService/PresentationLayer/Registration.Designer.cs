@@ -169,9 +169,9 @@ namespace ClickForService.PresentationLayer
             "Wari",
             "Dhanmondi",
             "Kuratoli"});
-            this.CityregistercomboBox.Location = new System.Drawing.Point(403, 280);
+            this.CityregistercomboBox.Location = new System.Drawing.Point(313, 280);
             this.CityregistercomboBox.Name = "CityregistercomboBox";
-            this.CityregistercomboBox.Size = new System.Drawing.Size(166, 21);
+            this.CityregistercomboBox.Size = new System.Drawing.Size(256, 21);
             this.CityregistercomboBox.TabIndex = 42;
             this.CityregistercomboBox.SelectedIndexChanged += new System.EventHandler(this.CountryregistercomboBox_SelectedIndexChanged);
             // 
@@ -417,9 +417,9 @@ namespace ClickForService.PresentationLayer
             "Rajshahi",
             "Rangpur",
             "Sylhet"});
-            this.DivisionregistercomboBox.Location = new System.Drawing.Point(388, 253);
+            this.DivisionregistercomboBox.Location = new System.Drawing.Point(328, 253);
             this.DivisionregistercomboBox.Name = "DivisionregistercomboBox";
-            this.DivisionregistercomboBox.Size = new System.Drawing.Size(181, 21);
+            this.DivisionregistercomboBox.Size = new System.Drawing.Size(241, 21);
             this.DivisionregistercomboBox.TabIndex = 49;
             // 
             // label11
@@ -476,9 +476,9 @@ namespace ClickForService.PresentationLayer
             this.CategoryregistercomboBox.Items.AddRange(new object[] {
             "Servicer Giver",
             "Service Taker"});
-            this.CategoryregistercomboBox.Location = new System.Drawing.Point(388, 334);
+            this.CategoryregistercomboBox.Location = new System.Drawing.Point(328, 334);
             this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
-            this.CategoryregistercomboBox.Size = new System.Drawing.Size(181, 21);
+            this.CategoryregistercomboBox.Size = new System.Drawing.Size(241, 21);
             this.CategoryregistercomboBox.TabIndex = 55;
             // 
             // label14
@@ -536,9 +536,9 @@ namespace ClickForService.PresentationLayer
             "Car Servicing/Repair",
             "Computer/Laptop Servicing/Repair",
             "Mobile Servicing"});
-            this.ProfessionregistercomboBox.Location = new System.Drawing.Point(403, 357);
+            this.ProfessionregistercomboBox.Location = new System.Drawing.Point(337, 357);
             this.ProfessionregistercomboBox.Name = "ProfessionregistercomboBox";
-            this.ProfessionregistercomboBox.Size = new System.Drawing.Size(166, 21);
+            this.ProfessionregistercomboBox.Size = new System.Drawing.Size(232, 21);
             this.ProfessionregistercomboBox.TabIndex = 60;
             // 
             // AddressregistertextBox
