@@ -27,15 +27,16 @@ namespace ClickForService.PresentationLayer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT *FROM Registrations WHERE userName='" + Login.UserName + "'";
+            string sql = "SELECT *FROM Registrations WHERE City='" + textBox1.Text + "'AND Profession='" + comboBox1.Text + "'";
             AccessProperty ap = new AccessProperty();
             DataAcess da = new DataAcess();
             SqlDataReader reader = da.GetData(sql);
-            //while (reader.Read())
-            //{
-
-
-            //}
+            
+            while (reader.Read())
+            {
+                textBox2.Text = Convert.ToString(reader["fullName"]);
+                
+            }
             da.ConnectionClose();
 
         } 
@@ -57,8 +58,16 @@ namespace ClickForService.PresentationLayer
             while (reader.Read())
             {
                 textBox1.Text = Convert.ToString(reader["City"]);
+                GeneralOperations go = new GeneralOperations();
+                dataGridView1.DataSource = go.GetMaid();
 
             }
+            da.ConnectionClose();
+
+            
+
+
+
 
         }
 
@@ -75,6 +84,16 @@ namespace ClickForService.PresentationLayer
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bindingSource1.MoveNext();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
