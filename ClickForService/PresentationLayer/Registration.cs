@@ -1,4 +1,4 @@
-﻿using System;
+using System
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -144,8 +144,6 @@ namespace ClickForService.PresentationLayer
 
             else if (CategoryregistercomboBox.Text == "")
             { MessageBox.Show("Blood Group can not be empty"); }
-
-
 
 
 
