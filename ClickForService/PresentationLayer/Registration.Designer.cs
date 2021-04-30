@@ -119,9 +119,9 @@ namespace ClickForService.PresentationLayer
             this.EmailregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmailregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.EmailregistertextBox.Location = new System.Drawing.Point(347, 154);
+            this.EmailregistertextBox.Location = new System.Drawing.Point(290, 154);
             this.EmailregistertextBox.Name = "EmailregistertextBox";
-            this.EmailregistertextBox.Size = new System.Drawing.Size(300, 13);
+            this.EmailregistertextBox.Size = new System.Drawing.Size(357, 13);
             this.EmailregistertextBox.TabIndex = 45;
             this.EmailregistertextBox.TextChanged += new System.EventHandler(this.EmailregistertextBox_TextChanged);
             // 
@@ -224,9 +224,9 @@ namespace ClickForService.PresentationLayer
             this.MobilenumberregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MobilenumberregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MobilenumberregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.MobilenumberregistertextBox.Location = new System.Drawing.Point(347, 183);
+            this.MobilenumberregistertextBox.Location = new System.Drawing.Point(337, 183);
             this.MobilenumberregistertextBox.Name = "MobilenumberregistertextBox";
-            this.MobilenumberregistertextBox.Size = new System.Drawing.Size(300, 13);
+            this.MobilenumberregistertextBox.Size = new System.Drawing.Size(310, 13);
             this.MobilenumberregistertextBox.TabIndex = 38;
             this.MobilenumberregistertextBox.TextChanged += new System.EventHandler(this.MobilenumberregistertextBox_TextChanged);
             // 
@@ -235,10 +235,10 @@ namespace ClickForService.PresentationLayer
             this.ConfirmpasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ConfirmpasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmpasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(359, 98);
+            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(347, 98);
             this.ConfirmpasswordregistertextBox.Name = "ConfirmpasswordregistertextBox";
             this.ConfirmpasswordregistertextBox.PasswordChar = '*';
-            this.ConfirmpasswordregistertextBox.Size = new System.Drawing.Size(288, 13);
+            this.ConfirmpasswordregistertextBox.Size = new System.Drawing.Size(300, 13);
             this.ConfirmpasswordregistertextBox.TabIndex = 37;
             this.ConfirmpasswordregistertextBox.TextChanged += new System.EventHandler(this.ConfirmpasswordregistertextBox_TextChanged);
             // 
@@ -247,10 +247,11 @@ namespace ClickForService.PresentationLayer
             this.PasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.PasswordregistertextBox.Location = new System.Drawing.Point(388, 69);
+            this.PasswordregistertextBox.Location = new System.Drawing.Point(307, 69);
+            this.PasswordregistertextBox.Multiline = true;
             this.PasswordregistertextBox.Name = "PasswordregistertextBox";
             this.PasswordregistertextBox.PasswordChar = '*';
-            this.PasswordregistertextBox.Size = new System.Drawing.Size(300, 13);
+            this.PasswordregistertextBox.Size = new System.Drawing.Size(340, 23);
             this.PasswordregistertextBox.TabIndex = 36;
             this.PasswordregistertextBox.TextChanged += new System.EventHandler(this.PasswordregistertextBox_TextChanged);
             // 
@@ -261,7 +262,7 @@ namespace ClickForService.PresentationLayer
             this.UsernameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UsernameregistertextBox.Location = new System.Drawing.Point(313, 43);
             this.UsernameregistertextBox.Name = "UsernameregistertextBox";
-            this.UsernameregistertextBox.Size = new System.Drawing.Size(300, 13);
+            this.UsernameregistertextBox.Size = new System.Drawing.Size(334, 13);
             this.UsernameregistertextBox.TabIndex = 35;
             this.UsernameregistertextBox.TextChanged += new System.EventHandler(this.UsernameregistertextBox_TextChanged);
             // 
@@ -437,9 +438,9 @@ namespace ClickForService.PresentationLayer
             this.NidregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NidregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NidregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.NidregistertextBox.Location = new System.Drawing.Point(347, 130);
+            this.NidregistertextBox.Location = new System.Drawing.Point(282, 130);
             this.NidregistertextBox.Name = "NidregistertextBox";
-            this.NidregistertextBox.Size = new System.Drawing.Size(300, 13);
+            this.NidregistertextBox.Size = new System.Drawing.Size(365, 13);
             this.NidregistertextBox.TabIndex = 51;
             // 
             // label12
