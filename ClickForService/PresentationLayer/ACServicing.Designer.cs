@@ -47,10 +47,12 @@ namespace ClickForService.PresentationLayer
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxCity
@@ -82,10 +84,13 @@ namespace ClickForService.PresentationLayer
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(255, 308);
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Location = new System.Drawing.Point(284, 311);
+            this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(203, 20);
+            this.textBox4.Size = new System.Drawing.Size(300, 20);
             this.textBox4.TabIndex = 3;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label1
             // 
@@ -112,9 +117,11 @@ namespace ClickForService.PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(169, 315);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label3.Location = new System.Drawing.Point(165, 315);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.Size = new System.Drawing.Size(113, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Mobile Number";
             // 
@@ -168,32 +175,39 @@ namespace ClickForService.PresentationLayer
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(510, 306);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(511, 355);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 22);
+            this.button2.Size = new System.Drawing.Size(90, 30);
             this.button2.TabIndex = 11;
             this.button2.Text = "Previous";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(629, 306);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(639, 355);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(81, 22);
+            this.button3.Size = new System.Drawing.Size(81, 30);
             this.button3.TabIndex = 12;
             this.button3.Text = "Next";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(679, 405);
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Location = new System.Drawing.Point(679, 416);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(81, 22);
+            this.buttonBack.Size = new System.Drawing.Size(81, 33);
             this.buttonBack.TabIndex = 13;
             this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // pictureBox2
@@ -234,12 +248,22 @@ namespace ClickForService.PresentationLayer
             this.pictureBox4.TabIndex = 70;
             this.pictureBox4.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox5.Location = new System.Drawing.Point(158, 334);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(405, 1);
+            this.pictureBox5.TabIndex = 71;
+            this.pictureBox5.TabStop = false;
+            // 
             // ACServicing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -267,6 +291,7 @@ namespace ClickForService.PresentationLayer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,5 +317,6 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
