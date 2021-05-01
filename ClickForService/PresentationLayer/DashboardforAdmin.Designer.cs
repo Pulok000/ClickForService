@@ -32,24 +32,24 @@ namespace ClickForService.PresentationLayer
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label16.Location = new System.Drawing.Point(291, 83);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(205, 28);
-            this.label16.TabIndex = 67;
-            this.label16.Text = "Click For Service";
+            //this.label16.AutoSize = true;
+           // this.label16.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+           // this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+           // this.label16.Location = new System.Drawing.Point(291, 83);
+           // this.label16.Name = "label16";
+            //this.label16.Size = new System.Drawing.Size(205, 28);
+           // this.label16.TabIndex = 67;
+            //this.label16.Text = "Click For Service";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 66;
-            this.pictureBox1.TabStop = false;
+            //this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
+            //this.pictureBox1.Location = new System.Drawing.Point(343, 12);
+           // this.pictureBox1.Name = "pictureBox1";
+            //this.pictureBox1.Size = new System.Drawing.Size(87, 71);
+            //this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            //this.pictureBox1.TabIndex = 66;
+            //this.pictureBox1.TabStop = false;
             // 
             // DashboardforAdmin
             // 
