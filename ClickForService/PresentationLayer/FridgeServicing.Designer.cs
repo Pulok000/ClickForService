@@ -134,6 +134,7 @@ namespace ClickForService.PresentationLayer
             this.buttonBack.TabIndex = 87;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // button3
             // 
