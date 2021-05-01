@@ -99,6 +99,12 @@
     <Compile Include="PresentationLayer\DashboardforSP.Designer.cs">
       <DependentUpon>DashboardforSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\FridgeServicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\FridgeServicing.Designer.cs">
+      <DependentUpon>FridgeServicing.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\HouseHoldService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\DashboardforSP.resx">
       <DependentUpon>DashboardforSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\FridgeServicing.resx">
+      <DependentUpon>FridgeServicing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\HouseHoldService.resx">
       <DependentUpon>HouseHoldService.cs</DependentUpon>
