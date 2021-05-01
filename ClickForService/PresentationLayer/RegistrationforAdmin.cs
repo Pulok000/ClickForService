@@ -155,5 +155,10 @@ namespace ClickForService.PresentationLayer
                 }
             }
         }
+
+        private void RegistrationforAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
