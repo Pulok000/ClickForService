@@ -69,6 +69,12 @@
     <Compile Include="PresentationLayer\AdminMyProfile.Designer.cs">
       <DependentUpon>AdminMyProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\CarServicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\CarServicing.Designer.cs">
+      <DependentUpon>CarServicing.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="PresentationLayer\DashboardforSP.Designer.cs">
       <DependentUpon>DashboardforSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\FridgeServicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\FridgeServicing.Designer.cs">
+      <DependentUpon>FridgeServicing.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\HouseHoldService.cs">
       <SubType>Form</SubType>
@@ -176,6 +188,9 @@
     <EmbeddedResource Include="PresentationLayer\AdminMyProfile.resx">
       <DependentUpon>AdminMyProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\CarServicing.resx">
+      <DependentUpon>CarServicing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\DashboardforSP.resx">
       <DependentUpon>DashboardforSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\FridgeServicing.resx">
+      <DependentUpon>FridgeServicing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\HouseHoldService.resx">
       <DependentUpon>HouseHoldService.cs</DependentUpon>

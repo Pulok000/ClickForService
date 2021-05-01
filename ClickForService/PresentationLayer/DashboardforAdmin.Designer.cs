@@ -67,7 +67,7 @@ namespace ClickForService.PresentationLayer
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Bauhaus 93", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label16.Location = new System.Drawing.Point(165, 121);
+            this.label16.Location = new System.Drawing.Point(211, 77);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(243, 33);
             this.label16.TabIndex = 80;
@@ -78,7 +78,7 @@ namespace ClickForService.PresentationLayer
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(142, 395);
+            this.button6.Location = new System.Drawing.Point(190, 350);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(281, 37);
             this.button6.TabIndex = 72;
@@ -91,7 +91,7 @@ namespace ClickForService.PresentationLayer
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(142, 307);
+            this.button5.Location = new System.Drawing.Point(190, 262);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(281, 37);
             this.button5.TabIndex = 71;
@@ -103,7 +103,7 @@ namespace ClickForService.PresentationLayer
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(142, 348);
+            this.button4.Location = new System.Drawing.Point(190, 303);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(281, 43);
             this.button4.TabIndex = 70;
@@ -115,7 +115,7 @@ namespace ClickForService.PresentationLayer
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(142, 264);
+            this.button3.Location = new System.Drawing.Point(190, 219);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(281, 37);
             this.button3.TabIndex = 69;
@@ -128,7 +128,7 @@ namespace ClickForService.PresentationLayer
             this.buttonUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUser.Location = new System.Drawing.Point(142, 221);
+            this.buttonUser.Location = new System.Drawing.Point(190, 176);
             this.buttonUser.Name = "buttonUser";
             this.buttonUser.Size = new System.Drawing.Size(281, 37);
             this.buttonUser.TabIndex = 68;
@@ -141,7 +141,7 @@ namespace ClickForService.PresentationLayer
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(142, 438);
+            this.button1.Location = new System.Drawing.Point(190, 393);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(281, 37);
             this.button1.TabIndex = 67;
@@ -154,7 +154,7 @@ namespace ClickForService.PresentationLayer
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label1.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(206, 176);
+            this.label1.Location = new System.Drawing.Point(254, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 30);
             this.label1.TabIndex = 66;
@@ -165,7 +165,7 @@ namespace ClickForService.PresentationLayer
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(142, 481);
+            this.button2.Location = new System.Drawing.Point(190, 436);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(281, 37);
             this.button2.TabIndex = 81;
@@ -224,7 +224,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox8.Image = global::ClickForService.Properties.Resources.profile;
-            this.pictureBox8.Location = new System.Drawing.Point(151, 481);
+            this.pictureBox8.Location = new System.Drawing.Point(199, 436);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(25, 35);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -234,7 +234,7 @@ namespace ClickForService.PresentationLayer
             // pictureBox7
             // 
             this.pictureBox7.Image = global::ClickForService.Properties.Resources.clickservicelogo;
-            this.pictureBox7.Location = new System.Drawing.Point(243, 33);
+            this.pictureBox7.Location = new System.Drawing.Point(285, 3);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(87, 71);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -246,7 +246,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox6.Image = global::ClickForService.Properties.Resources.profile;
-            this.pictureBox6.Location = new System.Drawing.Point(151, 438);
+            this.pictureBox6.Location = new System.Drawing.Point(199, 393);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 35);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -257,7 +257,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox5.Image = global::ClickForService.Properties.Resources.about1;
-            this.pictureBox5.Location = new System.Drawing.Point(151, 397);
+            this.pictureBox5.Location = new System.Drawing.Point(199, 352);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 35);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -268,7 +268,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox4.Image = global::ClickForService.Properties.Resources.locklogo1;
-            this.pictureBox4.Location = new System.Drawing.Point(151, 348);
+            this.pictureBox4.Location = new System.Drawing.Point(199, 303);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -279,7 +279,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox3.Image = global::ClickForService.Properties.Resources.subscription;
-            this.pictureBox3.Location = new System.Drawing.Point(151, 307);
+            this.pictureBox3.Location = new System.Drawing.Point(199, 262);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 35);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -290,7 +290,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox2.Image = global::ClickForService.Properties.Resources.transportlogo2;
-            this.pictureBox2.Location = new System.Drawing.Point(151, 266);
+            this.pictureBox2.Location = new System.Drawing.Point(199, 221);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,7 +301,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox1.Image = global::ClickForService.Properties.Resources.house;
-            this.pictureBox1.Location = new System.Drawing.Point(151, 223);
+            this.pictureBox1.Location = new System.Drawing.Point(199, 178);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -312,7 +312,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 619);
+            this.ClientSize = new System.Drawing.Size(781, 619);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.pictureBox9);

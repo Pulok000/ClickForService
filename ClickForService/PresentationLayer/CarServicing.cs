@@ -1,5 +1,4 @@
-﻿using ClickForService.BusinessLogicLayer;
-using ClickForService.DatabaseConnectionLayer;
+﻿using ClickForService.DatabaseConnectionLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,19 +13,19 @@ using System.Windows.Forms;
 
 namespace ClickForService.PresentationLayer
 {
-    public partial class ACServicing : Form
+    public partial class CarServicing : Form
     {
-        public ACServicing()
+        public CarServicing()
         {
             InitializeComponent();
         }
 
-        private void ACServicing_FormClosing(object sender, FormClosingEventArgs e)
+        private void CarServicing_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void ACServicing_Load(object sender, EventArgs e)
+        private void CarServicing_Load(object sender, EventArgs e)
         {
             string sql = "SELECT *FROM Registrations WHERE userName='" + Login.UserName + "'";
             AccessProperty ap = new AccessProperty();
@@ -35,10 +34,9 @@ namespace ClickForService.PresentationLayer
             while (reader.Read())
             {
                 textBoxCity.Text = Convert.ToString(reader["City"]);
-                
+
             }
             da.ConnectionClose();
-
         }
 
         int pos;
@@ -46,21 +44,23 @@ namespace ClickForService.PresentationLayer
         DataTable data = new DataTable();
         private void button1_Click(object sender, EventArgs e)
         {
+
+
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
 
-
+            
             connection.Open();
-            string PF = "AC Mechanic";
+            string PF = "Car Mechanic";
 
-            string sql1 = "SELECT *FROM Registrations WHERE gender= '" + comboBox1.Text + "' and Profession='" + PF + "' ";
+            string sql1 = "SELECT *FROM Registrations WHERE gender= '" + comboBox1.Text + "' and Profession='"+PF+"' ";
             SqlCommand command = new SqlCommand(sql1, connection);
             SqlDataReader reader = command.ExecuteReader();
-
+            
 
 
             if (reader.Read())
             {
-
+                
 
                 DataAcess ac = new DataAcess();
 
@@ -100,7 +100,6 @@ namespace ClickForService.PresentationLayer
                 MessageBox.Show("First Record");
             }
             displaytext(pos);
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -118,7 +117,7 @@ namespace ClickForService.PresentationLayer
         {
             HouseHoldService houseHoldService = new HouseHoldService();
             this.Hide();
-            
+
 
             DialogResult d;
 
@@ -135,25 +134,6 @@ namespace ClickForService.PresentationLayer
             else
                 Close();
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+

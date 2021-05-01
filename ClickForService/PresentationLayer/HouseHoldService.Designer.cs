@@ -79,6 +79,7 @@ namespace ClickForService.PresentationLayer
             this.button3.TabIndex = 2;
             this.button3.Text = "Fridge Servicing/Repair";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -91,6 +92,7 @@ namespace ClickForService.PresentationLayer
             this.button4.TabIndex = 3;
             this.button4.Text = "Car Servicing/Repair";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
