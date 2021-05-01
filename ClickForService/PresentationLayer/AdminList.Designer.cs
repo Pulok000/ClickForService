@@ -90,6 +90,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Enabled = false;
             this.textBox9.Location = new System.Drawing.Point(538, 351);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
@@ -113,6 +114,7 @@ namespace ClickForService.PresentationLayer
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(746, 211);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // pictureBox10
             // 
@@ -200,6 +202,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Enabled = false;
             this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox8.Location = new System.Drawing.Point(537, 233);
             this.textBox8.Multiline = true;
@@ -221,6 +224,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(537, 297);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -241,6 +245,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(147, 377);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
@@ -261,6 +266,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(147, 329);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -287,7 +293,7 @@ namespace ClickForService.PresentationLayer
             this.groupBox1.Size = new System.Drawing.Size(771, 236);
             this.groupBox1.TabIndex = 156;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "User List";
+            this.groupBox1.Text = "Admin List";
             // 
             // label5
             // 
@@ -303,6 +309,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(147, 283);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -323,6 +330,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(147, 241);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -343,6 +351,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(147, 195);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";

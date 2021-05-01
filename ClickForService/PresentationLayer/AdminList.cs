@@ -74,14 +74,13 @@ namespace ClickForService.PresentationLayer
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
             connection.Open();
 
-            string sql = "SELECT *FROM Registrations WHERE category='" + "Service Giver" + "'";
+            string sql = "SELECT *FROM Registrations WHERE category='" + "Click For Service Staff" + "'";
+            
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
             
             
-                    
-
-            List<Adminlists> EL = new List<Adminlists>();
+           List<Adminlists> EL = new List<Adminlists>();
             while (reader.Read())
             {
                 Adminlists sL = new Adminlists();
@@ -94,14 +93,7 @@ namespace ClickForService.PresentationLayer
 
                 sL.City = Convert.ToString(reader["City"]);
 
-                string sql1 = "SELECT *FROM userpermissions WHERE uniqueCode='" + "AD" + "'";
-                SqlCommand command1 = new SqlCommand(sql1, connection);
-
-                SqlDataReader reader1 = command1.ExecuteReader();
-                while (reader1.Read())
-                {
-                    sL.Designation= Convert.ToString(reader1["Designation"]);
-                }
+                             
                 EL.Add(sL);
 
             }
@@ -109,6 +101,21 @@ namespace ClickForService.PresentationLayer
             dataGridView1.DataSource = EL;
             connection.Close();
 
+
+
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox5.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            textBox6.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
     }
 

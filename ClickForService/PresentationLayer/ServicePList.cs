@@ -102,5 +102,17 @@ namespace ClickForService.PresentationLayer
             connection.Close();
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox5.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            textBox6.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            textBox9.Text= dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+        }
     }
 }
