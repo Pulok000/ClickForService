@@ -112,5 +112,10 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             registration.Show();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
