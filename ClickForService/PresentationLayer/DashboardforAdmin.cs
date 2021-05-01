@@ -70,5 +70,19 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             SPL.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AdminList AL = new AdminList();
+            this.Hide();
+            AL.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdminMyProfile AMP = new AdminMyProfile();
+            this.Hide();
+            AMP.Show();
+        }
     }
 }
