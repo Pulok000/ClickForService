@@ -34,7 +34,7 @@ namespace ClickForService.PresentationLayer
             while (reader.Read())
             {
                 textBoxCity.Text = Convert.ToString(reader["City"]);
-
+                
             }
             da.ConnectionClose();
         }
@@ -55,8 +55,8 @@ namespace ClickForService.PresentationLayer
             string sql1 = "SELECT *FROM Registrations WHERE gender= '" + comboBox1.Text + "' and Profession='"+PF+"' ";
             SqlCommand command = new SqlCommand(sql1, connection);
             SqlDataReader reader = command.ExecuteReader();
-            
 
+            connection.Close();
 
             if (reader.Read())
             {
@@ -70,6 +70,7 @@ namespace ClickForService.PresentationLayer
                 pos = 0;
                 displaytext(pos);
 
+                ac.ConnectionClose();
 
 
             }
@@ -81,6 +82,7 @@ namespace ClickForService.PresentationLayer
 
                 this.Hide();
                 carServicing.Show();
+                connection.Close();
             }
 
         }

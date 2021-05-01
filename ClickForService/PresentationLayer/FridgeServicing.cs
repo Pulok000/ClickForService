@@ -69,7 +69,8 @@ namespace ClickForService.PresentationLayer
                 sqladp.Fill(data);
                 pos = 0;
                 displaytext(pos);
-
+                connection.Close();
+                ac.ConnectionClose();
 
 
             }
@@ -81,6 +82,7 @@ namespace ClickForService.PresentationLayer
 
                 this.Hide();
                 fridgeServicing.Show();
+                connection.Close();
             }
 
 

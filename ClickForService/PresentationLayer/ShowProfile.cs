@@ -44,6 +44,7 @@ namespace ClickForService.PresentationLayer
 
                
             }
+            da.ConnectionClose();
         }
 
         private void ShowProfile_FormClosing(object sender, FormClosingEventArgs e)

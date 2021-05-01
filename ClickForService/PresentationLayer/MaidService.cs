@@ -59,6 +59,8 @@ namespace ClickForService.PresentationLayer
                 sqladp.Fill(data);
                 pos = 0;
                 displaytext(pos);
+                connection.Close();
+                ac.ConnectionClose();
 
 
 
@@ -71,6 +73,7 @@ namespace ClickForService.PresentationLayer
 
                 this.Hide();
                 maidService.Show();
+                connection.Close();
             }
 
         }
@@ -98,6 +101,7 @@ namespace ClickForService.PresentationLayer
                 textBox1.Text = Convert.ToString(reader["City"]);
                 GeneralOperations go = new GeneralOperations();
                 dataGridView1.DataSource = go.GetMaid();
+           
 
             }
             da.ConnectionClose();

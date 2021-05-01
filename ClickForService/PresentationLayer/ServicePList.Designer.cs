@@ -235,6 +235,7 @@ namespace ClickForService.PresentationLayer
             this.buttonsearch.TabIndex = 82;
             this.buttonsearch.Text = "Search";
             this.buttonsearch.UseVisualStyleBackColor = false;
+            this.buttonsearch.Click += new System.EventHandler(this.buttonsearch_Click);
             // 
             // comboBox1
             // 
