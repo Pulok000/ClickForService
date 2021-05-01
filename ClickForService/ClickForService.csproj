@@ -63,6 +63,12 @@
     <Compile Include="PresentationLayer\AdminList.Designer.cs">
       <DependentUpon>AdminList.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\AdminMyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\AdminMyProfile.Designer.cs">
+      <DependentUpon>AdminMyProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\AdminList.resx">
       <DependentUpon>AdminList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\AdminMyProfile.resx">
+      <DependentUpon>AdminMyProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>
