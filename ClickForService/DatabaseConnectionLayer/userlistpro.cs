@@ -32,11 +32,7 @@ namespace ClickForService.DatabaseConnectionLayer
         }
 
 
-        public string Category
-        {
-            set;
-            get;
-        }
+       
 
         public string Address
         {

@@ -216,17 +216,18 @@ namespace ClickForService.PresentationLayer
             this.buttonsearch.TabIndex = 82;
             this.buttonsearch.Text = "Search";
             this.buttonsearch.UseVisualStyleBackColor = false;
+            this.buttonsearch.Click += new System.EventHandler(this.buttonsearch_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(287, 47);
+            this.label1.Location = new System.Drawing.Point(271, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.Size = new System.Drawing.Size(86, 16);
             this.label1.TabIndex = 79;
-            this.label1.Text = "Your City";
+            this.label1.Text = "User Name";
             // 
             // pictureBox2
             // 
@@ -241,7 +242,6 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox1.Location = new System.Drawing.Point(363, 43);
