@@ -109,6 +109,7 @@ namespace ClickForService.PresentationLayer
             this.button4.TabIndex = 70;
             this.button4.Text = "User Profile Edit/Updates";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
