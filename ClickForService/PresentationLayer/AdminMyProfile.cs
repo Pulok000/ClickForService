@@ -40,11 +40,10 @@ namespace ClickForService.PresentationLayer
 
             
             SqlCommand command = new SqlCommand(sql, connectionn);
-            command.ExecuteReader();
-
+           
 
             SqlDataReader reader12 = command.ExecuteReader();
-            connectionn.Close();
+            //connectionn.Close();
 
             if (reader12.Read())
             {
@@ -71,27 +70,32 @@ namespace ClickForService.PresentationLayer
             }
             connectionn.Close();
 
-            DataAcess da1 = new DataAcess();
 
-            string sql1 = "SELECT *FROM userpermissions WHERE userName= '"+Login.UserName+"'";
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
+            connection.Open();
 
-            da1.GetData(sql1);
-            SqlDataReader reader1 = da1.GetData(sql1);
-            da1.ConnectionClose();
+            string sql1 = "SELECT *FROM userpermissions WHERE userName= '" + Login.UserName + "'";
 
-            if (reader1.Read())
+            SqlCommand command1 = new SqlCommand(sql1, connection);
+
+
+            SqlDataReader reader = command1.ExecuteReader();
+
+            
+   
+            if (reader.Read())
             {
-                textBox8.Text = Convert.ToString(reader1["Designation"]);
+                textBox8.Text = Convert.ToString(reader["Designation"]);
 
-                da1.ConnectionClose();
+                connection.Close();
 
 
             }
             else 
             {
-                da1.ConnectionClose();
+                connection.Close();
              }
-            da1.ConnectionClose();
+            connection.Close();
         }
     }
 }
