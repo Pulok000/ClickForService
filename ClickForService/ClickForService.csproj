@@ -57,6 +57,12 @@
     <Compile Include="PresentationLayer\ACServicing.Designer.cs">
       <DependentUpon>ACServicing.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\AdminList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\AdminList.Designer.cs">
+      <DependentUpon>AdminList.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PresentationLayer\ACServicing.resx">
       <DependentUpon>ACServicing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\AdminList.resx">
+      <DependentUpon>AdminList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>

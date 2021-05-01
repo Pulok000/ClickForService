@@ -46,7 +46,9 @@ namespace ClickForService.PresentationLayer
 
         private void buttonUser_Click(object sender, EventArgs e)
         {
-
+            UserList UL = new UserList();
+            this.Hide();
+            UL.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,7 +66,9 @@ namespace ClickForService.PresentationLayer
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-
+            ServicePList SPL = new ServicePList();
+            this.Hide();
+            SPL.Show();
         }
     }
 }
