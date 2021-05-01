@@ -16,5 +16,15 @@ namespace ClickForService.PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void RegistrationforAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registerformbutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
