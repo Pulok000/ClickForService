@@ -134,6 +134,7 @@ namespace ClickForService.PresentationLayer
             this.buttonBack.TabIndex = 87;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // button3
             // 
@@ -245,6 +246,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(361, 307);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -255,6 +257,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(305, 251);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -265,6 +268,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(297, 193);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";

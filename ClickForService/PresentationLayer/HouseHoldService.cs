@@ -72,5 +72,12 @@ namespace ClickForService.PresentationLayer
             else
                 Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CarServicing carServicing = new CarServicing();
+            this.Hide();
+            carServicing.Show();
+        }
     }
 }
