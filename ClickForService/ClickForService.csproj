@@ -180,6 +180,12 @@
     <Compile Include="PresentationLayer\UserList.Designer.cs">
       <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\UserProfileInAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\UserProfileInAdmin.Designer.cs">
+      <DependentUpon>UserProfileInAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PresentationLayer\ACServicing.resx">
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\UserProfileInAdmin.resx">
+      <DependentUpon>UserProfileInAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
