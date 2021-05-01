@@ -41,9 +41,11 @@ namespace ClickForService.PresentationLayer
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonUser = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -51,6 +53,7 @@ namespace ClickForService.PresentationLayer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // label16
@@ -150,7 +153,7 @@ namespace ClickForService.PresentationLayer
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(281, 37);
             this.button6.TabIndex = 72;
-            this.button6.Text = "About Us";
+            this.button6.Text = "Admin\'s List";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -162,7 +165,7 @@ namespace ClickForService.PresentationLayer
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(281, 37);
             this.button5.TabIndex = 71;
-            this.button5.Text = "Subscribtion";
+            this.button5.Text = "User Complain";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -174,7 +177,7 @@ namespace ClickForService.PresentationLayer
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(281, 37);
             this.button4.TabIndex = 70;
-            this.button4.Text = "Change Password";
+            this.button4.Text = "User Profile Edit/Updates";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -186,20 +189,21 @@ namespace ClickForService.PresentationLayer
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(281, 37);
             this.button3.TabIndex = 69;
-            this.button3.Text = "Transpotation Services";
+            this.button3.Text = "Service Provider List";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonUser
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(144, 262);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(281, 37);
-            this.button2.TabIndex = 68;
-            this.button2.Text = "House Hold Services";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUser.Location = new System.Drawing.Point(144, 262);
+            this.buttonUser.Name = "buttonUser";
+            this.buttonUser.Size = new System.Drawing.Size(281, 37);
+            this.buttonUser.TabIndex = 68;
+            this.buttonUser.Text = "User List";
+            this.buttonUser.UseVisualStyleBackColor = false;
+            this.buttonUser.Click += new System.EventHandler(this.buttonUser_Click);
             // 
             // button1
             // 
@@ -210,8 +214,9 @@ namespace ClickForService.PresentationLayer
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(281, 37);
             this.button1.TabIndex = 67;
-            this.button1.Text = "Profile";
+            this.button1.Text = "Block User";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -224,11 +229,36 @@ namespace ClickForService.PresentationLayer
             this.label1.TabIndex = 66;
             this.label1.Text = "DashBoard";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pictureBox8.Image = global::ClickForService.Properties.Resources.profile;
+            this.pictureBox8.Location = new System.Drawing.Point(153, 520);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(25, 35);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 82;
+            this.pictureBox8.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(144, 520);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(281, 37);
+            this.button2.TabIndex = 81;
+            this.button2.Text = "Profile";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // DashboardforAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 619);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -241,7 +271,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonUser);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "DashboardforAdmin";
@@ -254,6 +284,7 @@ namespace ClickForService.PresentationLayer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,8 +304,10 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonUser;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button2;
     }
 }
