@@ -89,7 +89,13 @@ namespace ClickForService.PresentationLayer
                 int result = command.ExecuteNonQuery();
                 if (result > 0)
                 {
-                    string sql1 = "UPDATE userpermissions SET password='" +PasswordtextBox.Text+ "' WHERE userName='" + UNtextbox.Text+ "'";
+                    string ab = "";
+                    if(CategoryregistercomboBox.Text=="Service Taker")
+                    { ab = "ST"; }
+                    else if(CategoryregistercomboBox.Text=="Service Giver")
+                    { ab = "GU"; }
+                    
+                    string sql1 = "UPDATE userpermissions SET password='" +PasswordtextBox.Text+ "',uniqueCode='"+ab+"' WHERE userName='" + UNtextbox.Text+ "'";
                     SqlCommand command1 = new SqlCommand(sql1, connection);
                     int result1 = command1.ExecuteNonQuery();
                     if (result1 > 0)
