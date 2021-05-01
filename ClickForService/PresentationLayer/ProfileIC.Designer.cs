@@ -75,7 +75,7 @@ namespace ClickForService.PresentationLayer
             this.label10 = new System.Windows.Forms.Label();
             this.Nameregisterlabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -476,6 +476,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.UNtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.UNtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNtextbox.Enabled = false;
             this.UNtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UNtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UNtextbox.Location = new System.Drawing.Point(300, 126);
@@ -585,18 +586,18 @@ namespace ClickForService.PresentationLayer
             this.label1.TabIndex = 244;
             this.label1.Text = "My Profile";
             // 
-            // button2
+            // buttonUpdate
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(680, 471);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 30);
-            this.button2.TabIndex = 290;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.Location = new System.Drawing.Point(680, 471);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(84, 30);
+            this.buttonUpdate.TabIndex = 290;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.button2_Click);
             // 
             // ProfileIC
             // 
@@ -604,7 +605,7 @@ namespace ClickForService.PresentationLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 506);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -654,6 +655,7 @@ namespace ClickForService.PresentationLayer
             this.Name = "ProfileIC";
             this.Text = "ProfileIC";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProfileIC_FormClosing);
+            this.Load += new System.EventHandler(this.ProfileIC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -722,6 +724,6 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Nameregisterlabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonUpdate;
     }
 }
