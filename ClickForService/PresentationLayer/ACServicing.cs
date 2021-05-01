@@ -70,7 +70,8 @@ namespace ClickForService.PresentationLayer
                 pos = 0;
                 displaytext(pos);
 
-
+                ac.ConnectionClose();
+                connection.Close();
 
             }
             else
@@ -81,7 +82,10 @@ namespace ClickForService.PresentationLayer
 
                 this.Hide();
                 carServicing.Show();
+
+                connection.Close();
             }
+            connection.Close();
 
         }
         public void displaytext(int rowno)

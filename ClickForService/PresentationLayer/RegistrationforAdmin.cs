@@ -32,7 +32,7 @@ namespace ClickForService.PresentationLayer
             string sql = "SELECT *FROM Registrations WHERE userName='" + UsernameregistertextBox.Text + "'";
             SqlCommand command11 = new SqlCommand(sql, connection11);
             SqlDataReader reader = command11.ExecuteReader();
-
+            
             if (reader.Read())
             {
 
