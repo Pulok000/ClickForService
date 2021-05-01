@@ -66,7 +66,7 @@ namespace ClickForService.PresentationLayer
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Nameregisterlabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDesig = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -567,13 +567,13 @@ namespace ClickForService.PresentationLayer
             this.Nameregisterlabel.TabIndex = 81;
             this.Nameregisterlabel.Text = "Name";
             // 
-            // comboBox1
+            // comboBoxDesig
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxDesig.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBoxDesig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDesig.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.comboBoxDesig.FormattingEnabled = true;
+            this.comboBoxDesig.Items.AddRange(new object[] {
             "Admin",
             "Managing Director",
             "Cheif Executive Officer CEO",
@@ -585,10 +585,10 @@ namespace ClickForService.PresentationLayer
             "Software Department",
             "IT Support Team",
             "Complain Manager"});
-            this.comboBox1.Location = new System.Drawing.Point(351, 439);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(257, 21);
-            this.comboBox1.TabIndex = 135;
+            this.comboBoxDesig.Location = new System.Drawing.Point(351, 439);
+            this.comboBoxDesig.Name = "comboBoxDesig";
+            this.comboBoxDesig.Size = new System.Drawing.Size(257, 21);
+            this.comboBoxDesig.TabIndex = 135;
             // 
             // label18
             // 
@@ -761,7 +761,7 @@ namespace ClickForService.PresentationLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 600);
             this.Controls.Add(this.pictureBox17);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxDesig);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox16);
@@ -897,7 +897,7 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Nameregisterlabel;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxDesig;
         private System.Windows.Forms.Label label18;
     }
 }
