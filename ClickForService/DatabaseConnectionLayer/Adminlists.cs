@@ -51,10 +51,6 @@ namespace ClickForService.DatabaseConnectionLayer
                 get;
             }
 
-            public string Designation
-            {
-                set;
-                get;
-            }
+            
     }
 }

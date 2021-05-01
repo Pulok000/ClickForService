@@ -75,12 +75,12 @@ namespace ClickForService.PresentationLayer
             connection.Open();
 
             string sql = "SELECT *FROM Registrations WHERE category='" + "Click For Service Staff" + "'";
-            
+
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
-            
-            
-           List<Adminlists> EL = new List<Adminlists>();
+
+
+            List<Adminlists> EL = new List<Adminlists>();
             while (reader.Read())
             {
                 Adminlists sL = new Adminlists();
@@ -90,10 +90,8 @@ namespace ClickForService.PresentationLayer
                 sL.MobileNumber = Convert.ToString(reader["mobileNumber"]);
                 sL.Address = Convert.ToString(reader["Address"]);
                 sL.Division = Convert.ToString(reader["Division"]);
-
                 sL.City = Convert.ToString(reader["City"]);
-
-                             
+                // sL.Designation = Convert.ToString(reader["Designation"]);      
                 EL.Add(sL);
 
             }
@@ -115,9 +113,29 @@ namespace ClickForService.PresentationLayer
             textBox6.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-            textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+            //textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
+            connection.Open();
+
+            string sql = "SELECT *FROM userPermissions WHERE userName='" + textBox3.Text + "'";
+
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                textBox9.Text = Convert.ToString(reader["Designation"]);
+            }
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
-
 }
  
