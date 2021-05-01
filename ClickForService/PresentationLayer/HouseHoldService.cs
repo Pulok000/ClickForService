@@ -79,5 +79,12 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             carServicing.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FridgeServicing fridgeServicing = new FridgeServicing();
+            this.Hide();
+            fridgeServicing.Show();
+        }
     }
 }

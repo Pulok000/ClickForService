@@ -145,6 +145,7 @@ namespace ClickForService.PresentationLayer
             this.button3.TabIndex = 86;
             this.button3.Text = "Next";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -157,6 +158,7 @@ namespace ClickForService.PresentationLayer
             this.button2.TabIndex = 85;
             this.button2.Text = "Previous";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -169,6 +171,7 @@ namespace ClickForService.PresentationLayer
             this.button1.TabIndex = 84;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
@@ -309,6 +312,7 @@ namespace ClickForService.PresentationLayer
             this.Name = "FridgeServicing";
             this.Text = "FridgeServicing";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FridgeServicing_FormClosing);
+            this.Load += new System.EventHandler(this.FridgeServicing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
