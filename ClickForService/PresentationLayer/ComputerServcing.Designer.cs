@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.mobileservcingbackbutton = new System.Windows.Forms.Button();
-            this.advancesearchcpmputerservicelabel = new System.Windows.Forms.Label();
-            this.computerservcinglistlabel = new System.Windows.Forms.Label();
             this.computerservicingdataGridView = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.computerservicingdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,26 +45,6 @@
             this.mobileservcingbackbutton.UseVisualStyleBackColor = true;
             this.mobileservcingbackbutton.Click += new System.EventHandler(this.mobileservcingbackbutton_Click);
             // 
-            // advancesearchcpmputerservicelabel
-            // 
-            this.advancesearchcpmputerservicelabel.AutoSize = true;
-            this.advancesearchcpmputerservicelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.advancesearchcpmputerservicelabel.Location = new System.Drawing.Point(20, 176);
-            this.advancesearchcpmputerservicelabel.Name = "advancesearchcpmputerservicelabel";
-            this.advancesearchcpmputerservicelabel.Size = new System.Drawing.Size(176, 25);
-            this.advancesearchcpmputerservicelabel.TabIndex = 7;
-            this.advancesearchcpmputerservicelabel.Text = "Advance Search:";
-            // 
-            // computerservcinglistlabel
-            // 
-            this.computerservcinglistlabel.AutoSize = true;
-            this.computerservcinglistlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.computerservcinglistlabel.Location = new System.Drawing.Point(162, 18);
-            this.computerservcinglistlabel.Name = "computerservcinglistlabel";
-            this.computerservcinglistlabel.Size = new System.Drawing.Size(261, 25);
-            this.computerservcinglistlabel.TabIndex = 6;
-            this.computerservcinglistlabel.Text = "List of All service Provider";
-            // 
             // computerservicingdataGridView
             // 
             this.computerservicingdataGridView.AllowUserToAddRows = false;
@@ -75,14 +55,38 @@
             this.computerservicingdataGridView.ReadOnly = true;
             this.computerservicingdataGridView.Size = new System.Drawing.Size(353, 115);
             this.computerservicingdataGridView.TabIndex = 5;
+            this.computerservicingdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.computerservicingdataGridView_CellClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label7.Location = new System.Drawing.Point(155, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(255, 25);
+            this.label7.TabIndex = 175;
+            this.label7.Text = "List of service Provider";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label1.Location = new System.Drawing.Point(29, 194);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 25);
+            this.label1.TabIndex = 176;
+            this.label1.Text = "Advance Search:";
             // 
             // ComputerServcing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(544, 480);
-            this.Controls.Add(this.advancesearchcpmputerservicelabel);
-            this.Controls.Add(this.computerservcinglistlabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.computerservicingdataGridView);
             this.Controls.Add(this.mobileservcingbackbutton);
             this.Name = "ComputerServcing";
@@ -99,8 +103,8 @@
         #endregion
 
         private System.Windows.Forms.Button mobileservcingbackbutton;
-        private System.Windows.Forms.Label advancesearchcpmputerservicelabel;
-        private System.Windows.Forms.Label computerservcinglistlabel;
         private System.Windows.Forms.DataGridView computerservicingdataGridView;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
     }
 }

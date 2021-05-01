@@ -28,7 +28,7 @@ namespace ClickForService.DatabaseConnectionLayer
 
         public List<AccessProperty> GetAllComputerServices()
         {
-            string s1 = "Servicer Giver";
+            string s1 = "Service Giver";
             string s2 = "Computer or Laptop Mechanic";
             string sql = "SELECT *FROM Registrations Where category='" + s1 + "' And Profession='" + s2 + "'";
             SqlDataReader reader = this.GetData(sql);
@@ -48,7 +48,7 @@ namespace ClickForService.DatabaseConnectionLayer
 
         public List<AccessProperty> GetAllMobileServices()
         {
-            string s1 = "Servicer Giver";
+            string s1 = "Service Giver";
             string s2 = "Mobile Mechanic";
             string sql = "SELECT *FROM Registrations Where category='" + s1 + "' And Profession='" + s2 + "'";
             SqlDataReader reader = this.GetData(sql);

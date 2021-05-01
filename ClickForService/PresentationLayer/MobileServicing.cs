@@ -56,7 +56,7 @@ namespace ClickForService.PresentationLayer
             {
                 var row = dt.NewRow();
 
-                row["Name"] = item.FullName;
+                row["Name"] = item.UserName;
                 row["Profession"] = item.Profession;
                 row["City"] = item.City;
                 row["Address"] = item.Address;
@@ -68,6 +68,16 @@ namespace ClickForService.PresentationLayer
             }
 
             mobileservicingdataGridView.DataSource = dt;
+        }
+
+        private void mobileservicingdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string spUsername = mobileservicingdataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            
+            MobileServiceProviderDetails mobileServiceProviderDetails = new MobileServiceProviderDetails(spUsername);
+
+            this.Hide();
+            mobileServiceProviderDetails.Show();
         }
     }
 }

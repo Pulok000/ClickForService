@@ -93,6 +93,12 @@
     <Compile Include="PresentationLayer\ComputerServcing.Designer.cs">
       <DependentUpon>ComputerServcing.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\ComputerServiceProviderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\ComputerServiceProviderDetails.Designer.cs">
+      <DependentUpon>ComputerServiceProviderDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,12 @@
     </Compile>
     <Compile Include="PresentationLayer\MaidService.Designer.cs">
       <DependentUpon>MaidService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\MobileServiceProviderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\MobileServiceProviderDetails.Designer.cs">
+      <DependentUpon>MobileServiceProviderDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\MobileServicing.cs">
       <SubType>Form</SubType>
@@ -212,6 +224,9 @@
     <EmbeddedResource Include="PresentationLayer\ComputerServcing.resx">
       <DependentUpon>ComputerServcing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\ComputerServiceProviderDetails.resx">
+      <DependentUpon>ComputerServiceProviderDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\MaidService.resx">
       <DependentUpon>MaidService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\MobileServiceProviderDetails.resx">
+      <DependentUpon>MobileServiceProviderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\MobileServicing.resx">
       <DependentUpon>MobileServicing.cs</DependentUpon>
