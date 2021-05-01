@@ -8,6 +8,7 @@ namespace ClickForService.DatabaseConnectionLayer
 {
     class AccessProperty
     {
+
         public string EmailId
         {
             set;
@@ -26,7 +27,7 @@ namespace ClickForService.DatabaseConnectionLayer
             get;
         }
 
-        public string Address 
+        public string Address
         {
             set;
             get;
@@ -85,5 +86,14 @@ namespace ClickForService.DatabaseConnectionLayer
             set;
             get;
         }
+
+        //For dashboardForservice provider:
+
+        public int Id { get; set; }
+        public string UserName { get; set; }
+        public double ServiceCharge { get; set; }
+        public int Rating { get; set; }
+        public string AvailStime { get; set; }
+
     }
 }

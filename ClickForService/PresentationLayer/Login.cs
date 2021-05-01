@@ -58,9 +58,12 @@ namespace ClickForService.PresentationLayer
                     }
                     else if(Permission=="GU")
                     {
-                        DashboardforSP dsp = new DashboardforSP();
+
+                        AddServiceProviderDetails addServiceProviderDetails = new AddServiceProviderDetails(textBoxUsername.Text);
                         this.Hide();
-                        dsp.Show();
+                        addServiceProviderDetails.Show();
+       
+
                     }
 
                     else

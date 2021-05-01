@@ -30,6 +30,35 @@ namespace ClickForService.BusinessLogicLayer
             return this.operation.GetAllMobileServices();
         }
 
+        //
+        public int AddServiceProviderDetails(string username, double serviceCharge, string availableTime)
+        {
+
+            AccessProperty accessProperty = new AccessProperty()
+            {
+                UserName = username,
+                ServiceCharge = serviceCharge,
+                AvailStime = availableTime
+            };
+            this.operation = new Operations();
+            return this.operation.AddServiceProviderDetails(accessProperty);
+        }
+        //
+
+        public AccessProperty GetServiceProviderRegDetails(string userName)
+        {
+            return this.operation.GetServiceProviderRegDetails(userName);
+        }
+
+
+
+
+        public AccessProperty GetServiceProviderAdditionalDetails(string userName)
+        {
+            return this.operation.GetServiceProviderAdditionalDetails(userName);
+        }
+
+
 
     }
 }
