@@ -50,5 +50,10 @@ namespace ClickForService.PresentationLayer
         {
             Application.Exit();
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
