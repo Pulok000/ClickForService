@@ -111,7 +111,7 @@ namespace ClickForService.PresentationLayer
                         Gender = "Female";
                     }
 
-                    string sql1 = "INSERT INTO Registrations(userName, emailId, password, category, Address, City, Division, bloodGroup, mobileNumber, NID, fullName, dateofbirth, gender, Profession) VALUES('" + UsernameregistertextBox.Text + "','" + EmailregistertextBox.Text + "', '" + PasswordregistertextBox.Text + "','" + CategoryregistercomboBox.Text + "','" + AddressregistertextBox.Text + "','" + CityregistercomboBox.Text + "','" + DivisionregistercomboBox.Text + "','" + BloodgroupregistercomboBox.Text + "','" + MobilenumberregistertextBox.Text + "','" + NidregistertextBox.Text + "','" + NameregistertextBox.Text + "','" + DateofbirthregisterdateTimePicker.Text + "','" + Gender + "','" + ProfessionregistercomboBox.Text + "')";
+                    string sql1 = "INSERT INTO Registrations(userName, emailId, password, category, Address, City, Division, bloodGroup, mobileNumber, NID, fullName, dateofbirth, gender, Profession) VALUES ('" + UsernameregistertextBox.Text + "','" + EmailregistertextBox.Text + "', '" + PasswordregistertextBox.Text + "','" + CategoryregistercomboBox.Text + "','" + AddressregistertextBox.Text + "','" + CityregistercomboBox.Text + "','" + DivisionregistercomboBox.Text + "','" + BloodgroupregistercomboBox.Text + "','" + MobilenumberregistertextBox.Text + "','" + NidregistertextBox.Text + "','" + NameregistertextBox.Text + "','" + DateofbirthregisterdateTimePicker.Text + "','" + Gender + "','" + ProfessionregistercomboBox.Text + "')";
 
                     string ab = "";
                     if (CategoryregistercomboBox.Text == "Service Giver")
@@ -130,7 +130,7 @@ namespace ClickForService.PresentationLayer
                     int result = command1.ExecuteNonQuery();
                     if (result > 0)
                     {
-                        string sql2 = "INSERT INTO userpermissions(userName, uniqueCode, password, Designation) VALUES('" + UsernameregistertextBox.Text + "','" + ab + "', '" + PasswordregistertextBox.Text + "','" +comboBoxDesig.Text+ "')";
+                        string sql2 = "INSERT INTO userpermissions (userName, uniqueCode, password, Designation) VALUES('" + UsernameregistertextBox.Text + "','" + ab + "', '" + PasswordregistertextBox.Text + "','" +comboBoxDesig.Text+ "')";
                         SqlCommand command2 = new SqlCommand(sql2, connect);
                         int result3 = command2.ExecuteNonQuery();
 
@@ -159,6 +159,16 @@ namespace ClickForService.PresentationLayer
         private void RegistrationforAdmin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AgreeregistercheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AgreeregistercheckBox.Checked)
+            {
+                Registerformbutton.Enabled = true;
+            }
+            else Registerformbutton.Enabled = false;
+
         }
     }
 }

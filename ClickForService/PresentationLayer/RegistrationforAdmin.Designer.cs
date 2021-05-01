@@ -218,7 +218,7 @@ namespace ClickForService.PresentationLayer
             this.CategoryregistercomboBox.Items.AddRange(new object[] {
             "Service Giver",
             "Service Taker",
-            "Click For Service\'s Staff"});
+            "Click For Service Staff"});
             this.CategoryregistercomboBox.Location = new System.Drawing.Point(343, 352);
             this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
             this.CategoryregistercomboBox.Size = new System.Drawing.Size(241, 21);
@@ -343,6 +343,7 @@ namespace ClickForService.PresentationLayer
             this.AgreeregistercheckBox.TabIndex = 99;
             this.AgreeregistercheckBox.Text = "I Agree all the terms && condition";
             this.AgreeregistercheckBox.UseVisualStyleBackColor = true;
+            this.AgreeregistercheckBox.CheckedChanged += new System.EventHandler(this.AgreeregistercheckBox_CheckedChanged);
             // 
             // CityregistercomboBox
             // 

@@ -64,7 +64,7 @@ namespace ClickForService.PresentationLayer
 
             DataAcess da1 = new DataAcess();
 
-            string sql1 = "SELECT *FROM userpermissions WHERE userName= '" + Login.UserName + "'";
+            string sql1 = "SELECT *FROM userpermissions WHERE userName= '"+Login.UserName+"'";
 
             da1.GetData(sql1);
             SqlDataReader reader1 = da1.GetData(sql1);
@@ -77,6 +77,10 @@ namespace ClickForService.PresentationLayer
 
 
             }
+            else 
+            {
+                da1.ConnectionClose();
+             }
         }
     }
 }
