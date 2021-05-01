@@ -44,13 +44,12 @@ namespace ClickForService.PresentationLayer
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.AddressregistertextBox = new System.Windows.Forms.TextBox();
+            this.AddresText = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -60,22 +59,20 @@ namespace ClickForService.PresentationLayer
             this.label2 = new System.Windows.Forms.Label();
             this.EmailregistertextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.MobilenumberregistertextBox = new System.Windows.Forms.TextBox();
-            this.ConfirmpasswordregistertextBox = new System.Windows.Forms.TextBox();
-            this.PasswordregistertextBox = new System.Windows.Forms.TextBox();
+            this.MobilenumbertextBox = new System.Windows.Forms.TextBox();
+            this.PasswordtextBox = new System.Windows.Forms.TextBox();
             this.UNtextbox = new System.Windows.Forms.TextBox();
             this.Nametextbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Nameregisterlabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.DOBBOX = new System.Windows.Forms.TextBox();
+            this.textBoxgender = new System.Windows.Forms.TextBox();
+            this.textBoxdivision = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -93,7 +90,6 @@ namespace ClickForService.PresentationLayer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -241,19 +237,10 @@ namespace ClickForService.PresentationLayer
             this.pictureBox6.TabIndex = 174;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox4.Location = new System.Drawing.Point(226, 197);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(400, 1);
-            this.pictureBox4.TabIndex = 173;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox3.Location = new System.Drawing.Point(226, 168);
+            this.pictureBox3.Location = new System.Drawing.Point(226, 200);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(400, 1);
             this.pictureBox3.TabIndex = 172;
@@ -262,7 +249,7 @@ namespace ClickForService.PresentationLayer
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox2.Location = new System.Drawing.Point(226, 139);
+            this.pictureBox2.Location = new System.Drawing.Point(225, 168);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(400, 1);
             this.pictureBox2.TabIndex = 171;
@@ -271,7 +258,7 @@ namespace ClickForService.PresentationLayer
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox5.Location = new System.Drawing.Point(226, 106);
+            this.pictureBox5.Location = new System.Drawing.Point(229, 142);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(400, 1);
             this.pictureBox5.TabIndex = 170;
@@ -298,15 +285,15 @@ namespace ClickForService.PresentationLayer
             this.pictureBox1.TabIndex = 168;
             this.pictureBox1.TabStop = false;
             // 
-            // AddressregistertextBox
+            // AddresText
             // 
-            this.AddressregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AddressregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.AddressregistertextBox.Location = new System.Drawing.Point(292, 390);
-            this.AddressregistertextBox.Name = "AddressregistertextBox";
-            this.AddressregistertextBox.Size = new System.Drawing.Size(334, 13);
-            this.AddressregistertextBox.TabIndex = 167;
+            this.AddresText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AddresText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddresText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.AddresText.Location = new System.Drawing.Point(292, 390);
+            this.AddresText.Name = "AddresText";
+            this.AddresText.Size = new System.Drawing.Size(334, 13);
+            this.AddresText.TabIndex = 167;
             // 
             // label15
             // 
@@ -405,45 +392,34 @@ namespace ClickForService.PresentationLayer
             this.label8.TabIndex = 154;
             this.label8.Text = "Email";
             // 
-            // MobilenumberregistertextBox
+            // MobilenumbertextBox
             // 
-            this.MobilenumberregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MobilenumberregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MobilenumberregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.MobilenumberregistertextBox.Location = new System.Drawing.Point(316, 260);
-            this.MobilenumberregistertextBox.Name = "MobilenumberregistertextBox";
-            this.MobilenumberregistertextBox.Size = new System.Drawing.Size(310, 13);
-            this.MobilenumberregistertextBox.TabIndex = 149;
+            this.MobilenumbertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MobilenumbertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MobilenumbertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.MobilenumbertextBox.Location = new System.Drawing.Point(316, 260);
+            this.MobilenumbertextBox.Name = "MobilenumbertextBox";
+            this.MobilenumbertextBox.Size = new System.Drawing.Size(310, 13);
+            this.MobilenumbertextBox.TabIndex = 149;
             // 
-            // ConfirmpasswordregistertextBox
+            // PasswordtextBox
             // 
-            this.ConfirmpasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConfirmpasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmpasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(326, 175);
-            this.ConfirmpasswordregistertextBox.Name = "ConfirmpasswordregistertextBox";
-            this.ConfirmpasswordregistertextBox.PasswordChar = '*';
-            this.ConfirmpasswordregistertextBox.Size = new System.Drawing.Size(300, 13);
-            this.ConfirmpasswordregistertextBox.TabIndex = 148;
-            // 
-            // PasswordregistertextBox
-            // 
-            this.PasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.PasswordregistertextBox.Location = new System.Drawing.Point(286, 146);
-            this.PasswordregistertextBox.Multiline = true;
-            this.PasswordregistertextBox.Name = "PasswordregistertextBox";
-            this.PasswordregistertextBox.PasswordChar = '*';
-            this.PasswordregistertextBox.Size = new System.Drawing.Size(340, 23);
-            this.PasswordregistertextBox.TabIndex = 147;
+            this.PasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.PasswordtextBox.Location = new System.Drawing.Point(292, 175);
+            this.PasswordtextBox.Multiline = true;
+            this.PasswordtextBox.Name = "PasswordtextBox";
+            this.PasswordtextBox.PasswordChar = '*';
+            this.PasswordtextBox.Size = new System.Drawing.Size(340, 23);
+            this.PasswordtextBox.TabIndex = 147;
             // 
             // UNtextbox
             // 
             this.UNtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UNtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.UNtextbox.Location = new System.Drawing.Point(292, 120);
+            this.UNtextbox.Location = new System.Drawing.Point(298, 149);
             this.UNtextbox.Name = "UNtextbox";
             this.UNtextbox.Size = new System.Drawing.Size(334, 13);
             this.UNtextbox.TabIndex = 146;
@@ -453,7 +429,7 @@ namespace ClickForService.PresentationLayer
             this.Nametextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Nametextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nametextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Nametextbox.Location = new System.Drawing.Point(286, 87);
+            this.Nametextbox.Location = new System.Drawing.Point(292, 116);
             this.Nametextbox.Multiline = true;
             this.Nametextbox.Name = "Nametextbox";
             this.Nametextbox.Size = new System.Drawing.Size(300, 13);
@@ -504,25 +480,12 @@ namespace ClickForService.PresentationLayer
             this.label5.TabIndex = 141;
             this.label5.Text = "MobileNumber";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label4.Location = new System.Drawing.Point(207, 175);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
-            this.label4.TabIndex = 140;
-            this.label4.Text = "ConfirmPassword";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(223, 152);
+            this.label3.Location = new System.Drawing.Point(229, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 139;
@@ -533,7 +496,7 @@ namespace ClickForService.PresentationLayer
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label10.Location = new System.Drawing.Point(226, 123);
+            this.label10.Location = new System.Drawing.Point(232, 152);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 13);
             this.label10.TabIndex = 138;
@@ -544,42 +507,42 @@ namespace ClickForService.PresentationLayer
             this.Nameregisterlabel.AutoSize = true;
             this.Nameregisterlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nameregisterlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Nameregisterlabel.Location = new System.Drawing.Point(226, 89);
+            this.Nameregisterlabel.Location = new System.Drawing.Point(232, 118);
             this.Nameregisterlabel.Name = "Nameregisterlabel";
             this.Nameregisterlabel.Size = new System.Drawing.Size(39, 13);
             this.Nameregisterlabel.TabIndex = 137;
             this.Nameregisterlabel.Text = "Name";
             // 
-            // textBox1
+            // DOBBOX
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox1.Location = new System.Drawing.Point(303, 288);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 13);
-            this.textBox1.TabIndex = 189;
+            this.DOBBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DOBBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOBBOX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DOBBOX.Location = new System.Drawing.Point(303, 288);
+            this.DOBBOX.Name = "DOBBOX";
+            this.DOBBOX.Size = new System.Drawing.Size(323, 13);
+            this.DOBBOX.TabIndex = 189;
             // 
-            // textBox2
+            // textBoxgender
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox2.Location = new System.Drawing.Point(292, 307);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(323, 13);
-            this.textBox2.TabIndex = 190;
+            this.textBoxgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxgender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxgender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBoxgender.Location = new System.Drawing.Point(292, 307);
+            this.textBoxgender.Name = "textBoxgender";
+            this.textBoxgender.Size = new System.Drawing.Size(323, 13);
+            this.textBoxgender.TabIndex = 190;
             // 
-            // textBox3
+            // textBoxdivision
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox3.Location = new System.Drawing.Point(292, 333);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(323, 18);
-            this.textBox3.TabIndex = 191;
+            this.textBoxdivision.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxdivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxdivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBoxdivision.Location = new System.Drawing.Point(292, 333);
+            this.textBoxdivision.Multiline = true;
+            this.textBoxdivision.Name = "textBoxdivision";
+            this.textBoxdivision.Size = new System.Drawing.Size(323, 18);
+            this.textBoxdivision.TabIndex = 191;
             // 
             // textBox4
             // 
@@ -641,9 +604,9 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxdivision);
+            this.Controls.Add(this.textBoxgender);
+            this.Controls.Add(this.DOBBOX);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -658,13 +621,12 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.AddressregistertextBox);
+            this.Controls.Add(this.AddresText);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -674,16 +636,14 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.label2);
             this.Controls.Add(this.EmailregistertextBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.MobilenumberregistertextBox);
-            this.Controls.Add(this.ConfirmpasswordregistertextBox);
-            this.Controls.Add(this.PasswordregistertextBox);
+            this.Controls.Add(this.MobilenumbertextBox);
+            this.Controls.Add(this.PasswordtextBox);
             this.Controls.Add(this.UNtextbox);
             this.Controls.Add(this.Nametextbox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Nameregisterlabel);
@@ -704,7 +664,6 @@ namespace ClickForService.PresentationLayer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -730,13 +689,12 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox AddressregistertextBox;
+        private System.Windows.Forms.TextBox AddresText;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
@@ -746,22 +704,20 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox EmailregistertextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox MobilenumberregistertextBox;
-        private System.Windows.Forms.TextBox ConfirmpasswordregistertextBox;
-        private System.Windows.Forms.TextBox PasswordregistertextBox;
+        private System.Windows.Forms.TextBox MobilenumbertextBox;
+        private System.Windows.Forms.TextBox PasswordtextBox;
         private System.Windows.Forms.TextBox UNtextbox;
         private System.Windows.Forms.TextBox Nametextbox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Nameregisterlabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox DOBBOX;
+        private System.Windows.Forms.TextBox textBoxgender;
+        private System.Windows.Forms.TextBox textBoxdivision;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
