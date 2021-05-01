@@ -31,12 +31,7 @@ namespace ClickForService.PresentationLayer
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBoxdivision = new System.Windows.Forms.TextBox();
             this.textBoxgender = new System.Windows.Forms.TextBox();
-            this.DOBBOX = new System.Windows.Forms.TextBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -76,6 +71,11 @@ namespace ClickForService.PresentationLayer
             this.Nameregisterlabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.DivisionregistercomboBox = new System.Windows.Forms.ComboBox();
+            this.CityregistercomboBox = new System.Windows.Forms.ComboBox();
+            this.CategoryregistercomboBox = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DateofbirthregisterdateTimePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -108,6 +108,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox7.Location = new System.Drawing.Point(315, 438);
@@ -116,58 +117,11 @@ namespace ClickForService.PresentationLayer
             this.textBox7.Size = new System.Drawing.Size(323, 20);
             this.textBox7.TabIndex = 288;
             // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox6.Location = new System.Drawing.Point(315, 416);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(323, 16);
-            this.textBox6.TabIndex = 287;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox5.Location = new System.Drawing.Point(300, 393);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(323, 17);
-            this.textBox5.TabIndex = 286;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox4.Location = new System.Drawing.Point(294, 342);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(323, 20);
-            this.textBox4.TabIndex = 285;
-            // 
-            // textBoxdivision
-            // 
-            this.textBoxdivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textBoxdivision.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxdivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxdivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBoxdivision.Location = new System.Drawing.Point(294, 314);
-            this.textBoxdivision.Multiline = true;
-            this.textBoxdivision.Name = "textBoxdivision";
-            this.textBoxdivision.Size = new System.Drawing.Size(323, 18);
-            this.textBoxdivision.TabIndex = 284;
-            // 
             // textBoxgender
             // 
             this.textBoxgender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBoxgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxgender.Enabled = false;
             this.textBoxgender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxgender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBoxgender.Location = new System.Drawing.Point(294, 288);
@@ -175,18 +129,6 @@ namespace ClickForService.PresentationLayer
             this.textBoxgender.Name = "textBoxgender";
             this.textBoxgender.Size = new System.Drawing.Size(323, 18);
             this.textBoxgender.TabIndex = 283;
-            // 
-            // DOBBOX
-            // 
-            this.DOBBOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.DOBBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DOBBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DOBBOX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.DOBBOX.Location = new System.Drawing.Point(305, 263);
-            this.DOBBOX.Multiline = true;
-            this.DOBBOX.Name = "DOBBOX";
-            this.DOBBOX.Size = new System.Drawing.Size(322, 20);
-            this.DOBBOX.TabIndex = 282;
             // 
             // pictureBox16
             // 
@@ -463,6 +405,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.PasswordtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.PasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordtextBox.Enabled = false;
             this.PasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.PasswordtextBox.Location = new System.Drawing.Point(298, 159);
@@ -599,21 +542,109 @@ namespace ClickForService.PresentationLayer
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.button2_Click);
             // 
+            // DivisionregistercomboBox
+            // 
+            this.DivisionregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DivisionregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DivisionregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DivisionregistercomboBox.FormattingEnabled = true;
+            this.DivisionregistercomboBox.Items.AddRange(new object[] {
+            "Dhaka",
+            "Comilla",
+            "Chattogram",
+            "Barishal",
+            "Mymensingh",
+            "Khulna",
+            "Rajshahi",
+            "Rangpur",
+            "Sylhet"});
+            this.DivisionregistercomboBox.Location = new System.Drawing.Point(298, 312);
+            this.DivisionregistercomboBox.Name = "DivisionregistercomboBox";
+            this.DivisionregistercomboBox.Size = new System.Drawing.Size(323, 21);
+            this.DivisionregistercomboBox.TabIndex = 291;
+            // 
+            // CityregistercomboBox
+            // 
+            this.CityregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CityregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CityregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.CityregistercomboBox.FormattingEnabled = true;
+            this.CityregistercomboBox.Items.AddRange(new object[] {
+            "Dhaka",
+            "Uttora",
+            "Mirpur",
+            "Bonani",
+            "Gulshan",
+            "Rajbari",
+            "Patuakhali",
+            "Shorishabari",
+            "Dhaka Cantt.",
+            "Wari",
+            "Dhanmondi",
+            "Kuratoli"});
+            this.CityregistercomboBox.Location = new System.Drawing.Point(300, 339);
+            this.CityregistercomboBox.Name = "CityregistercomboBox";
+            this.CityregistercomboBox.Size = new System.Drawing.Size(321, 21);
+            this.CityregistercomboBox.TabIndex = 292;
+            // 
+            // CategoryregistercomboBox
+            // 
+            this.CategoryregistercomboBox.Enabled = false;
+            this.CategoryregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CategoryregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.CategoryregistercomboBox.FormattingEnabled = true;
+            this.CategoryregistercomboBox.Items.AddRange(new object[] {
+            "Service Giver",
+            "Service Taker"});
+            this.CategoryregistercomboBox.Location = new System.Drawing.Point(308, 392);
+            this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
+            this.CategoryregistercomboBox.Size = new System.Drawing.Size(241, 21);
+            this.CategoryregistercomboBox.TabIndex = 293;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Enabled = false;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox6.Location = new System.Drawing.Point(315, 416);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(323, 16);
+            this.textBox6.TabIndex = 287;
+            // 
+            // DateofbirthregisterdateTimePicker
+            // 
+            this.DateofbirthregisterdateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DateofbirthregisterdateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DateofbirthregisterdateTimePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DateofbirthregisterdateTimePicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DateofbirthregisterdateTimePicker.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.DateofbirthregisterdateTimePicker.Location = new System.Drawing.Point(340, 264);
+            this.DateofbirthregisterdateTimePicker.MaxDate = new System.DateTime(2021, 4, 17, 0, 0, 0, 0);
+            this.DateofbirthregisterdateTimePicker.MinDate = new System.DateTime(1910, 1, 25, 23, 59, 59, 0);
+            this.DateofbirthregisterdateTimePicker.Name = "DateofbirthregisterdateTimePicker";
+            this.DateofbirthregisterdateTimePicker.Size = new System.Drawing.Size(181, 20);
+            this.DateofbirthregisterdateTimePicker.TabIndex = 294;
+            this.DateofbirthregisterdateTimePicker.Value = new System.DateTime(2021, 4, 17, 0, 0, 0, 0);
+            // 
             // ProfileIC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 506);
+            this.Controls.Add(this.DateofbirthregisterdateTimePicker);
+            this.Controls.Add(this.CategoryregistercomboBox);
+            this.Controls.Add(this.CityregistercomboBox);
+            this.Controls.Add(this.DivisionregistercomboBox);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBoxdivision);
             this.Controls.Add(this.textBoxgender);
-            this.Controls.Add(this.DOBBOX);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
@@ -680,12 +711,7 @@ namespace ClickForService.PresentationLayer
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBoxdivision;
         private System.Windows.Forms.TextBox textBoxgender;
-        private System.Windows.Forms.TextBox DOBBOX;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
@@ -725,5 +751,10 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label Nameregisterlabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.ComboBox DivisionregistercomboBox;
+        private System.Windows.Forms.ComboBox CityregistercomboBox;
+        private System.Windows.Forms.ComboBox CategoryregistercomboBox;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker DateofbirthregisterdateTimePicker;
     }
 }
