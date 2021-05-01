@@ -44,15 +44,44 @@ namespace ClickForService.PresentationLayer
         DataTable data = new DataTable();
         private void button1_Click(object sender, EventArgs e)
         {
+
+
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
 
-            DataAcess ac = new DataAcess();
+            
+            connection.Open();
             string PF = "Car Mechanic";
-            string sql = "SELECT *FROM Registrations WHERE City='" + textBoxCity.Text + "'AND gender='" + comboBox1.Text + "'AND Profession='" + PF + "'";
-            sqladp = new SqlDataAdapter(sql, connection);
-            sqladp.Fill(data);
-            pos = 0;
-            displaytext(pos);
+
+            string sql1 = "SELECT *FROM Registrations WHERE gender= '" + comboBox1.Text + "' and Profession='"+PF+"' ";
+            SqlCommand command = new SqlCommand(sql1, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            
+
+
+            if (reader.Read())
+            {
+                
+
+                DataAcess ac = new DataAcess();
+
+                string sql = "SELECT *FROM Registrations WHERE City='" + textBoxCity.Text + "'AND gender='" + comboBox1.Text + "'AND Profession='" + PF + "'";
+                sqladp = new SqlDataAdapter(sql, connection);
+                sqladp.Fill(data);
+                pos = 0;
+                displaytext(pos);
+
+
+
+            }
+            else
+            {
+
+                MessageBox.Show("Sorry!There is no Mechanic as per your Requirement");
+                CarServicing carServicing = new CarServicing();
+
+                this.Hide();
+                carServicing.Show();
+            }
 
         }
         public void displaytext(int rowno)

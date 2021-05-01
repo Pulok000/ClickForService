@@ -141,7 +141,7 @@ namespace ClickForService.PresentationLayer
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label4.Location = new System.Drawing.Point(219, 59);
+            this.label4.Location = new System.Drawing.Point(208, 59);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 16);
             this.label4.TabIndex = 7;
