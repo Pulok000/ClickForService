@@ -62,9 +62,7 @@ namespace ClickForService.PresentationLayer
                  textBox6.Text = Convert.ToString(reader12["Profession"]);
                  textBox7.Text = Convert.ToString(reader12["bloodGroup"]);
 
-                //textBoxPass.Text = Convert.ToString(reader["password"]);
-                //Textboxgender.Text = Convert.ToString(reader["gender"]);
-                connectionn.Close();
+                 connectionn.Close();
 
 
             }
