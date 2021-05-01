@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations;
 
 namespace ClickForService.PresentationLayer
 {
@@ -95,6 +96,52 @@ namespace ClickForService.PresentationLayer
 
         }
 
+        public bool IsValidEmail(string source)
+        {
+            return new EmailAddressAttribute().IsValid(source);
+        }
+
+        //Email validation
+
+        private int CheckEmail(string email)
+        {
+            if (email == "")
+            {
+                return 1;
+            }
+            else if (!IsValidEmail(email))
+            {
+
+                return 2;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        //Password validation
+
+        //will add it later
+
+        private int CheckPassword(string password)
+        {
+            if (password == "")
+            {
+                return 1;
+            }
+            else if (password.Length < 6)
+            {
+
+                return 2;
+            }//and many more
+            else
+            {
+                return 0;
+            }
+        }
+
+
         private void Registerformbutton_Click(object sender, EventArgs e)
         {
             ////Login login = new Login();
@@ -138,10 +185,19 @@ namespace ClickForService.PresentationLayer
                 { MessageBox.Show("Password can not be empty"); }
 
                 else if (ConfirmpasswordregistertextBox.Text == "")
-                { MessageBox.Show("Confrim Password can not be empty"); }
-
-                else if (EmailregistertextBox.Text == "")
-                { MessageBox.Show("Email can not be empty"); }
+                { MessageBox.Show("Confrim Password can not be empty"); 
+                }
+                else if (CheckEmail(EmailregistertextBox.Text) != 0)
+                {
+                    if (CheckEmail(EmailregistertextBox.Text) == 1)
+                    {
+                        MessageBox.Show("Email can not be empty");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Email");
+                    }
+                }
 
                 else if (DateofbirthregisterdateTimePicker.Text == "")
                 { MessageBox.Show("Date of Birth can not be empty"); }

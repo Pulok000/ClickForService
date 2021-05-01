@@ -79,5 +79,11 @@ namespace ClickForService.DatabaseConnectionLayer
             set;
             get;
         }
+
+        public string Profession
+        {
+            set;
+            get;
+        }
     }
 }
