@@ -59,6 +59,7 @@ namespace ClickForService.PresentationLayer
             this.buttonCP.TabIndex = 1;
             this.buttonCP.Text = "Change Password";
             this.buttonCP.UseVisualStyleBackColor = false;
+            this.buttonCP.Click += new System.EventHandler(this.buttonCP_Click);
             // 
             // buttonSPI
             // 
