@@ -53,7 +53,9 @@ namespace ClickForService.PresentationLayer
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            BlockUser BU = new BlockUser();
+            this.Hide();
+            BU.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)

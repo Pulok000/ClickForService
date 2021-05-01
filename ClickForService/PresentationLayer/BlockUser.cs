@@ -127,8 +127,8 @@ namespace ClickForService.PresentationLayer
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
 
             connection.Open();
-
-            string sql1 = "SELECT *FROM userpermissions WHERE userName= '" + textBox1.Text + "'";
+                                  
+            string sql1 = "SELECT *FROM userpermissions WHERE userName= '" + textBox1.Text + "'AND uniqueCode='"+"ST"+"' OR uniqueCode='"+"GU"+"'";
             SqlCommand command = new SqlCommand(sql1, connection);
             SqlDataReader reader = command.ExecuteReader();
 
@@ -157,7 +157,7 @@ namespace ClickForService.PresentationLayer
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString);
             connection.Open();
 
-            string sql = "UPDATE userpermissions SET Block='" + "yes" + "'WHERE userName='" + UsernameregistertextBox.Text + "'";
+            string sql = "UPDATE userpermissions SET Block='" + "no" + "'WHERE userName='" + UsernameregistertextBox.Text + "'";
 
             SqlCommand command = new SqlCommand(sql, connection);
             int result = command.ExecuteNonQuery();
