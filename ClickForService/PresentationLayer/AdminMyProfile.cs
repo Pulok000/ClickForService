@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -31,36 +32,44 @@ namespace ClickForService.PresentationLayer
 
         private void AdminMyProfile_Load(object sender, EventArgs e)
         {
-            DataAcess da = new DataAcess();
+
+            SqlConnection connectionn = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
+            connectionn.Open();
 
             string sql = "SELECT *FROM Registrations WHERE userName= '" + Login.UserName + "'";
 
-            da.GetData(sql);
-            SqlDataReader reader = da.GetData(sql);
+            
+            SqlCommand command = new SqlCommand(sql, connectionn);
+            command.ExecuteReader();
 
-            if (reader.Read())
+
+            SqlDataReader reader12 = command.ExecuteReader();
+            connectionn.Close();
+
+            if (reader12.Read())
             {
-                 Nametextbox.Text = Convert.ToString(reader["fullName"]);
-                 UNtextbox.Text = Convert.ToString(reader["userName"]);
-                 PasswordtextBox.Text = Convert.ToString(reader["password"]);
-                 NidregistertextBox.Text = Convert.ToString(reader["NID"]);
-                 EmailregistertextBox.Text = Convert.ToString(reader["emailId"]);
-                 MobilenumbertextBox.Text = Convert.ToString(reader["mobileNumber"]);
-                 DOBBOX.Text = Convert.ToString(reader["dateofbirth"]);
-                 textBoxgender.Text = Convert.ToString(reader["gender"]);
-                 textBoxdivision.Text = Convert.ToString(reader["Division"]);
-                 textBox4.Text = Convert.ToString(reader["City"]);
-                 AddresText.Text = Convert.ToString(reader["Address"]);
-                 textBox5.Text = Convert.ToString(reader["category"]);
-                 textBox6.Text = Convert.ToString(reader["Profession"]);
-                 textBox7.Text = Convert.ToString(reader["bloodGroup"]);
+                 Nametextbox.Text = Convert.ToString(reader12["fullName"]);
+                 UNtextbox.Text = Convert.ToString(reader12["userName"]);
+                 PasswordtextBox.Text = Convert.ToString(reader12["password"]);
+                 NidregistertextBox.Text = Convert.ToString(reader12["NID"]);
+                 EmailregistertextBox.Text = Convert.ToString(reader12["emailId"]);
+                 MobilenumbertextBox.Text = Convert.ToString(reader12["mobileNumber"]);
+                 DOBBOX.Text = Convert.ToString(reader12["dateofbirth"]);
+                 textBoxgender.Text = Convert.ToString(reader12["gender"]);
+                 textBoxdivision.Text = Convert.ToString(reader12["Division"]);
+                 textBox4.Text = Convert.ToString(reader12["City"]);
+                 AddresText.Text = Convert.ToString(reader12["Address"]);
+                 textBox5.Text = Convert.ToString(reader12["category"]);
+                 textBox6.Text = Convert.ToString(reader12["Profession"]);
+                 textBox7.Text = Convert.ToString(reader12["bloodGroup"]);
 
                 //textBoxPass.Text = Convert.ToString(reader["password"]);
                 //Textboxgender.Text = Convert.ToString(reader["gender"]);
-                da.ConnectionClose();
+                connectionn.Close();
 
 
             }
+            connectionn.Close();
 
             DataAcess da1 = new DataAcess();
 
@@ -68,10 +77,11 @@ namespace ClickForService.PresentationLayer
 
             da1.GetData(sql1);
             SqlDataReader reader1 = da1.GetData(sql1);
+            da1.ConnectionClose();
 
-            if (reader.Read())
+            if (reader1.Read())
             {
-                textBox8.Text = Convert.ToString(reader["Designation"]);
+                textBox8.Text = Convert.ToString(reader1["Designation"]);
 
                 da1.ConnectionClose();
 
@@ -81,6 +91,7 @@ namespace ClickForService.PresentationLayer
             {
                 da1.ConnectionClose();
              }
+            da1.ConnectionClose();
         }
     }
 }
