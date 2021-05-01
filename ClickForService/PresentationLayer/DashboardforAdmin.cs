@@ -53,5 +53,13 @@ namespace ClickForService.PresentationLayer
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            RegistrationforAdmin RFA = new RegistrationforAdmin();
+            this.Hide();
+            RFA.Show();
+
+        }
     }
 }

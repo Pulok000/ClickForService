@@ -246,8 +246,10 @@ namespace ClickForService.PresentationLayer
                     {
                         ab = "GU";
                     }
-                    else
+                    else if(CategoryregistercomboBox.Text=="Service Taker")
                     { ab = "ST"; }
+
+                    else { ab = "AD"; }
 
 
 

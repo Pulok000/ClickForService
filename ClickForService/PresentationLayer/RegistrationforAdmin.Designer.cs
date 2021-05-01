@@ -216,8 +216,9 @@ namespace ClickForService.PresentationLayer
             this.CategoryregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.CategoryregistercomboBox.FormattingEnabled = true;
             this.CategoryregistercomboBox.Items.AddRange(new object[] {
-            "Servicer Giver",
-            "Service Taker"});
+            "Service Giver",
+            "Service Taker",
+            "Click For Service\'s Staff"});
             this.CategoryregistercomboBox.Location = new System.Drawing.Point(343, 352);
             this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
             this.CategoryregistercomboBox.Size = new System.Drawing.Size(241, 21);
@@ -474,6 +475,7 @@ namespace ClickForService.PresentationLayer
             this.Registerformbutton.TabIndex = 89;
             this.Registerformbutton.Text = "Register";
             this.Registerformbutton.UseVisualStyleBackColor = false;
+            this.Registerformbutton.Click += new System.EventHandler(this.Registerformbutton_Click);
             // 
             // label9
             // 
@@ -816,6 +818,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.Nameregisterlabel);
             this.Name = "RegistrationforAdmin";
             this.Text = "RegistrationforAdmin";
+            this.Load += new System.EventHandler(this.RegistrationforAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
