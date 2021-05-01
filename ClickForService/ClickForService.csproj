@@ -51,6 +51,7 @@
     <Compile Include="DatabaseConnectionLayer\AccessProperty.cs" />
     <Compile Include="DatabaseConnectionLayer\DataAcess.cs" />
     <Compile Include="DatabaseConnectionLayer\Operations.cs" />
+    <Compile Include="DatabaseConnectionLayer\userlistpro.cs" />
     <Compile Include="PresentationLayer\ACServicing.cs">
       <SubType>Form</SubType>
     </Compile>

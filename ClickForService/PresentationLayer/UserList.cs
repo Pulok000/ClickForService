@@ -40,22 +40,22 @@ namespace ClickForService.PresentationLayer
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
             connection.Open();
 
-            string sql = "SELECT *FROM Registrations WHERE userName='" + Login.UserName + "'";
+            string sql = "SELECT *FROM Registrations WHERE category='" + "Service Taker" + "'";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
 
-            List<AccessProperty> EL = new List<AccessProperty>();
+            List<userlistpro> EL = new List<userlistpro>();
             while (reader.Read())
             {
-                AccessProperty eventlist = new AccessProperty();
-                eventlist.ID = (int)reader["Id"];
-                eventlist.EventsName = Convert.ToString(reader["eventName"]);
-                eventlist.Des = Convert.ToString(reader["description"]);
-                eventlist.DateCreate = Convert.ToString(reader["dateOfCreate"]);
-                eventlist.ChangeDate = Convert.ToString(reader["dateOfChange"]);
-                eventlist.IMPORTANT = Convert.ToString(reader["importance"]);
+                userlistpro eventlist = new userlistpro();
+                eventlist.FullName = Convert.ToString(reader["fullName"]);
+                eventlist.UN = Convert.ToString(reader["userName"]);
+                eventlist.NID = Convert.ToString(reader["NID"]);
+                eventlist.MobileNumber = Convert.ToString(reader["mobileNumber"]);
+                eventlist.Address = Convert.ToString(reader["Address"]);
+                eventlist.Division = Convert.ToString(reader["Division"]);
 
-                eventlist.Image = Convert.ToString(reader["photo"]);
+                eventlist.City = Convert.ToString(reader["City"]);
 
 
 
@@ -68,5 +68,18 @@ namespace ClickForService.PresentationLayer
             connection.Close();
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+           /* pictureBox1.Image = new Bitmap(dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString());
+
+            textBoxImagepath.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            textBoxDescription.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            textBoxCreateDate.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+        */}
     }
 }
