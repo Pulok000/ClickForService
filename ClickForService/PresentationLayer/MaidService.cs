@@ -16,7 +16,7 @@ namespace ClickForService.PresentationLayer
 {
     public partial class MaidService : Form
     {
-       
+
         int pos;
         SqlDataAdapter sqladp;
         DataTable data = new DataTable();
@@ -33,18 +33,51 @@ namespace ClickForService.PresentationLayer
             Application.Exit();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
 
-            DataAcess ac = new DataAcess();
-            string sql = "SELECT *FROM Registrations WHERE City='" + textBox1.Text + "'AND Profession='" + comboBox1.Text + "'";
-            sqladp = new SqlDataAdapter(sql, connection);
-            sqladp.Fill(data);
-            pos = 0;
-            displaytext(pos);
 
-        } 
+            connection.Open();
+            string PF = "Maid Service";
+
+            string sql1 = "SELECT *FROM Registrations WHERE gender= '" + comboBox1.Text + "' and Profession='" + PF + "' ";
+            SqlCommand command = new SqlCommand(sql1, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+
+
+            if (reader.Read())
+            {
+
+
+                DataAcess ac = new DataAcess();
+
+                string sql = "SELECT *FROM Registrations WHERE City='" + textBox1.Text + "'AND gender='" + comboBox1.Text + "'AND Profession='" + PF + "'";
+                sqladp = new SqlDataAdapter(sql, connection);
+                sqladp.Fill(data);
+                pos = 0;
+                displaytext(pos);
+
+
+
+            }
+            else
+            {
+
+                MessageBox.Show("Sorry!There is no Mechanic as per your Requirement");
+                MaidService maidService = new MaidService();
+
+                this.Hide();
+                maidService.Show();
+            }
+
+        }
+        
+    
+
+    
         
 
         private void button1_Click_1(object sender, EventArgs e)
