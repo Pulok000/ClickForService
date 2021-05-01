@@ -129,6 +129,12 @@
     <Compile Include="PresentationLayer\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\RegistrationforAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\RegistrationforAdmin.Designer.cs">
+      <DependentUpon>RegistrationforAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\ShowProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\RegistrationforAdmin.resx">
+      <DependentUpon>RegistrationforAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ShowProfile.resx">
       <DependentUpon>ShowProfile.cs</DependentUpon>

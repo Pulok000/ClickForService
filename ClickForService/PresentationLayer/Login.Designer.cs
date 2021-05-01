@@ -56,10 +56,10 @@ namespace ClickForService.PresentationLayer
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBoxUsername.Location = new System.Drawing.Point(109, 146);
+            this.textBoxUsername.Location = new System.Drawing.Point(72, 146);
             this.textBoxUsername.Multiline = true;
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(332, 24);
+            this.textBoxUsername.Size = new System.Drawing.Size(369, 24);
             this.textBoxUsername.TabIndex = 1;
             // 
             // label3
@@ -89,11 +89,11 @@ namespace ClickForService.PresentationLayer
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(109, 204);
+            this.textBoxPassword.Location = new System.Drawing.Point(72, 204);
             this.textBoxPassword.Multiline = true;
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(332, 24);
+            this.textBoxPassword.Size = new System.Drawing.Size(369, 24);
             this.textBoxPassword.TabIndex = 16;
             // 
             // label2
