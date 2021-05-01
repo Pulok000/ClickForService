@@ -76,7 +76,7 @@ namespace ClickForService.PresentationLayer
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonMale = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.ProfessionregistercomboBox = new System.Windows.Forms.ComboBox();
             this.BloodgroupregistercomboBox = new System.Windows.Forms.ComboBox();
@@ -182,6 +182,7 @@ namespace ClickForService.PresentationLayer
             this.buttonUpdate.TabIndex = 337;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // button1
             // 
@@ -347,6 +348,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.UNtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.UNtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNtextbox.Enabled = false;
             this.UNtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UNtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UNtextbox.Location = new System.Drawing.Point(323, 169);
@@ -596,7 +598,6 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox1.Location = new System.Drawing.Point(338, 82);
@@ -629,27 +630,28 @@ namespace ClickForService.PresentationLayer
             this.button2.TabIndex = 344;
             this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // radioButton1
+            // radioButtonMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(347, 333);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 345;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonMale.AutoSize = true;
+            this.radioButtonMale.Location = new System.Drawing.Point(347, 333);
+            this.radioButtonMale.Name = "radioButtonMale";
+            this.radioButtonMale.Size = new System.Drawing.Size(48, 17);
+            this.radioButtonMale.TabIndex = 345;
+            this.radioButtonMale.TabStop = true;
+            this.radioButtonMale.Text = "Male";
+            this.radioButtonMale.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(476, 332);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(59, 17);
             this.radioButton2.TabIndex = 346;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // ProfessionregistercomboBox
@@ -698,7 +700,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.ProfessionregistercomboBox);
             this.Controls.Add(this.BloodgroupregistercomboBox);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButtonMale);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
@@ -748,6 +750,8 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.label1);
             this.Name = "UserProfileInAdmin";
             this.Text = "UserProfileInAdmin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserProfileInAdmin_FormClosing);
+            this.Load += new System.EventHandler(this.UserProfileInAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -817,7 +821,7 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonMale;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.ComboBox ProfessionregistercomboBox;
         private System.Windows.Forms.ComboBox BloodgroupregistercomboBox;

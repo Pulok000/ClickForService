@@ -87,7 +87,9 @@ namespace ClickForService.PresentationLayer
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            UserProfileInAdmin UPA = new UserProfileInAdmin();
+            this.Hide();
+            UPA.Show();
         }
     }
 }
