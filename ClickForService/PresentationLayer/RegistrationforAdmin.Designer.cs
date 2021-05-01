@@ -818,6 +818,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.Nameregisterlabel);
             this.Name = "RegistrationforAdmin";
             this.Text = "RegistrationforAdmin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegistrationforAdmin_FormClosing);
             this.Load += new System.EventHandler(this.RegistrationforAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();

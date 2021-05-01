@@ -135,11 +135,23 @@
     <Compile Include="PresentationLayer\RegistrationforAdmin.Designer.cs">
       <DependentUpon>RegistrationforAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\ServicePList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\ServicePList.Designer.cs">
+      <DependentUpon>ServicePList.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\ShowProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PresentationLayer\ShowProfile.Designer.cs">
       <DependentUpon>ShowProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -185,8 +197,14 @@
     <EmbeddedResource Include="PresentationLayer\RegistrationforAdmin.resx">
       <DependentUpon>RegistrationforAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\ServicePList.resx">
+      <DependentUpon>ServicePList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ShowProfile.resx">
       <DependentUpon>ShowProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
