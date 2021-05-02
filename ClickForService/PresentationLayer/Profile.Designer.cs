@@ -33,6 +33,9 @@ namespace ClickForService.PresentationLayer
             this.buttonCP = new System.Windows.Forms.Button();
             this.buttonSPI = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonCPI
@@ -87,12 +90,35 @@ namespace ClickForService.PresentationLayer
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bauhaus 93", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label16.Location = new System.Drawing.Point(5, 77);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(243, 33);
+            this.label16.TabIndex = 67;
+            this.label16.Text = "Click For Service";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ClickForService.Properties.Resources.clickservicelogo;
+            this.pictureBox7.Location = new System.Drawing.Point(83, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(87, 71);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 66;
+            this.pictureBox7.TabStop = false;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonSPI);
             this.Controls.Add(this.buttonCP);
@@ -101,7 +127,9 @@ namespace ClickForService.PresentationLayer
             this.Text = "Profile";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Profile_FormClosing);
             this.Load += new System.EventHandler(this.Profile_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,5 +139,7 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Button buttonCP;
         private System.Windows.Forms.Button buttonSPI;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
