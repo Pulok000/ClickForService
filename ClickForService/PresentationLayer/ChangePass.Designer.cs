@@ -29,7 +29,6 @@ namespace ClickForService.PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.ConfirmpasswordregistertextBox = new System.Windows.Forms.TextBox();
             this.PasswordregistertextBox = new System.Windows.Forms.TextBox();
@@ -41,27 +40,17 @@ namespace ClickForService.PresentationLayer
             this.label2 = new System.Windows.Forms.Label();
             this.Nameregisterlabel = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label17.Location = new System.Drawing.Point(747, 425);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(41, 16);
-            this.label17.TabIndex = 183;
-            this.label17.Text = "EXIT";
             // 
             // label16
             // 
@@ -76,10 +65,11 @@ namespace ClickForService.PresentationLayer
             // 
             // ConfirmpasswordregistertextBox
             // 
+            this.ConfirmpasswordregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ConfirmpasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ConfirmpasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmpasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(239, 264);
+            this.ConfirmpasswordregistertextBox.Location = new System.Drawing.Point(239, 260);
             this.ConfirmpasswordregistertextBox.Multiline = true;
             this.ConfirmpasswordregistertextBox.Name = "ConfirmpasswordregistertextBox";
             this.ConfirmpasswordregistertextBox.PasswordChar = '*';
@@ -88,37 +78,41 @@ namespace ClickForService.PresentationLayer
             // 
             // PasswordregistertextBox
             // 
+            this.PasswordregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.PasswordregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswordregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.PasswordregistertextBox.Location = new System.Drawing.Point(239, 229);
+            this.PasswordregistertextBox.Location = new System.Drawing.Point(209, 221);
             this.PasswordregistertextBox.Multiline = true;
             this.PasswordregistertextBox.Name = "PasswordregistertextBox";
             this.PasswordregistertextBox.PasswordChar = '*';
-            this.PasswordregistertextBox.Size = new System.Drawing.Size(340, 23);
+            this.PasswordregistertextBox.Size = new System.Drawing.Size(370, 23);
             this.PasswordregistertextBox.TabIndex = 145;
             // 
             // UsernameregistertextBox
             // 
+            this.UsernameregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.UsernameregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UsernameregistertextBox.Enabled = false;
             this.UsernameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.UsernameregistertextBox.Location = new System.Drawing.Point(239, 190);
+            this.UsernameregistertextBox.Location = new System.Drawing.Point(209, 187);
+            this.UsernameregistertextBox.Multiline = true;
             this.UsernameregistertextBox.Name = "UsernameregistertextBox";
-            this.UsernameregistertextBox.Size = new System.Drawing.Size(334, 13);
+            this.UsernameregistertextBox.Size = new System.Drawing.Size(370, 20);
             this.UsernameregistertextBox.TabIndex = 144;
             // 
             // NameregistertextBox
             // 
+            this.NameregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.NameregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NameregistertextBox.Enabled = false;
             this.NameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.NameregistertextBox.Location = new System.Drawing.Point(245, 155);
+            this.NameregistertextBox.Location = new System.Drawing.Point(209, 155);
             this.NameregistertextBox.Multiline = true;
             this.NameregistertextBox.Name = "NameregistertextBox";
-            this.NameregistertextBox.Size = new System.Drawing.Size(328, 13);
+            this.NameregistertextBox.Size = new System.Drawing.Size(364, 20);
             this.NameregistertextBox.TabIndex = 143;
             // 
             // Registerformbutton
@@ -137,12 +131,12 @@ namespace ClickForService.PresentationLayer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label4.Location = new System.Drawing.Point(115, 264);
+            this.label4.Location = new System.Drawing.Point(105, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
+            this.label4.Size = new System.Drawing.Size(128, 16);
             this.label4.TabIndex = 137;
             this.label4.Text = "ConfirmPassword";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -150,73 +144,45 @@ namespace ClickForService.PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(153, 235);
+            this.label3.Location = new System.Drawing.Point(121, 228);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 136;
             this.label3.Text = "Password";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label2.Location = new System.Drawing.Point(153, 190);
+            this.label2.Location = new System.Drawing.Point(115, 191);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(82, 16);
             this.label2.TabIndex = 135;
             this.label2.Text = "UserName";
             // 
             // Nameregisterlabel
             // 
             this.Nameregisterlabel.AutoSize = true;
-            this.Nameregisterlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nameregisterlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nameregisterlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Nameregisterlabel.Location = new System.Drawing.Point(179, 155);
+            this.Nameregisterlabel.Location = new System.Drawing.Point(115, 159);
             this.Nameregisterlabel.Name = "Nameregisterlabel";
-            this.Nameregisterlabel.Size = new System.Drawing.Size(39, 13);
+            this.Nameregisterlabel.Size = new System.Drawing.Size(49, 16);
             this.Nameregisterlabel.TabIndex = 134;
             this.Nameregisterlabel.Text = "Name";
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox4.Location = new System.Drawing.Point(179, 292);
+            this.pictureBox4.Location = new System.Drawing.Point(97, 283);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(400, 1);
+            this.pictureBox4.Size = new System.Drawing.Size(500, 1);
             this.pictureBox4.TabIndex = 171;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox3.Location = new System.Drawing.Point(179, 251);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(400, 1);
-            this.pictureBox3.TabIndex = 170;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox2.Location = new System.Drawing.Point(179, 209);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(400, 1);
-            this.pictureBox2.TabIndex = 169;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox5.Location = new System.Drawing.Point(179, 174);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(400, 1);
-            this.pictureBox5.TabIndex = 168;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox1
             // 
@@ -228,16 +194,57 @@ namespace ClickForService.PresentationLayer
             this.pictureBox1.TabIndex = 166;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox3.Location = new System.Drawing.Point(97, 247);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(500, 1);
+            this.pictureBox3.TabIndex = 184;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox2.Location = new System.Drawing.Point(97, 206);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(500, 1);
+            this.pictureBox2.TabIndex = 185;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox5.Location = new System.Drawing.Point(97, 174);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(500, 1);
+            this.pictureBox5.TabIndex = 186;
+            this.pictureBox5.TabStop = false;
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Location = new System.Drawing.Point(44, 382);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(81, 33);
+            this.buttonBack.TabIndex = 187;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // ChangePass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ConfirmpasswordregistertextBox);
@@ -254,22 +261,17 @@ namespace ClickForService.PresentationLayer
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChangePass_FormClosing);
             this.Load += new System.EventHandler(this.ChangePass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox ConfirmpasswordregistertextBox;
@@ -281,5 +283,9 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Nameregisterlabel;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

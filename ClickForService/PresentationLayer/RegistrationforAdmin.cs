@@ -170,5 +170,43 @@ namespace ClickForService.PresentationLayer
             else Registerformbutton.Enabled = false;
 
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            DashboardforAdmin dashboardadmin = new DashboardforAdmin();
+            this.Hide();
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                dashboardadmin.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
+        }
+
+        private void ConfirmpasswordregistertextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

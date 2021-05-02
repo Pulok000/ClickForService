@@ -93,5 +93,35 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             UPA.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SendNotification SN = new SendNotification();
+            this.Hide();
+            SN.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            Login login = new Login();
+            this.Hide();
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to LOGOUT?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                login.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
+        }
     }
 }

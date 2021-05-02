@@ -114,6 +114,7 @@ namespace ClickForService.PresentationLayer
             // 
             // CategoryregistercomboBox
             // 
+            this.CategoryregistercomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.CategoryregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CategoryregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategoryregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -123,11 +124,12 @@ namespace ClickForService.PresentationLayer
             "Service Taker"});
             this.CategoryregistercomboBox.Location = new System.Drawing.Point(331, 435);
             this.CategoryregistercomboBox.Name = "CategoryregistercomboBox";
-            this.CategoryregistercomboBox.Size = new System.Drawing.Size(241, 21);
+            this.CategoryregistercomboBox.Size = new System.Drawing.Size(313, 21);
             this.CategoryregistercomboBox.TabIndex = 340;
             // 
             // CityregistercomboBox
             // 
+            this.CityregistercomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.CityregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CityregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CityregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -152,6 +154,7 @@ namespace ClickForService.PresentationLayer
             // 
             // DivisionregistercomboBox
             // 
+            this.DivisionregistercomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.DivisionregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DivisionregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DivisionregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -176,7 +179,7 @@ namespace ClickForService.PresentationLayer
             this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(692, 649);
+            this.buttonUpdate.Location = new System.Drawing.Point(664, 555);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(84, 30);
             this.buttonUpdate.TabIndex = 337;
@@ -187,13 +190,15 @@ namespace ClickForService.PresentationLayer
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(32, 663);
+            this.button1.Location = new System.Drawing.Point(42, 617);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 33);
             this.button1.TabIndex = 336;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label16
             // 
@@ -464,7 +469,7 @@ namespace ClickForService.PresentationLayer
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox1.Location = new System.Drawing.Point(338, 82);
+            this.textBox1.Location = new System.Drawing.Point(319, 67);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(328, 20);
@@ -476,7 +481,7 @@ namespace ClickForService.PresentationLayer
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label4.Location = new System.Drawing.Point(248, 86);
+            this.label4.Location = new System.Drawing.Point(229, 71);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 342;
@@ -488,7 +493,7 @@ namespace ClickForService.PresentationLayer
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(692, 78);
+            this.button2.Location = new System.Drawing.Point(673, 87);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 30);
             this.button2.TabIndex = 344;
@@ -520,6 +525,7 @@ namespace ClickForService.PresentationLayer
             // 
             // ProfessionregistercomboBox
             // 
+            this.ProfessionregistercomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ProfessionregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ProfessionregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProfessionregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -533,11 +539,12 @@ namespace ClickForService.PresentationLayer
             "Mobile Mechanic"});
             this.ProfessionregistercomboBox.Location = new System.Drawing.Point(347, 469);
             this.ProfessionregistercomboBox.Name = "ProfessionregistercomboBox";
-            this.ProfessionregistercomboBox.Size = new System.Drawing.Size(232, 21);
+            this.ProfessionregistercomboBox.Size = new System.Drawing.Size(297, 21);
             this.ProfessionregistercomboBox.TabIndex = 348;
             // 
             // BloodgroupregistercomboBox
             // 
+            this.BloodgroupregistercomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BloodgroupregistercomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BloodgroupregistercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodgroupregistercomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -551,9 +558,9 @@ namespace ClickForService.PresentationLayer
             "AB-",
             "O+",
             "O-"});
-            this.BloodgroupregistercomboBox.Location = new System.Drawing.Point(363, 503);
+            this.BloodgroupregistercomboBox.Location = new System.Drawing.Point(351, 503);
             this.BloodgroupregistercomboBox.Name = "BloodgroupregistercomboBox";
-            this.BloodgroupregistercomboBox.Size = new System.Drawing.Size(216, 21);
+            this.BloodgroupregistercomboBox.Size = new System.Drawing.Size(293, 21);
             this.BloodgroupregistercomboBox.TabIndex = 347;
             // 
             // pictureBox16
@@ -696,6 +703,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(810, 749);
             this.Controls.Add(this.ProfessionregistercomboBox);
             this.Controls.Add(this.BloodgroupregistercomboBox);

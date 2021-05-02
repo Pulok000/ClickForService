@@ -57,7 +57,23 @@ namespace ClickForService.PresentationLayer
         {
             DashboardforSP dashboardforSP = new DashboardforSP(spUsername);
             this.Hide();
-            dashboardforSP.Show();
+            
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                dashboardforSP.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
         }
     }
 }

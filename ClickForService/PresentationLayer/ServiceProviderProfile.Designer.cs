@@ -60,7 +60,6 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -69,12 +68,13 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -83,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dobtextBox
@@ -222,7 +223,7 @@
             this.updatespdetailsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.updatespdetailsbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.updatespdetailsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatespdetailsbutton.Location = new System.Drawing.Point(580, 712);
+            this.updatespdetailsbutton.Location = new System.Drawing.Point(569, 677);
             this.updatespdetailsbutton.Name = "updatespdetailsbutton";
             this.updatespdetailsbutton.Size = new System.Drawing.Size(87, 28);
             this.updatespdetailsbutton.TabIndex = 252;
@@ -429,16 +430,6 @@
             this.pictureBox12.TabIndex = 255;
             this.pictureBox12.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
-            this.pictureBox1.Location = new System.Drawing.Point(294, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 251;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -511,12 +502,35 @@
             this.pictureBox6.TabIndex = 232;
             this.pictureBox6.TabStop = false;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label16.Location = new System.Drawing.Point(7, 71);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(205, 28);
+            this.label16.TabIndex = 271;
+            this.label16.Text = "Click For Service";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
+            this.pictureBox1.Location = new System.Drawing.Point(59, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 270;
+            this.pictureBox1.TabStop = false;
+            // 
             // ServiceProviderProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(684, 750);
+            this.ClientSize = new System.Drawing.Size(684, 749);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dobtextBox);
             this.Controls.Add(this.nametextBox);
             this.Controls.Add(this.NidtextBox);
@@ -535,7 +549,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.updatespdetailsbutton);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mobiletoextBox);
             this.Controls.Add(this.gendertextBox);
             this.Controls.Add(this.citytextBox);
@@ -566,7 +579,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -575,6 +587,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,7 +613,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button updatespdetailsbutton;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox mobiletoextBox;
         private System.Windows.Forms.TextBox gendertextBox;
         private System.Windows.Forms.TextBox citytextBox;
@@ -623,5 +635,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox fullnametextBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

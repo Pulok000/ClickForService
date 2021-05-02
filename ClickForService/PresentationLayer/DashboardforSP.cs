@@ -79,7 +79,22 @@ namespace ClickForService.PresentationLayer
         {
             Login login = new Login();
             this.Hide();
-            login.Show();
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go LOGOUT?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                login.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
         }
 
         private void buttonMaid_Click(object sender, EventArgs e)
