@@ -73,13 +73,15 @@ namespace ClickForService.PresentationLayer
             // 
             // UsernameregistertextBox
             // 
+            this.UsernameregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.UsernameregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UsernameregistertextBox.Enabled = false;
-            this.UsernameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.UsernameregistertextBox.Location = new System.Drawing.Point(158, 254);
+            this.UsernameregistertextBox.Location = new System.Drawing.Point(162, 250);
+            this.UsernameregistertextBox.Multiline = true;
             this.UsernameregistertextBox.Name = "UsernameregistertextBox";
-            this.UsernameregistertextBox.Size = new System.Drawing.Size(262, 13);
+            this.UsernameregistertextBox.Size = new System.Drawing.Size(262, 20);
             this.UsernameregistertextBox.TabIndex = 190;
             this.UsernameregistertextBox.TextChanged += new System.EventHandler(this.UsernameregistertextBox_TextChanged);
             // 
@@ -99,11 +101,11 @@ namespace ClickForService.PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label2.Location = new System.Drawing.Point(74, 254);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(82, 16);
             this.label2.TabIndex = 185;
             this.label2.Text = "UserName";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -202,6 +204,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(806, 601);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
