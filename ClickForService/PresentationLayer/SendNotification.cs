@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tulpep.NotificationWindow;
 
 namespace ClickForService.PresentationLayer
 {
@@ -17,9 +18,19 @@ namespace ClickForService.PresentationLayer
             InitializeComponent();
         }
 
+        public static void Nf()
+        {
+        }
         
         private void button1_Click(object sender, EventArgs e)
         {
+
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.ib;
+            popup.ContentText = textBox1.Text;
+            textBox1.Text = "";
+
+            popup.Popup();
         }
 
         private void SendNotification_FormClosing(object sender, FormClosingEventArgs e)

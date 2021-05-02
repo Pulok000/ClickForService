@@ -133,6 +133,16 @@ namespace ClickForService.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ib {
+            get {
+                object obj = ResourceManager.GetObject("ib", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap locklogo {
             get {
                 object obj = ResourceManager.GetObject("locklogo", resourceCulture);
