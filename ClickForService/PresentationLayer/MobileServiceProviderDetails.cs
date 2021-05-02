@@ -70,7 +70,24 @@ namespace ClickForService.PresentationLayer
         {
             MobileServicing mobileServicing = new MobileServicing();
             this.Hide();
-            mobileServicing.Show();
+            
+            
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                mobileServicing.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
         }
 
         private void MobileServiceProviderDetails_FormClosing(object sender, FormClosingEventArgs e)
