@@ -45,5 +45,12 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             pp.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ChangePass CP = new ChangePass();
+            this.Hide();
+            CP.Show();
+        }
     }
 }

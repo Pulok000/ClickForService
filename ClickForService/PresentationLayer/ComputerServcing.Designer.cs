@@ -32,6 +32,7 @@
             this.computerservicingdataGridView = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Registerformbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.computerservicingdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,12 +80,25 @@
             this.label1.TabIndex = 176;
             this.label1.Text = "Advance Search:";
             // 
+            // Registerformbutton
+            // 
+            this.Registerformbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Registerformbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Registerformbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registerformbutton.Location = new System.Drawing.Point(222, 412);
+            this.Registerformbutton.Name = "Registerformbutton";
+            this.Registerformbutton.Size = new System.Drawing.Size(94, 27);
+            this.Registerformbutton.TabIndex = 177;
+            this.Registerformbutton.Text = "Search";
+            this.Registerformbutton.UseVisualStyleBackColor = false;
+            // 
             // ComputerServcing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(544, 480);
+            this.Controls.Add(this.Registerformbutton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.computerservicingdataGridView);
@@ -106,5 +120,6 @@
         private System.Windows.Forms.DataGridView computerservicingdataGridView;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Registerformbutton;
     }
 }

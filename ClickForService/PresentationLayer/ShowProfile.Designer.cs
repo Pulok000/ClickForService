@@ -96,6 +96,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox7.Location = new System.Drawing.Point(330, 441);
@@ -109,6 +110,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox6.Location = new System.Drawing.Point(330, 419);
@@ -121,6 +123,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox5.Location = new System.Drawing.Point(315, 396);
@@ -133,6 +136,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBox4.Location = new System.Drawing.Point(309, 345);
@@ -145,6 +149,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBoxdivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBoxdivision.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxdivision.Enabled = false;
             this.textBoxdivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxdivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBoxdivision.Location = new System.Drawing.Point(309, 317);
@@ -157,6 +162,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.textBoxgender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBoxgender.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxgender.Enabled = false;
             this.textBoxgender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxgender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.textBoxgender.Location = new System.Drawing.Point(309, 291);
@@ -169,6 +175,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.DOBBOX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.DOBBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DOBBOX.Enabled = false;
             this.DOBBOX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOBBOX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.DOBBOX.Location = new System.Drawing.Point(320, 266);
@@ -328,6 +335,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AddresText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AddresText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AddresText.Enabled = false;
             this.AddresText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddresText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.AddresText.Location = new System.Drawing.Point(309, 374);
@@ -384,6 +392,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.NidregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.NidregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NidregistertextBox.Enabled = false;
             this.NidregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NidregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.NidregistertextBox.Location = new System.Drawing.Point(278, 191);
@@ -417,6 +426,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.EmailregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.EmailregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailregistertextBox.Enabled = false;
             this.EmailregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.EmailregistertextBox.Location = new System.Drawing.Point(286, 215);
@@ -440,6 +450,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.MobilenumbertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.MobilenumbertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MobilenumbertextBox.Enabled = false;
             this.MobilenumbertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MobilenumbertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.MobilenumbertextBox.Location = new System.Drawing.Point(355, 241);
@@ -452,6 +463,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.PasswordtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.PasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordtextBox.Enabled = false;
             this.PasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.PasswordtextBox.Location = new System.Drawing.Point(313, 162);
@@ -465,6 +477,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.UNtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.UNtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNtextbox.Enabled = false;
             this.UNtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UNtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UNtextbox.Location = new System.Drawing.Point(315, 129);
@@ -477,6 +490,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.Nametextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Nametextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Nametextbox.Enabled = false;
             this.Nametextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nametextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Nametextbox.Location = new System.Drawing.Point(309, 100);

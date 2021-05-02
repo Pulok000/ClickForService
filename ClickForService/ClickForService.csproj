@@ -49,8 +49,11 @@
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\GeneralOperations.cs" />
     <Compile Include="DatabaseConnectionLayer\AccessProperty.cs" />
+    <Compile Include="DatabaseConnectionLayer\Adminlists.cs" />
     <Compile Include="DatabaseConnectionLayer\DataAcess.cs" />
     <Compile Include="DatabaseConnectionLayer\Operations.cs" />
+    <Compile Include="DatabaseConnectionLayer\SPList.cs" />
+    <Compile Include="DatabaseConnectionLayer\userlistpro.cs" />
     <Compile Include="PresentationLayer\ACServicing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +77,12 @@
     </Compile>
     <Compile Include="PresentationLayer\AdminMyProfile.Designer.cs">
       <DependentUpon>AdminMyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\BlockUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\BlockUser.Designer.cs">
+      <DependentUpon>BlockUser.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\CarServicing.cs">
       <SubType>Form</SubType>
@@ -153,6 +162,12 @@
     <Compile Include="PresentationLayer\MobileServicing.Designer.cs">
       <DependentUpon>MobileServicing.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +191,12 @@
     </Compile>
     <Compile Include="PresentationLayer\RegistrationforAdmin.Designer.cs">
       <DependentUpon>RegistrationforAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\SendNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\SendNotification.Designer.cs">
+      <DependentUpon>SendNotification.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\ServicePList.cs">
       <SubType>Form</SubType>
@@ -201,6 +222,12 @@
     <Compile Include="PresentationLayer\UserList.Designer.cs">
       <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\UserProfileInAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\UserProfileInAdmin.Designer.cs">
+      <DependentUpon>UserProfileInAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PresentationLayer\ACServicing.resx">
@@ -214,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\AdminMyProfile.resx">
       <DependentUpon>AdminMyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\BlockUser.resx">
+      <DependentUpon>BlockUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\CarServicing.resx">
       <DependentUpon>CarServicing.cs</DependentUpon>
@@ -254,6 +284,9 @@
     <EmbeddedResource Include="PresentationLayer\MobileServicing.resx">
       <DependentUpon>MobileServicing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +299,9 @@
     <EmbeddedResource Include="PresentationLayer\RegistrationforAdmin.resx">
       <DependentUpon>RegistrationforAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\SendNotification.resx">
+      <DependentUpon>SendNotification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ServicePList.resx">
       <DependentUpon>ServicePList.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\UserProfileInAdmin.resx">
+      <DependentUpon>UserProfileInAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

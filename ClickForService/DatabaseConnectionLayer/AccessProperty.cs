@@ -87,6 +87,7 @@ namespace ClickForService.DatabaseConnectionLayer
             get;
         }
 
+<<<<<<< HEAD
         //For dashboardForservice provider:
 
         public int Id { get; set; }
@@ -95,5 +96,12 @@ namespace ClickForService.DatabaseConnectionLayer
         public int Rating { get; set; }
         public string AvailStime { get; set; }
 
+=======
+        public string UN
+        {
+            set;
+            get;
+        }
+>>>>>>> upstream/master
     }
 }
