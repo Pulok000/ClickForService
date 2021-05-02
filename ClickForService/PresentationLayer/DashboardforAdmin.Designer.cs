@@ -109,6 +109,7 @@ namespace ClickForService.PresentationLayer
             this.button4.TabIndex = 70;
             this.button4.Text = "User Profile Edit/Updates";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -178,7 +179,7 @@ namespace ClickForService.PresentationLayer
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(142, 524);
+            this.button7.Location = new System.Drawing.Point(248, 481);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(281, 37);
             this.button7.TabIndex = 83;
@@ -190,7 +191,7 @@ namespace ClickForService.PresentationLayer
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(142, 570);
+            this.button8.Location = new System.Drawing.Point(248, 535);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(281, 37);
             this.button8.TabIndex = 85;
@@ -202,7 +203,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox10.Image = global::ClickForService.Properties.Resources.subscription;
-            this.pictureBox10.Location = new System.Drawing.Point(151, 570);
+            this.pictureBox10.Location = new System.Drawing.Point(257, 535);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 35);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,7 +214,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox9.Image = global::ClickForService.Properties.Resources.locklogo1;
-            this.pictureBox9.Location = new System.Drawing.Point(151, 524);
+            this.pictureBox9.Location = new System.Drawing.Point(257, 481);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 35);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

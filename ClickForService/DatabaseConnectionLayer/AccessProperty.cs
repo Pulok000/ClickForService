@@ -85,5 +85,11 @@ namespace ClickForService.DatabaseConnectionLayer
             set;
             get;
         }
+
+        public string UN
+        {
+            set;
+            get;
+        }
     }
 }

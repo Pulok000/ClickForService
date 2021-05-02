@@ -56,5 +56,19 @@ namespace ClickForService.PresentationLayer
         {
             Application.Exit();
         }
+
+        private void buttonCPI_Click(object sender, EventArgs e)
+        {
+            ProfileIC PIC = new ProfileIC();
+            this.Hide();
+            PIC.Show();
+        }
+
+        private void buttonCP_Click(object sender, EventArgs e)
+        {
+            ChangePass CP = new ChangePass();
+            this.Hide();
+            CP.Show();
+        }
     }
 }

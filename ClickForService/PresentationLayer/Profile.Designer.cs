@@ -46,6 +46,7 @@ namespace ClickForService.PresentationLayer
             this.buttonCPI.TabIndex = 0;
             this.buttonCPI.Text = "Change Profile Info";
             this.buttonCPI.UseVisualStyleBackColor = false;
+            this.buttonCPI.Click += new System.EventHandler(this.buttonCPI_Click);
             // 
             // buttonCP
             // 
@@ -58,6 +59,7 @@ namespace ClickForService.PresentationLayer
             this.buttonCP.TabIndex = 1;
             this.buttonCP.Text = "Change Password";
             this.buttonCP.UseVisualStyleBackColor = false;
+            this.buttonCP.Click += new System.EventHandler(this.buttonCP_Click);
             // 
             // buttonSPI
             // 

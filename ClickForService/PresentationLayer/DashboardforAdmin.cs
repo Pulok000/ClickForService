@@ -53,7 +53,9 @@ namespace ClickForService.PresentationLayer
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            BlockUser BU = new BlockUser();
+            this.Hide();
+            BU.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -83,6 +85,13 @@ namespace ClickForService.PresentationLayer
             AdminMyProfile AMP = new AdminMyProfile();
             this.Hide();
             AMP.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            UserProfileInAdmin UPA = new UserProfileInAdmin();
+            this.Hide();
+            UPA.Show();
         }
     }
 }
