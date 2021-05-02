@@ -65,18 +65,19 @@ namespace ClickForService.PresentationLayer
              
 
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            notification();
+            
+           
+        }
+
         public static void ABC()
         {
             SendNotification SN = new SendNotification();
             SN.notification();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            notification();
-
-           
-        }
-       
         private void SendNotification_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
