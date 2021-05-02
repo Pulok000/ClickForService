@@ -56,6 +56,7 @@
             // 
             this.computerservicingdataGridView.AllowUserToAddRows = false;
             this.computerservicingdataGridView.AllowUserToDeleteRows = false;
+            this.computerservicingdataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.computerservicingdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.computerservicingdataGridView.Location = new System.Drawing.Point(107, 138);
             this.computerservicingdataGridView.Name = "computerservicingdataGridView";
@@ -123,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(544, 480);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox7);
