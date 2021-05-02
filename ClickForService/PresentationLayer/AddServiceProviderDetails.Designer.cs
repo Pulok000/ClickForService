@@ -89,7 +89,7 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.Location = new System.Drawing.Point(427, 456);
@@ -102,7 +102,7 @@
             // 
             // Registerformbutton
             // 
-            this.Registerformbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Registerformbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Registerformbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Registerformbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registerformbutton.Location = new System.Drawing.Point(239, 372);
