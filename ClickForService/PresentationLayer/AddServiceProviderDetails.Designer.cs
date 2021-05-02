@@ -39,12 +39,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Nameregisterlabel = new System.Windows.Forms.Label();
             this.NameregistertextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // totimecomboBox
             // 
+            this.totimecomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.totimecomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.totimecomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totimecomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -59,6 +61,7 @@
             // 
             // totimetextBox
             // 
+            this.totimetextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.totimetextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.totimetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totimetextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -70,6 +73,7 @@
             // 
             // fromtimecomboBox
             // 
+            this.fromtimecomboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.fromtimecomboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fromtimecomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromtimecomboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -85,6 +89,7 @@
             // buttonBack
             // 
             this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.Location = new System.Drawing.Point(427, 456);
             this.buttonBack.Name = "buttonBack";
@@ -131,6 +136,7 @@
             // 
             // fromtimetextBox
             // 
+            this.fromtimetextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.fromtimetextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fromtimetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromtimetextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -164,6 +170,7 @@
             // 
             // NameregistertextBox
             // 
+            this.NameregistertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.NameregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NameregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -173,21 +180,35 @@
             this.NameregistertextBox.Size = new System.Drawing.Size(159, 26);
             this.NameregistertextBox.TabIndex = 128;
             // 
-            // pictureBox1
+            // label16
             // 
-            this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
-            this.pictureBox1.Location = new System.Drawing.Point(239, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 130;
-            this.pictureBox1.TabStop = false;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bauhaus 93", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label16.Location = new System.Drawing.Point(167, 66);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(243, 33);
+            this.label16.TabIndex = 141;
+            this.label16.Text = "Click For Service";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ClickForService.Properties.Resources.clickservicelogo;
+            this.pictureBox7.Location = new System.Drawing.Point(239, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(87, 71);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 140;
+            this.pictureBox7.TabStop = false;
             // 
             // AddServiceProviderDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(555, 508);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.totimecomboBox);
             this.Controls.Add(this.totimetextBox);
             this.Controls.Add(this.fromtimecomboBox);
@@ -197,14 +218,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.fromtimetextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Nameregisterlabel);
             this.Controls.Add(this.NameregistertextBox);
             this.MaximizeBox = false;
             this.Name = "AddServiceProviderDetails";
             this.Text = "AddServiceProviderDetails";
             this.Load += new System.EventHandler(this.AddServiceProviderDetails_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,8 +241,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox fromtimetextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Nameregisterlabel;
         private System.Windows.Forms.TextBox NameregistertextBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
