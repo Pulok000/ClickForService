@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\GeneralOperations.cs" />
     <Compile Include="DatabaseConnectionLayer\AccessProperty.cs" />
+    <Compile Include="DatabaseConnectionLayer\AccessPropertySP.cs" />
     <Compile Include="DatabaseConnectionLayer\Adminlists.cs" />
     <Compile Include="DatabaseConnectionLayer\DataAcess.cs" />
     <Compile Include="DatabaseConnectionLayer\Operations.cs" />
@@ -62,6 +63,12 @@
     </Compile>
     <Compile Include="PresentationLayer\ACServicing.Designer.cs">
       <DependentUpon>ACServicing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\AddServiceProviderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\AddServiceProviderDetails.Designer.cs">
+      <DependentUpon>AddServiceProviderDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\AdminList.cs">
       <SubType>Form</SubType>
@@ -98,6 +105,12 @@
     </Compile>
     <Compile Include="PresentationLayer\ComputerServcing.Designer.cs">
       <DependentUpon>ComputerServcing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\ComputerServiceProviderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\ComputerServiceProviderDetails.Designer.cs">
+      <DependentUpon>ComputerServiceProviderDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\Dashboard.cs">
       <SubType>Form</SubType>
@@ -141,6 +154,12 @@
     <Compile Include="PresentationLayer\MaidService.Designer.cs">
       <DependentUpon>MaidService.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\MobileServiceProviderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\MobileServiceProviderDetails.Designer.cs">
+      <DependentUpon>MobileServiceProviderDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\MobileServicing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +202,12 @@
     <Compile Include="PresentationLayer\ServicePList.Designer.cs">
       <DependentUpon>ServicePList.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\ServiceProviderProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\ServiceProviderProfile.Designer.cs">
+      <DependentUpon>ServiceProviderProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\ShowProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +231,9 @@
     <EmbeddedResource Include="PresentationLayer\ACServicing.resx">
       <DependentUpon>ACServicing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\AddServiceProviderDetails.resx">
+      <DependentUpon>AddServiceProviderDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\AdminList.resx">
       <DependentUpon>AdminList.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ComputerServcing.resx">
       <DependentUpon>ComputerServcing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\ComputerServiceProviderDetails.resx">
+      <DependentUpon>ComputerServiceProviderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -245,6 +276,9 @@
     <EmbeddedResource Include="PresentationLayer\MaidService.resx">
       <DependentUpon>MaidService.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\MobileServiceProviderDetails.resx">
+      <DependentUpon>MobileServiceProviderDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\MobileServicing.resx">
       <DependentUpon>MobileServicing.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ServicePList.resx">
       <DependentUpon>ServicePList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\ServiceProviderProfile.resx">
+      <DependentUpon>ServiceProviderProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\ShowProfile.resx">
       <DependentUpon>ShowProfile.cs</DependentUpon>

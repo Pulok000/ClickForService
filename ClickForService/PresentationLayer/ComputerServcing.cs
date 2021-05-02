@@ -34,8 +34,10 @@ namespace ClickForService.PresentationLayer
         private void ComputerServcing_Load(object sender, EventArgs e)
         {
             GeneralOperations go = new GeneralOperations();
+            GeneralOperations go2 = new GeneralOperations();
 
-            List<AccessProperty> getComputerServices = go.GetAllComputerServices();
+            List<AccessPropertySP> getComputerServices = go.GetAllComputerServices();
+            //go2.GetServiceProviderAdditionalDetails(userName)
 
             DataTable dt = new DataTable();
 
@@ -51,7 +53,7 @@ namespace ClickForService.PresentationLayer
             {
                 var row = dt.NewRow();
 
-                row["Name"] = item.FullName;
+                row["Name"] = item.UserName;
                 row["Profession"] = item.Profession;
                 row["City"] = item.City;
                 row["Address"] = item.Address;
@@ -63,6 +65,21 @@ namespace ClickForService.PresentationLayer
             }
 
             computerservicingdataGridView.DataSource = dt;
+        }
+
+        private void computerservicingdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string spUsername = computerservicingdataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            
+            ComputerServiceProviderDetails showComputerServiceDetails = new ComputerServiceProviderDetails(spUsername);
+
+            this.Hide();
+            showComputerServiceDetails.Show();
+        }
+
+        private void advancesearchcpmputerservicelabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,23 +12,20 @@ using System.Windows.Forms;
 
 namespace ClickForService.PresentationLayer
 {
-    public partial class DashboardforSP : Form
+    public partial class ComputerServiceProviderDetails : Form
     {
-
         private GeneralOperations generalOperations;
         private GeneralOperations generalOperations2;
         private AccessPropertySP accessProperty;
         private AccessPropertySP accessProperty2;
 
         private string spUserName;
-        
-        public DashboardforSP()
+        public ComputerServiceProviderDetails()
         {
             InitializeComponent();
         }
 
-
-        public DashboardforSP(string spUserName)
+        public ComputerServiceProviderDetails(string spUserName)
         {
             InitializeComponent();
             this.spUserName = spUserName;
@@ -64,29 +61,21 @@ namespace ClickForService.PresentationLayer
 
         }
 
+        private void updatespdetailsbutton_Click(object sender, EventArgs e)
+        {
+            ComputerServcing computerServcing = new ComputerServcing();
+            this.Hide();
+            computerServcing.Show();
+        }
 
-        private void DashboardforSP_FormClosing(object sender, FormClosingEventArgs e)
+        private void ComputerServiceProviderDetails_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void DashboardforSP_Load(object sender, EventArgs e)
+        private void ComputerServiceProviderDetails_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            this.Hide();
-            login.Show();
-        }
-
-        private void buttonMaid_Click(object sender, EventArgs e)
-        {
-            ServiceProviderProfile serviceProviderProfile = new ServiceProviderProfile(spUserName);
-            this.Hide();
-            serviceProviderProfile.Show();
         }
     }
 }

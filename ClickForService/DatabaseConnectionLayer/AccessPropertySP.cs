@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ClickForService.DatabaseConnectionLayer
 {
-    class AccessProperty
+    class AccessPropertySP
     {
 
-        public string EmailId
+
+
+                public string EmailId
         {
             set;
             get;
@@ -87,21 +89,21 @@ namespace ClickForService.DatabaseConnectionLayer
             get;
         }
 
-//<<<<<<< HEAD
+
         //For dashboardForservice provider:
 
-//        public int Id { get; set; }
-//        public string UserName { get; set; }
-//        public double ServiceCharge { get; set; }
-//        public int Rating { get; set; }
-//        public string AvailStime { get; set; }
+        public int Id { get; set; }
+        public string UserName { get; set; }
+        public double ServiceCharge { get; set; }
+        public int Rating { get; set; }
+        public string AvailStime { get; set; }
 
-////=======
-//        public string UN
-//        {
-//            set;
-//            get;
-//        }
-//>>>>>>> upstream/master
+
+        public string UN
+        {
+            set;
+            get;
+        }
+
     }
 }
