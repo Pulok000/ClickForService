@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tulpep.NotificationWindow;
 
 namespace ClickForService.PresentationLayer
 {
@@ -15,7 +16,12 @@ namespace ClickForService.PresentationLayer
         public Dashboard()
         {
             InitializeComponent();
+
+
+            SendNotification.ABC();
         }
+
+        
 
         private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -31,8 +37,9 @@ namespace ClickForService.PresentationLayer
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            
         }
+
 
         private void label2_Click(object sender, EventArgs e)
         {
