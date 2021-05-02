@@ -65,7 +65,24 @@ namespace ClickForService.PresentationLayer
         {
             ComputerServcing computerServcing = new ComputerServcing();
             this.Hide();
-            computerServcing.Show();
+            
+            
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                computerServcing.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
         }
 
         private void ComputerServiceProviderDetails_FormClosing(object sender, FormClosingEventArgs e)
