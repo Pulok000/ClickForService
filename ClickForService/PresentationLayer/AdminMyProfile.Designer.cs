@@ -101,7 +101,7 @@ namespace ClickForService.PresentationLayer
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label1.Font = new System.Drawing.Font("Bauhaus 93", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(338, 9);
+            this.label1.Location = new System.Drawing.Point(339, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 30);
             this.label1.TabIndex = 87;
@@ -269,7 +269,7 @@ namespace ClickForService.PresentationLayer
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label16.Location = new System.Drawing.Point(-5, 160);
+            this.label16.Location = new System.Drawing.Point(0, 94);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(205, 28);
             this.label16.TabIndex = 169;
@@ -278,7 +278,7 @@ namespace ClickForService.PresentationLayer
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
-            this.pictureBox1.Location = new System.Drawing.Point(55, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(60, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -344,9 +344,10 @@ namespace ClickForService.PresentationLayer
             this.NidregistertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NidregistertextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NidregistertextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.NidregistertextBox.Location = new System.Drawing.Point(261, 207);
+            this.NidregistertextBox.Location = new System.Drawing.Point(267, 205);
+            this.NidregistertextBox.Multiline = true;
             this.NidregistertextBox.Name = "NidregistertextBox";
-            this.NidregistertextBox.Size = new System.Drawing.Size(365, 13);
+            this.NidregistertextBox.Size = new System.Drawing.Size(365, 15);
             this.NidregistertextBox.TabIndex = 159;
             // 
             // label11
@@ -419,9 +420,10 @@ namespace ClickForService.PresentationLayer
             this.UNtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UNtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.UNtextbox.Location = new System.Drawing.Point(298, 149);
+            this.UNtextbox.Location = new System.Drawing.Point(295, 145);
+            this.UNtextbox.Multiline = true;
             this.UNtextbox.Name = "UNtextbox";
-            this.UNtextbox.Size = new System.Drawing.Size(334, 13);
+            this.UNtextbox.Size = new System.Drawing.Size(334, 20);
             this.UNtextbox.TabIndex = 146;
             // 
             // Nametextbox
@@ -432,7 +434,7 @@ namespace ClickForService.PresentationLayer
             this.Nametextbox.Location = new System.Drawing.Point(292, 116);
             this.Nametextbox.Multiline = true;
             this.Nametextbox.Name = "Nametextbox";
-            this.Nametextbox.Size = new System.Drawing.Size(300, 13);
+            this.Nametextbox.Size = new System.Drawing.Size(300, 20);
             this.Nametextbox.TabIndex = 145;
             // 
             // label9
@@ -598,6 +600,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(797, 629);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
