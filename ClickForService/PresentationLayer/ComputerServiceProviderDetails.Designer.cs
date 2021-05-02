@@ -68,7 +68,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(162, 438);
@@ -79,7 +79,7 @@
             // 
             // availabilitytextBox
             // 
-            this.availabilitytextBox.BackColor = System.Drawing.Color.White;
+            this.availabilitytextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.availabilitytextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.availabilitytextBox.Enabled = false;
             this.availabilitytextBox.Location = new System.Drawing.Point(174, 396);
@@ -90,7 +90,7 @@
             // 
             // servicechargetextBox
             // 
-            this.servicechargetextBox.BackColor = System.Drawing.Color.White;
+            this.servicechargetextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.servicechargetextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.servicechargetextBox.Enabled = false;
             this.servicechargetextBox.Location = new System.Drawing.Point(202, 352);
@@ -101,7 +101,7 @@
             // 
             // mobilenumbertextBox
             // 
-            this.mobilenumbertextBox.BackColor = System.Drawing.Color.White;
+            this.mobilenumbertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.mobilenumbertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mobilenumbertextBox.Enabled = false;
             this.mobilenumbertextBox.Location = new System.Drawing.Point(202, 306);
@@ -112,7 +112,7 @@
             // 
             // addresstextBox
             // 
-            this.addresstextBox.BackColor = System.Drawing.Color.White;
+            this.addresstextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.addresstextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addresstextBox.Enabled = false;
             this.addresstextBox.Location = new System.Drawing.Point(162, 265);
@@ -123,7 +123,7 @@
             // 
             // citytextBox
             // 
-            this.citytextBox.BackColor = System.Drawing.Color.White;
+            this.citytextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.citytextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.citytextBox.Enabled = false;
             this.citytextBox.Location = new System.Drawing.Point(144, 214);
@@ -134,7 +134,7 @@
             // 
             // divisiontextBox
             // 
-            this.divisiontextBox.BackColor = System.Drawing.Color.White;
+            this.divisiontextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.divisiontextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.divisiontextBox.Enabled = false;
             this.divisiontextBox.Location = new System.Drawing.Point(153, 171);
@@ -246,7 +246,7 @@
             // 
             // fullnametextBox
             // 
-            this.fullnametextBox.BackColor = System.Drawing.Color.White;
+            this.fullnametextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.fullnametextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fullnametextBox.Enabled = false;
             this.fullnametextBox.Location = new System.Drawing.Point(144, 125);
