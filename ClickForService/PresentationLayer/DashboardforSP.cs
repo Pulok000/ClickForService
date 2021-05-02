@@ -83,7 +83,7 @@ namespace ClickForService.PresentationLayer
 
             DialogResult d;
 
-            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            d = MessageBox.Show("Do you want to Go LOGOUT?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
             if (d == DialogResult.Yes)
             {
