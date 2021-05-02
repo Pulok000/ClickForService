@@ -32,7 +32,6 @@ namespace ClickForService.PresentationLayer
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -127,17 +126,6 @@ namespace ClickForService.PresentationLayer
             this.label18.Size = new System.Drawing.Size(91, 16);
             this.label18.TabIndex = 186;
             this.label18.Text = "Designation";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label17.Location = new System.Drawing.Point(744, 604);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(41, 16);
-            this.label17.TabIndex = 185;
-            this.label17.Text = "EXIT";
             // 
             // pictureBox16
             // 
@@ -642,7 +630,6 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.DOBBOX);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
@@ -710,7 +697,6 @@ namespace ClickForService.PresentationLayer
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
