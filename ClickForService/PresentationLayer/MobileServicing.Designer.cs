@@ -57,18 +57,21 @@
             // 
             // mobileservcingbackbutton
             // 
+            this.mobileservcingbackbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.mobileservcingbackbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mobileservcingbackbutton.Location = new System.Drawing.Point(417, 447);
             this.mobileservcingbackbutton.Name = "mobileservcingbackbutton";
-            this.mobileservcingbackbutton.Size = new System.Drawing.Size(75, 23);
+            this.mobileservcingbackbutton.Size = new System.Drawing.Size(75, 33);
             this.mobileservcingbackbutton.TabIndex = 0;
             this.mobileservcingbackbutton.Text = "Back";
-            this.mobileservcingbackbutton.UseVisualStyleBackColor = true;
+            this.mobileservcingbackbutton.UseVisualStyleBackColor = false;
             this.mobileservcingbackbutton.Click += new System.EventHandler(this.mobileservcingbackbutton_Click);
             // 
             // mobileservicingdataGridView
             // 
             this.mobileservicingdataGridView.AllowUserToAddRows = false;
             this.mobileservicingdataGridView.AllowUserToDeleteRows = false;
+            this.mobileservicingdataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.mobileservicingdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.mobileservicingdataGridView.Location = new System.Drawing.Point(86, 37);
             this.mobileservicingdataGridView.Name = "mobileservicingdataGridView";
@@ -79,7 +82,7 @@
             // 
             // mobilenumbertextBox
             // 
-            this.mobilenumbertextBox.BackColor = System.Drawing.Color.White;
+            this.mobilenumbertextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.mobilenumbertextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mobilenumbertextBox.Enabled = false;
             this.mobilenumbertextBox.Location = new System.Drawing.Point(162, 386);
@@ -90,7 +93,7 @@
             // 
             // addresstextBox
             // 
-            this.addresstextBox.BackColor = System.Drawing.Color.White;
+            this.addresstextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.addresstextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.addresstextBox.Enabled = false;
             this.addresstextBox.Location = new System.Drawing.Point(122, 345);
@@ -101,7 +104,7 @@
             // 
             // citytextBox
             // 
-            this.citytextBox.BackColor = System.Drawing.Color.White;
+            this.citytextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.citytextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.citytextBox.Enabled = false;
             this.citytextBox.Location = new System.Drawing.Point(104, 294);
@@ -112,7 +115,7 @@
             // 
             // divisiontextBox
             // 
-            this.divisiontextBox.BackColor = System.Drawing.Color.White;
+            this.divisiontextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.divisiontextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.divisiontextBox.Enabled = false;
             this.divisiontextBox.Location = new System.Drawing.Point(113, 251);

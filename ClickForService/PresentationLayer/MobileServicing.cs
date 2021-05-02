@@ -33,7 +33,22 @@ namespace ClickForService.PresentationLayer
         {
             HouseHoldService houseHoldService = new HouseHoldService();
             this.Hide();
-            houseHoldService.Show();
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                houseHoldService.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
         }
 
         private void MobileServicing_Load(object sender, EventArgs e)
