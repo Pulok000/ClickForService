@@ -136,6 +136,9 @@
   <data name="clicklogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clicklogo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="about1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="registration background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\registration background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +157,8 @@
   <data name="transportlogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transportlogo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="passwordlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\passwordlogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="house" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\house.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="passwordlogo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passwordlogo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +169,8 @@
   <data name="locklogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\locklogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="house" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\house.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="passwordlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordlogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="locklogo21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\locklogo21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,13 +178,13 @@
   <data name="passwordlogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\passwordlogo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="about1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ib" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\information-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="warnig icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warnig icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
