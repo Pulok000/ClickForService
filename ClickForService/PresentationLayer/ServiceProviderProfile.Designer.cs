@@ -222,7 +222,7 @@
             this.updatespdetailsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.updatespdetailsbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.updatespdetailsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatespdetailsbutton.Location = new System.Drawing.Point(580, 712);
+            this.updatespdetailsbutton.Location = new System.Drawing.Point(569, 677);
             this.updatespdetailsbutton.Name = "updatespdetailsbutton";
             this.updatespdetailsbutton.Size = new System.Drawing.Size(87, 28);
             this.updatespdetailsbutton.TabIndex = 252;
@@ -516,7 +516,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(684, 750);
+            this.ClientSize = new System.Drawing.Size(684, 749);
             this.Controls.Add(this.dobtextBox);
             this.Controls.Add(this.nametextBox);
             this.Controls.Add(this.NidtextBox);
