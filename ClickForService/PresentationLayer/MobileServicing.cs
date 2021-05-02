@@ -40,7 +40,7 @@ namespace ClickForService.PresentationLayer
         {
             GeneralOperations go = new GeneralOperations();
 
-            List<AccessProperty> getComputerServices = go.GetAllMobileServices();
+            List<AccessPropertySP> getComputerServices = go.GetAllMobileServices();
 
             DataTable dt = new DataTable();
 

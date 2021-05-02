@@ -26,16 +26,16 @@ namespace ClickForService.DatabaseConnectionLayer
         }
 
 
-        public List<AccessProperty> GetAllComputerServices()
+        public List<AccessPropertySP> GetAllComputerServices()
         {
             string s1 = "Service Giver";
             string s2 = "Computer or Laptop Mechanic";
             string sql = "SELECT *FROM Registrations Where category='" + s1 + "' And Profession='" + s2 + "'";
             SqlDataReader reader = this.GetData(sql);
-            List<AccessProperty> Ap1 = new List<AccessProperty>();
+            List<AccessPropertySP> Ap1 = new List<AccessPropertySP>();
             while (reader.Read())
             {
-                AccessProperty ap = new AccessProperty();
+                AccessPropertySP ap = new AccessPropertySP();
                 ap.UserName = Convert.ToString(reader["userName"]);
                 ap.Profession = Convert.ToString(reader["Profession"]);
                 ap.City = Convert.ToString(reader["City"]);
@@ -46,16 +46,16 @@ namespace ClickForService.DatabaseConnectionLayer
         }
 
 
-        public List<AccessProperty> GetAllMobileServices()
+        public List<AccessPropertySP> GetAllMobileServices()
         {
             string s1 = "Service Giver";
             string s2 = "Mobile Mechanic";
             string sql = "SELECT *FROM Registrations Where category='" + s1 + "' And Profession='" + s2 + "'";
             SqlDataReader reader = this.GetData(sql);
-            List<AccessProperty> Ap1 = new List<AccessProperty>();
+            List<AccessPropertySP> Ap1 = new List<AccessPropertySP>();
             while (reader.Read())
             {
-                AccessProperty ap = new AccessProperty();
+                AccessPropertySP ap = new AccessPropertySP();
                 ap.UserName = Convert.ToString(reader["userName"]);
                 ap.Profession = Convert.ToString(reader["Profession"]);
                 ap.City = Convert.ToString(reader["City"]);
@@ -68,7 +68,7 @@ namespace ClickForService.DatabaseConnectionLayer
 
         //For dashboardForservice provider:
 
-        public int AddServiceProviderDetails(AccessProperty accessProperty)
+        public int AddServiceProviderDetails(AccessPropertySP accessProperty)
         {
 
             string sql = "INSERT INTO SPTables(userName,serviceCharge,AvailStime) VALUES('" + accessProperty.UserName + "'," + accessProperty.ServiceCharge + ",'" + accessProperty.AvailStime + "')";
@@ -78,7 +78,7 @@ namespace ClickForService.DatabaseConnectionLayer
 
         //
 
-        public AccessProperty GetServiceProviderRegDetails(string userName)
+        public AccessPropertySP GetServiceProviderRegDetails(string userName)
         {
             string s = userName;
             string sql = "SELECT * FROM Registrations Where userName='" + s + "'";
@@ -87,7 +87,7 @@ namespace ClickForService.DatabaseConnectionLayer
             {
 
 
-                AccessProperty accessProperty = new AccessProperty();
+                AccessPropertySP accessProperty = new AccessPropertySP();
                 accessProperty.UserName = reader["userName"].ToString();
                 accessProperty.EmailId = reader["emailId"].ToString();
                 accessProperty.Password = reader["password"].ToString();
@@ -111,7 +111,7 @@ namespace ClickForService.DatabaseConnectionLayer
 
         //GetServiceProviderAdditionalDetails
 
-        public AccessProperty GetServiceProviderAdditionalDetails(string userName)
+        public AccessPropertySP GetServiceProviderAdditionalDetails(string userName)
         {
             string s = userName;
             string sql = "SELECT * FROM SPTables Where userName='" + s + "'";
@@ -119,7 +119,7 @@ namespace ClickForService.DatabaseConnectionLayer
             if (reader.Read())
             {
 
-                AccessProperty accessProperty = new AccessProperty();
+                AccessPropertySP accessProperty = new AccessPropertySP();
                 accessProperty.Id = Convert.ToInt32(reader["Id"].ToString());
                 accessProperty.UserName = reader["userName"].ToString();
                 accessProperty.ServiceCharge = Convert.ToDouble(reader["serviceCharge"]);

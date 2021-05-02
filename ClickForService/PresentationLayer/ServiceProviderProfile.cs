@@ -16,7 +16,7 @@ namespace ClickForService.PresentationLayer
     {
         private string spUsername;
         private GeneralOperations generalOperations;
-        private AccessProperty accessProperty;
+        private AccessPropertySP accessProperty;
 
         public ServiceProviderProfile()
         {

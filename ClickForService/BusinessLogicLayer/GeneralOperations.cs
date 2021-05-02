@@ -20,12 +20,12 @@ namespace ClickForService.BusinessLogicLayer
             return this.operation.GetMaid();
         }
 
-        public List<AccessProperty> GetAllComputerServices()
+        public List<AccessPropertySP> GetAllComputerServices()
         {
             return this.operation.GetAllComputerServices();
         }
 
-        public List<AccessProperty> GetAllMobileServices()
+        public List<AccessPropertySP> GetAllMobileServices()
         {
             return this.operation.GetAllMobileServices();
         }
@@ -34,7 +34,7 @@ namespace ClickForService.BusinessLogicLayer
         public int AddServiceProviderDetails(string username, double serviceCharge, string availableTime)
         {
 
-            AccessProperty accessProperty = new AccessProperty()
+            AccessPropertySP accessProperty = new AccessPropertySP()
             {
                 UserName = username,
                 ServiceCharge = serviceCharge,
@@ -45,7 +45,7 @@ namespace ClickForService.BusinessLogicLayer
         }
         //
 
-        public AccessProperty GetServiceProviderRegDetails(string userName)
+        public AccessPropertySP GetServiceProviderRegDetails(string userName)
         {
             return this.operation.GetServiceProviderRegDetails(userName);
         }
@@ -53,7 +53,7 @@ namespace ClickForService.BusinessLogicLayer
 
 
 
-        public AccessProperty GetServiceProviderAdditionalDetails(string userName)
+        public AccessPropertySP GetServiceProviderAdditionalDetails(string userName)
         {
             return this.operation.GetServiceProviderAdditionalDetails(userName);
         }

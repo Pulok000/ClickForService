@@ -36,7 +36,7 @@ namespace ClickForService.PresentationLayer
             GeneralOperations go = new GeneralOperations();
             GeneralOperations go2 = new GeneralOperations();
 
-            List<AccessProperty> getComputerServices = go.GetAllComputerServices();
+            List<AccessPropertySP> getComputerServices = go.GetAllComputerServices();
             //go2.GetServiceProviderAdditionalDetails(userName)
 
             DataTable dt = new DataTable();

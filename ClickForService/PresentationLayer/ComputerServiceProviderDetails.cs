@@ -16,8 +16,8 @@ namespace ClickForService.PresentationLayer
     {
         private GeneralOperations generalOperations;
         private GeneralOperations generalOperations2;
-        private AccessProperty accessProperty;
-        private AccessProperty accessProperty2;
+        private AccessPropertySP accessProperty;
+        private AccessPropertySP accessProperty2;
 
         private string spUserName;
         public ComputerServiceProviderDetails()
