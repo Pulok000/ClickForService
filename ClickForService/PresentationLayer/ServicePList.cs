@@ -114,5 +114,29 @@ namespace ClickForService.PresentationLayer
             textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
             textBox9.Text= dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DashboardforAdmin dashboardforAdmin = new DashboardforAdmin();
+            this.Hide();
+
+
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                dashboardforAdmin.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
+        }
     }
 }
