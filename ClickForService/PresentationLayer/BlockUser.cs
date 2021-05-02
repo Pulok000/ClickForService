@@ -128,7 +128,7 @@ namespace ClickForService.PresentationLayer
 
             connection.Open();
                                   
-            string sql1 = "SELECT *FROM userpermissions WHERE userName= '" + textBox1.Text + "'AND uniqueCode='"+"ST"+"' OR uniqueCode='"+"GU"+"'";
+            string sql1 = "SELECT *FROM userpermissions WHERE userName= '" + textBox1.Text + "'AND (uniqueCode='"+"ST"+"' OR uniqueCode='"+"GU"+"' OR uniqueCode='"+""+"')";
             SqlCommand command = new SqlCommand(sql1, connection);
             SqlDataReader reader = command.ExecuteReader();
 

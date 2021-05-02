@@ -183,7 +183,7 @@ namespace ClickForService.PresentationLayer
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(281, 37);
             this.button7.TabIndex = 83;
-            this.button7.Text = "Subscription Issue";
+            this.button7.Text = "Send Notification";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
