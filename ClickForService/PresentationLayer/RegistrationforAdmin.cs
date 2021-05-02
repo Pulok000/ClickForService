@@ -198,5 +198,15 @@ namespace ClickForService.PresentationLayer
             else
                 Close();
         }
+
+        private void ConfirmpasswordregistertextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
