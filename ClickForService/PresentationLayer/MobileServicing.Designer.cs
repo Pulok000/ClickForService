@@ -223,7 +223,7 @@
             // 
             // fullnametextBox
             // 
-            this.fullnametextBox.BackColor = System.Drawing.Color.White;
+            this.fullnametextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.fullnametextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fullnametextBox.Enabled = false;
             this.fullnametextBox.Location = new System.Drawing.Point(104, 205);
@@ -258,7 +258,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(518, 482);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
