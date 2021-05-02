@@ -40,6 +40,7 @@ namespace ClickForService.PresentationLayer
             this.button1.TabIndex = 0;
             this.button1.Text = "Test Notification";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SendNotification
             // 
@@ -49,6 +50,7 @@ namespace ClickForService.PresentationLayer
             this.Controls.Add(this.button1);
             this.Name = "SendNotification";
             this.Text = "SendNotification";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SendNotification_FormClosing);
             this.ResumeLayout(false);
 
         }
