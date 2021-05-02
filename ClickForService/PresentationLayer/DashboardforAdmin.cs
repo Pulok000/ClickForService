@@ -100,5 +100,28 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             SN.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            Login login = new Login();
+            this.Hide();
+
+
+            DialogResult d;
+
+            d = MessageBox.Show("Do you want to Go Back?", "", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (d == DialogResult.Yes)
+            {
+                login.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+                this.Show();
+            }
+            else
+                Close();
+        }
     }
 }

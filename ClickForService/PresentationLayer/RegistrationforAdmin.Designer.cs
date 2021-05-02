@@ -122,7 +122,7 @@ namespace ClickForService.PresentationLayer
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label16.Location = new System.Drawing.Point(48, 101);
+            this.label16.Location = new System.Drawing.Point(1, 81);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(205, 28);
             this.label16.TabIndex = 116;
@@ -326,7 +326,7 @@ namespace ClickForService.PresentationLayer
             this.AgreeregistercheckBox.AutoSize = true;
             this.AgreeregistercheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgreeregistercheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.AgreeregistercheckBox.Location = new System.Drawing.Point(57, 506);
+            this.AgreeregistercheckBox.Location = new System.Drawing.Point(100, 486);
             this.AgreeregistercheckBox.Name = "AgreeregistercheckBox";
             this.AgreeregistercheckBox.Size = new System.Drawing.Size(246, 20);
             this.AgreeregistercheckBox.TabIndex = 99;
@@ -459,7 +459,7 @@ namespace ClickForService.PresentationLayer
             this.Registerformbutton.Enabled = false;
             this.Registerformbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Registerformbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Registerformbutton.Location = new System.Drawing.Point(602, 520);
+            this.Registerformbutton.Location = new System.Drawing.Point(654, 466);
             this.Registerformbutton.Name = "Registerformbutton";
             this.Registerformbutton.Size = new System.Drawing.Size(88, 27);
             this.Registerformbutton.TabIndex = 89;
@@ -738,7 +738,7 @@ namespace ClickForService.PresentationLayer
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ClickForService.Properties.Resources.clickservicelogo;
-            this.pictureBox1.Location = new System.Drawing.Point(100, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(53, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -763,6 +763,7 @@ namespace ClickForService.PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(813, 600);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox17);
