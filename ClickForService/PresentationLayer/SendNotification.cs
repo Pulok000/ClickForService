@@ -16,5 +16,15 @@ namespace ClickForService.PresentationLayer
         {
             InitializeComponent();
         }
+
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void SendNotification_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -93,5 +93,12 @@ namespace ClickForService.PresentationLayer
             this.Hide();
             UPA.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SendNotification SN = new SendNotification();
+            this.Hide();
+            SN.Show();
+        }
     }
 }
