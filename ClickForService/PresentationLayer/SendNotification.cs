@@ -13,6 +13,7 @@ using Tulpep.NotificationWindow;
 
 namespace ClickForService.PresentationLayer
 {
+    public delegate void ABC();
     public partial class SendNotification : Form
     {
         public SendNotification()
@@ -23,16 +24,13 @@ namespace ClickForService.PresentationLayer
         public static void Nf()
         {
         }
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
 
+        public void notification()
+        {
             PopupNotifier popup = new PopupNotifier();
             popup.Image = Properties.Resources.ib;
             popup.ContentText = textBox1.Text;
             textBox1.Text = "";
-
-            
 
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBconnection"].ConnectionString);
 
@@ -62,6 +60,11 @@ namespace ClickForService.PresentationLayer
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            notification();
+        }
+       
         private void SendNotification_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

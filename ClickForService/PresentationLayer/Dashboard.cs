@@ -31,8 +31,13 @@ namespace ClickForService.PresentationLayer
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            SendNotification td = new SendNotification();   //Creating object of the class. 
+
+            ABC delegateobj = new ABC(td.notification);
+            td.notification();
 
         }
+
 
         private void label2_Click(object sender, EventArgs e)
         {
