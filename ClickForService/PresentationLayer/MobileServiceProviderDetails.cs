@@ -12,30 +12,27 @@ using System.Windows.Forms;
 
 namespace ClickForService.PresentationLayer
 {
-    public partial class DashboardforSP : Form
+    public partial class MobileServiceProviderDetails : Form
     {
-
         private GeneralOperations generalOperations;
         private GeneralOperations generalOperations2;
         private AccessPropertySP accessProperty;
         private AccessPropertySP accessProperty2;
-
-        private string spUserName;
-        
-        public DashboardforSP()
+        public MobileServiceProviderDetails()
         {
             InitializeComponent();
+
         }
 
-
-        public DashboardforSP(string spUserName)
+        private string spUsername;
+        public MobileServiceProviderDetails(string spUsername)
         {
             InitializeComponent();
-            this.spUserName = spUserName;
+            this.spUsername = spUsername;
 
             generalOperations = new GeneralOperations();
 
-            accessProperty = generalOperations.GetServiceProviderRegDetails(spUserName);
+            accessProperty = generalOperations.GetServiceProviderRegDetails(spUsername);
             fullnametextBox.Text = accessProperty.FullName;
             divisiontextBox.Text = accessProperty.Division;
             citytextBox.Text = accessProperty.City;
@@ -45,7 +42,7 @@ namespace ClickForService.PresentationLayer
 
 
             generalOperations2 = new GeneralOperations();
-            accessProperty2 = generalOperations2.GetServiceProviderAdditionalDetails(spUserName);
+            accessProperty2 = generalOperations2.GetServiceProviderAdditionalDetails(spUsername);
 
 
             try
@@ -64,29 +61,21 @@ namespace ClickForService.PresentationLayer
 
         }
 
+        private void MobileServiceProviderDetails_Load(object sender, EventArgs e)
+        {
 
-        private void DashboardforSP_FormClosing(object sender, FormClosingEventArgs e)
+        }
+
+        private void updatespdetailsbutton_Click(object sender, EventArgs e)
+        {
+            MobileServicing mobileServicing = new MobileServicing();
+            this.Hide();
+            mobileServicing.Show();
+        }
+
+        private void MobileServiceProviderDetails_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void DashboardforSP_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            this.Hide();
-            login.Show();
-        }
-
-        private void buttonMaid_Click(object sender, EventArgs e)
-        {
-            ServiceProviderProfile serviceProviderProfile = new ServiceProviderProfile(spUserName);
-            this.Hide();
-            serviceProviderProfile.Show();
         }
     }
 }

@@ -26,17 +26,17 @@ namespace ClickForService.DatabaseConnectionLayer
         }
 
 
-        public List<AccessProperty> GetAllComputerServices()
+        public List<AccessPropertySP> GetAllComputerServices()
         {
-            string s1 = "Servicer Giver";
+            string s1 = "Service Giver";
             string s2 = "Computer or Laptop Mechanic";
             string sql = "SELECT *FROM Registrations Where category='" + s1 + "' And Profession='" + s2 + "'";
             SqlDataReader reader = this.GetData(sql);
-            List<AccessProperty> Ap1 = new List<AccessProperty>();
+            List<AccessPropertySP> Ap1 = new List<AccessPropertySP>();
             while (reader.Read())
             {
-                AccessProperty ap = new AccessProperty();
-                ap.FullName = Convert.ToString(reader["fullName"]);
+                AccessPropertySP ap = new AccessPropertySP();
+                ap.UserName = Convert.ToString(reader["userName"]);
                 ap.Profession = Convert.ToString(reader["Profession"]);
                 ap.City = Convert.ToString(reader["City"]);
                 ap.Address = Convert.ToString(reader["Address"]);
@@ -46,17 +46,17 @@ namespace ClickForService.DatabaseConnectionLayer
         }
 
 
-        public List<AccessProperty> GetAllMobileServices()
+        public List<AccessPropertySP> GetAllMobileServices()
         {
-            string s1 = "Servicer Giver";
+            string s1 = "Service Giver";
             string s2 = "Mobile Mechanic";
             string sql = "SELECT *FROM Registrations Where category='" + s1 + "' And Profession='" + s2 + "'";
             SqlDataReader reader = this.GetData(sql);
-            List<AccessProperty> Ap1 = new List<AccessProperty>();
+            List<AccessPropertySP> Ap1 = new List<AccessPropertySP>();
             while (reader.Read())
             {
-                AccessProperty ap = new AccessProperty();
-                ap.FullName = Convert.ToString(reader["fullName"]);
+                AccessPropertySP ap = new AccessPropertySP();
+                ap.UserName = Convert.ToString(reader["userName"]);
                 ap.Profession = Convert.ToString(reader["Profession"]);
                 ap.City = Convert.ToString(reader["City"]);
                 ap.Address = Convert.ToString(reader["Address"]);
@@ -64,7 +64,82 @@ namespace ClickForService.DatabaseConnectionLayer
             }
             return Ap1;
         }
-        
+
+
+        //For dashboardForservice provider:
+
+        public int AddServiceProviderDetails(AccessPropertySP accessProperty)
+        {
+
+            string sql = "INSERT INTO SPTables(userName,serviceCharge,AvailStime) VALUES('" + accessProperty.UserName + "'," + accessProperty.ServiceCharge + ",'" + accessProperty.AvailStime + "')";
+
+            return this.ExecuteNonQuery(sql);
+        }
+
+        //
+
+        public AccessPropertySP GetServiceProviderRegDetails(string userName)
+        {
+            string s = userName;
+            string sql = "SELECT * FROM Registrations Where userName='" + s + "'";
+            SqlDataReader reader = this.GetData(sql);
+            if (reader.Read())
+            {
+
+
+                AccessPropertySP accessProperty = new AccessPropertySP();
+                accessProperty.UserName = reader["userName"].ToString();
+                accessProperty.EmailId = reader["emailId"].ToString();
+                accessProperty.Password = reader["password"].ToString();
+                accessProperty.Category = reader["category"].ToString();
+                accessProperty.Address = reader["Address"].ToString();
+                accessProperty.City = reader["City"].ToString();
+                accessProperty.Division = reader["Division"].ToString();
+                accessProperty.BloodGroup = reader["bloodGroup"].ToString();
+                accessProperty.MobileNumber = reader["mobileNumber"].ToString();
+                accessProperty.FullName = reader["fullName"].ToString();
+                accessProperty.NID = reader["NID"].ToString();
+                accessProperty.DOB = reader["dateofbirth"].ToString();
+                accessProperty.Gender = reader["gender"].ToString();
+                accessProperty.Profession = reader["Profession"].ToString();
+
+
+                return accessProperty;
+            }
+            return null;
+        }
+
+        //GetServiceProviderAdditionalDetails
+
+        public AccessPropertySP GetServiceProviderAdditionalDetails(string userName)
+        {
+            string s = userName;
+            string sql = "SELECT * FROM SPTables Where userName='" + s + "'";
+            SqlDataReader reader = this.GetData(sql);
+            if (reader.Read())
+            {
+
+                AccessPropertySP accessProperty = new AccessPropertySP();
+                accessProperty.Id = Convert.ToInt32(reader["Id"].ToString());
+                accessProperty.UserName = reader["userName"].ToString();
+                accessProperty.ServiceCharge = Convert.ToDouble(reader["serviceCharge"]);
+
+                try
+                {
+                    accessProperty.Rating = Convert.ToInt32(reader["Rating"]);
+                }
+                catch (Exception exp)
+                {
+
+                }
+
+                accessProperty.AvailStime = reader["AvailStime"].ToString();
+
+                return accessProperty;
+            }
+            return null;
+        }
+
     }
 
 }
